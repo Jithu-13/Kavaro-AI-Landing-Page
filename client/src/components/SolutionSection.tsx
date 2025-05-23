@@ -61,421 +61,230 @@ export default function SolutionSection() {
           </div>
         </div>
         
-        {/* Enhanced Risk & Insurance Document Flow - All Connected by Kavaro AI */}
+        {/* Simplified Risk Intelligence Hub - Clean, Icon-focused Layout */}
         <div className="max-w-6xl mx-auto px-6 py-16">
           <h3 className="text-2xl md:text-3xl font-semibold mb-6 text-[#0F1C3E] text-center">
-            The Complete Risk & Insurance Document Lifecycle
+            The Risk Management Intelligence Hub
           </h3>
-          <p className="text-gray-700 text-lg leading-relaxed mb-12 text-center max-w-3xl mx-auto">
-            Kavaro AI connects every stakeholder throughout the insurance lifecycle, providing integrated document flows and real-time intelligence at each stage.
+          <p className="text-gray-700 text-lg leading-relaxed mb-16 text-center max-w-3xl mx-auto">
+            Kavaro AI connects every stakeholder throughout the insurance ecosystem, providing integrated document flows and real-time risk intelligence.
           </p>
           
-          {/* Document Flow Diagram with Enhanced Animations and Aesthetics */}
-          <div className="relative min-h-[700px] md:min-h-[800px]">
-            {/* Background Elements */}
-            <div className="absolute inset-0 -z-10 overflow-hidden">
-              {/* Animated gradient background */}
-              <div className="absolute inset-0 bg-gradient-to-br from-gray-50 to-gray-100 opacity-50"></div>
-              
-              {/* Subtle pattern overlay */}
-              <div className="absolute inset-0 opacity-5">
-                <div className="h-full w-full" style={{ 
-                  backgroundImage: 'url("data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'28\' height=\'49\' viewBox=\'0 0 28 49\'%3E%3Cg fill-rule=\'evenodd\'%3E%3Cg id=\'hexagons\' fill=\'%23000000\' fill-opacity=\'1\'%3E%3Cpath d=\'M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")',
-                  backgroundSize: '28px 49px' 
-                }}></div>
-              </div>
-              
-              {/* Circular grid */}
-              <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] opacity-10">
-                <div className="absolute inset-0 rounded-full border border-gray-400"></div>
-                <div className="absolute inset-[15%] rounded-full border border-gray-400"></div>
-                <div className="absolute inset-[30%] rounded-full border border-gray-400"></div>
-                <div className="absolute inset-[45%] rounded-full border border-gray-400"></div>
+          {/* Simple circular hub visualization */}
+          <div className="relative h-[500px] md:h-[600px] mx-auto max-w-5xl">
+            {/* Subtle gradient background */}
+            <div className="absolute inset-0 bg-[#0F1C3E]/5 rounded-3xl"></div>
+            
+            {/* Central Kavaro Hub */}
+            <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-36 h-36 md:w-48 md:h-48 rounded-full bg-gradient-to-br from-[#0F1C3E] to-[#152045] flex items-center justify-center z-10 shadow-xl">
+              <div className="absolute inset-0 rounded-full border-4 border-[#2B8C74]/20"></div>
+              <div className="text-center">
+                <Shield className="h-10 w-10 md:h-12 md:w-12 text-[#2B8C74] mx-auto mb-2" />
+                <p className="text-white font-semibold text-lg md:text-xl">Kavaro AI</p>
+                <p className="text-[#2B8C74]/80 text-xs">Risk Intelligence Hub</p>
               </div>
             </div>
             
-            {/* Central Kavaro Hub - Animated */}
-            <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-48 h-48 rounded-full bg-gradient-to-br from-[#0F1C3E] to-[#152045] flex items-center justify-center z-20 shadow-xl animate-pulse">
-              {/* Inner glow effect */}
-              <div className="absolute inset-0 rounded-full bg-[#2B8C74]/10 blur-xl"></div>
-              
-              {/* Pulsating ring */}
-              <div className="absolute -inset-4 rounded-full border-4 border-[#2B8C74]/20 animate-ping opacity-20"></div>
-              <div className="absolute -inset-8 rounded-full border-2 border-[#2B8C74]/10 animate-ping opacity-10 animation-delay-500"></div>
-              
-              {/* Content */}
-              <div className="text-center z-10">
-                <div className="relative w-16 h-16 mx-auto mb-3">
-                  <div className="absolute inset-0 rounded-full bg-[#2B8C74]/20 animate-pulse"></div>
-                  <Shield className="h-10 w-10 text-[#2B8C74] absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2" />
-                </div>
-                <p className="text-white font-semibold text-xl">Kavaro AI</p>
-                <p className="text-[#2B8C74] text-sm font-medium">Risk Intelligence Hub</p>
-              </div>
-            </div>
-            
-            {/* Animated Document Particles */}
-            <div className="absolute inset-0 overflow-hidden pointer-events-none">
-              {/* Animated document icon flowing from underwriter to center */}
-              <div className="absolute left-[25%] top-[25%] animate-float-document opacity-70">
-                <div className="w-6 h-6 bg-blue-100 rounded flex items-center justify-center">
-                  <FileText className="h-3 w-3 text-blue-600" />
-                </div>
-              </div>
-              
-              {/* Animated document icon flowing from broker to center */}
-              <div className="absolute right-[25%] top-[25%] animate-float-document-delay-1 opacity-70">
-                <div className="w-6 h-6 bg-purple-100 rounded flex items-center justify-center">
-                  <FileText className="h-3 w-3 text-purple-600" />
-                </div>
-              </div>
-              
-              {/* Animated document icon flowing from compliance to center */}
-              <div className="absolute left-[25%] bottom-[25%] animate-float-document-delay-2 opacity-70">
-                <div className="w-6 h-6 bg-red-100 rounded flex items-center justify-center">
-                  <FileText className="h-3 w-3 text-red-600" />
-                </div>
-              </div>
-              
-              {/* Animated document icon flowing from client to center */}
-              <div className="absolute right-[25%] bottom-[25%] animate-float-document-delay-3 opacity-70">
-                <div className="w-6 h-6 bg-green-100 rounded flex items-center justify-center">
-                  <FileText className="h-3 w-3 text-green-600" />
-                </div>
-              </div>
-            </div>
-            
-            {/* Stakeholder Cards - Enhanced */}
-            <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6 md:gap-8 relative">
-              {/* 1. UNDERWRITERS */}
-              <div className="bg-white rounded-xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 group border border-blue-100">
-                <div className="bg-gradient-to-r from-blue-600 to-blue-700 text-white p-5">
-                  <div className="flex items-center">
-                    <div className="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center mr-3 group-hover:scale-110 transition-transform duration-300">
-                      <FileText className="h-6 w-6 text-white" />
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-lg">Underwriters</h4>
-                      <p className="text-xs text-blue-100">Risk evaluation & pricing</p>
+            {/* Stakeholder nodes in a circle */}
+            <div className="absolute inset-0">
+              {/* 1. UNDERWRITERS - Top */}
+              <div className="absolute top-8 left-1/2 transform -translate-x-1/2 transition-all duration-300 hover:-translate-y-1 group">
+                <div className="flex flex-col items-center">
+                  <div className="w-20 h-20 rounded-full bg-gradient-to-br from-blue-500/90 to-blue-600 shadow-lg flex items-center justify-center relative mb-3 group-hover:shadow-xl">
+                    <FileText className="h-8 w-8 text-white" />
+                    <div className="absolute -right-1 -bottom-1 w-8 h-8 rounded-full bg-blue-700 flex items-center justify-center shadow">
+                      <FileText className="h-4 w-4 text-blue-100" />
                     </div>
                   </div>
-                </div>
-                <div className="p-5">
-                  <p className="text-xs font-medium text-gray-700 mb-3 flex items-center">
-                    <span className="w-4 h-0.5 bg-blue-600 mr-2"></span>
-                    Documents Managed
-                  </p>
-                  <ul className="text-xs text-gray-600 space-y-2">
-                    <li className="flex items-center">
-                      <div className="w-1.5 h-1.5 rounded-full bg-blue-600 mr-2"></div>
-                      <span>Exposure schedules</span>
-                    </li>
-                    <li className="flex items-center">
-                      <div className="w-1.5 h-1.5 rounded-full bg-blue-600 mr-2"></div>
-                      <span>Applications (ACORD forms)</span>
-                    </li>
-                    <li className="flex items-center">
-                      <div className="w-1.5 h-1.5 rounded-full bg-blue-600 mr-2"></div>
-                      <span>Loss runs</span>
-                    </li>
-                    <li className="flex items-center">
-                      <div className="w-1.5 h-1.5 rounded-full bg-blue-600 mr-2"></div>
-                      <span>Risk narratives</span>
-                    </li>
-                  </ul>
-                  <div className="mt-5 pt-3 border-t border-gray-100">
-                    <p className="text-xs font-medium text-gray-700 mb-3 flex items-center">
-                      <span className="w-4 h-0.5 bg-blue-600 mr-2"></span>
-                      Lifecycle Stages
-                    </p>
-                    <div className="flex flex-wrap gap-2">
-                      <span className="text-[10px] bg-blue-100 text-blue-600 px-2 py-1 rounded-full flex items-center">
-                        <div className="w-1.5 h-1.5 rounded-full bg-blue-600 mr-1"></div>
-                        Submission Review
-                      </span>
-                      <span className="text-[10px] bg-blue-100 text-blue-600 px-2 py-1 rounded-full flex items-center">
-                        <div className="w-1.5 h-1.5 rounded-full bg-blue-600 mr-1"></div>
-                        Risk Analysis
-                      </span>
-                    </div>
+                  <div className="bg-white rounded-xl shadow px-3 py-2 text-center">
+                    <p className="font-medium text-gray-900">Underwriters</p>
+                    <p className="text-xs text-blue-700">Risk evaluation & pricing</p>
                   </div>
                 </div>
                 
-                {/* Connection to center - Animated */}
-                <div className="hidden md:block absolute left-[calc(50%+30px)] top-[calc(50%-100px)] h-[100px] w-px bg-gradient-to-b from-transparent via-[#2B8C74] to-transparent z-10">
-                  <div className="absolute inset-0 animate-connection-pulse"></div>
-                </div>
+                {/* Connection line to center */}
+                <div className="absolute left-1/2 top-[60px] w-px h-[98px] bg-gradient-to-b from-blue-500/30 to-[#2B8C74]/50"></div>
               </div>
               
-              {/* 2. INSURANCE BROKERS */}
-              <div className="bg-white rounded-xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 group border border-purple-100">
-                <div className="bg-gradient-to-r from-purple-600 to-purple-700 text-white p-5">
-                  <div className="flex items-center">
-                    <div className="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center mr-3 group-hover:scale-110 transition-transform duration-300">
-                      <Users className="h-6 w-6 text-white" />
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-lg">Brokers</h4>
-                      <p className="text-xs text-purple-100">Client support & renewals</p>
+              {/* 2. BROKERS - Top Right */}
+              <div className="absolute top-[25%] right-[15%] transform -translate-y-1/2 transition-all duration-300 hover:-translate-y-1 group">
+                <div className="flex flex-col items-center">
+                  <div className="w-20 h-20 rounded-full bg-gradient-to-br from-purple-500/90 to-purple-600 shadow-lg flex items-center justify-center relative mb-3 group-hover:shadow-xl">
+                    <Users className="h-8 w-8 text-white" />
+                    <div className="absolute -right-1 -bottom-1 w-8 h-8 rounded-full bg-purple-700 flex items-center justify-center shadow">
+                      <FileText className="h-4 w-4 text-purple-100" />
                     </div>
                   </div>
-                </div>
-                <div className="p-5">
-                  <p className="text-xs font-medium text-gray-700 mb-3 flex items-center">
-                    <span className="w-4 h-0.5 bg-purple-600 mr-2"></span>
-                    Documents Managed
-                  </p>
-                  <ul className="text-xs text-gray-600 space-y-2">
-                    <li className="flex items-center">
-                      <div className="w-1.5 h-1.5 rounded-full bg-purple-600 mr-2"></div>
-                      <span>Client intake forms</span>
-                    </li>
-                    <li className="flex items-center">
-                      <div className="w-1.5 h-1.5 rounded-full bg-purple-600 mr-2"></div>
-                      <span>COIs & endorsements</span>
-                    </li>
-                    <li className="flex items-center">
-                      <div className="w-1.5 h-1.5 rounded-full bg-purple-600 mr-2"></div>
-                      <span>Policy binders & declarations</span>
-                    </li>
-                    <li className="flex items-center">
-                      <div className="w-1.5 h-1.5 rounded-full bg-purple-600 mr-2"></div>
-                      <span>Renewal packets</span>
-                    </li>
-                  </ul>
-                  <div className="mt-5 pt-3 border-t border-gray-100">
-                    <p className="text-xs font-medium text-gray-700 mb-3 flex items-center">
-                      <span className="w-4 h-0.5 bg-purple-600 mr-2"></span>
-                      Lifecycle Stages
-                    </p>
-                    <div className="flex flex-wrap gap-2">
-                      <span className="text-[10px] bg-purple-100 text-purple-600 px-2 py-1 rounded-full flex items-center">
-                        <div className="w-1.5 h-1.5 rounded-full bg-purple-600 mr-1"></div>
-                        Client Onboarding
-                      </span>
-                      <span className="text-[10px] bg-purple-100 text-purple-600 px-2 py-1 rounded-full flex items-center">
-                        <div className="w-1.5 h-1.5 rounded-full bg-purple-600 mr-1"></div>
-                        Renewals
-                      </span>
-                    </div>
+                  <div className="bg-white rounded-xl shadow px-3 py-2 text-center">
+                    <p className="font-medium text-gray-900">Brokers</p>
+                    <p className="text-xs text-purple-700">Client support & renewals</p>
                   </div>
                 </div>
                 
-                {/* Connection to center - Animated */}
-                <div className="hidden lg:block absolute left-[calc(70%+30px)] top-[calc(50%)] h-px w-[80px] bg-gradient-to-r from-transparent via-[#2B8C74] to-transparent z-10">
-                  <div className="absolute inset-0 animate-connection-pulse-horizontal"></div>
-                </div>
+                {/* Connection line to center - slanted */}
+                <svg className="absolute top-[60px] left-[30px]" width="100" height="110" xmlns="http://www.w3.org/2000/svg">
+                  <defs>
+                    <linearGradient id="purpleGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%" stopColor="rgba(147, 51, 234, 0.3)" />
+                      <stop offset="100%" stopColor="rgba(43, 140, 116, 0.5)" />
+                    </linearGradient>
+                  </defs>
+                  <line x1="0" y1="0" x2="100" y2="110" stroke="url(#purpleGradient)" strokeWidth="2" />
+                </svg>
               </div>
               
-              {/* 3. CLIENTS / INSUREDS */}
-              <div className="bg-white rounded-xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 group border border-green-100 order-last lg:order-none">
-                <div className="bg-gradient-to-r from-green-600 to-green-700 text-white p-5">
-                  <div className="flex items-center">
-                    <div className="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center mr-3 group-hover:scale-110 transition-transform duration-300">
-                      <PanelTopOpen className="h-6 w-6 text-white" />
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-lg">Clients</h4>
-                      <p className="text-xs text-green-100">Risk, Ops, HR, Legal</p>
+              {/* 3. COMPLIANCE - Bottom Right */}
+              <div className="absolute bottom-[25%] right-[15%] transform translate-y-1/2 transition-all duration-300 hover:translate-y-0 group">
+                <div className="flex flex-col items-center">
+                  <div className="w-20 h-20 rounded-full bg-gradient-to-br from-red-500/90 to-red-600 shadow-lg flex items-center justify-center relative mb-3 group-hover:shadow-xl">
+                    <BarChart3 className="h-8 w-8 text-white" />
+                    <div className="absolute -right-1 -bottom-1 w-8 h-8 rounded-full bg-red-700 flex items-center justify-center shadow">
+                      <FileText className="h-4 w-4 text-red-100" />
                     </div>
                   </div>
-                </div>
-                <div className="p-5">
-                  <p className="text-xs font-medium text-gray-700 mb-3 flex items-center">
-                    <span className="w-4 h-0.5 bg-green-600 mr-2"></span>
-                    Documents Managed
-                  </p>
-                  <ul className="text-xs text-gray-600 space-y-2">
-                    <li className="flex items-center">
-                      <div className="w-1.5 h-1.5 rounded-full bg-green-600 mr-2"></div>
-                      <span>Insurance policies</span>
-                    </li>
-                    <li className="flex items-center">
-                      <div className="w-1.5 h-1.5 rounded-full bg-green-600 mr-2"></div>
-                      <span>Contracts with vendors</span>
-                    </li>
-                    <li className="flex items-center">
-                      <div className="w-1.5 h-1.5 rounded-full bg-green-600 mr-2"></div>
-                      <span>Vendor COIs</span>
-                    </li>
-                    <li className="flex items-center">
-                      <div className="w-1.5 h-1.5 rounded-full bg-green-600 mr-2"></div>
-                      <span>Claims documentation</span>
-                    </li>
-                  </ul>
-                  <div className="mt-5 pt-3 border-t border-gray-100">
-                    <p className="text-xs font-medium text-gray-700 mb-3 flex items-center">
-                      <span className="w-4 h-0.5 bg-green-600 mr-2"></span>
-                      Lifecycle Stages
-                    </p>
-                    <div className="flex flex-wrap gap-2">
-                      <span className="text-[10px] bg-green-100 text-green-600 px-2 py-1 rounded-full flex items-center">
-                        <div className="w-1.5 h-1.5 rounded-full bg-green-600 mr-1"></div>
-                        Policy Intake
-                      </span>
-                      <span className="text-[10px] bg-green-100 text-green-600 px-2 py-1 rounded-full flex items-center">
-                        <div className="w-1.5 h-1.5 rounded-full bg-green-600 mr-1"></div>
-                        Document Management
-                      </span>
-                    </div>
+                  <div className="bg-white rounded-xl shadow px-3 py-2 text-center">
+                    <p className="font-medium text-gray-900">Compliance</p>
+                    <p className="text-xs text-red-700">Legal & EHS teams</p>
                   </div>
                 </div>
                 
-                {/* Connection to center - Animated */}
-                <div className="hidden md:block absolute left-[calc(50%+30px)] top-[calc(50%+170px)] h-[100px] w-px bg-gradient-to-t from-transparent via-[#2B8C74] to-transparent z-10">
-                  <div className="absolute inset-0 animate-connection-pulse"></div>
-                </div>
+                {/* Connection line to center - slanted */}
+                <svg className="absolute bottom-[60px] left-[30px]" width="100" height="110" xmlns="http://www.w3.org/2000/svg">
+                  <defs>
+                    <linearGradient id="redGradient" x1="0%" y1="100%" x2="100%" y2="0%">
+                      <stop offset="0%" stopColor="rgba(239, 68, 68, 0.3)" />
+                      <stop offset="100%" stopColor="rgba(43, 140, 116, 0.5)" />
+                    </linearGradient>
+                  </defs>
+                  <line x1="0" y1="110" x2="100" y2="0" stroke="url(#redGradient)" strokeWidth="2" />
+                </svg>
               </div>
               
-              {/* 4. VENDORS / SUBCONTRACTORS */}
-              <div className="bg-white rounded-xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 group border border-amber-100">
-                <div className="bg-gradient-to-r from-amber-600 to-amber-700 text-white p-5">
-                  <div className="flex items-center">
-                    <div className="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center mr-3 group-hover:scale-110 transition-transform duration-300">
-                      <FileText className="h-6 w-6 text-white" />
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-lg">Vendors</h4>
-                      <p className="text-xs text-amber-100">Subcontractors & partners</p>
+              {/* 4. CLIENTS - Bottom */}
+              <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 transition-all duration-300 hover:translate-y-1 group">
+                <div className="flex flex-col items-center">
+                  <div className="w-20 h-20 rounded-full bg-gradient-to-br from-green-500/90 to-green-600 shadow-lg flex items-center justify-center relative mb-3 group-hover:shadow-xl">
+                    <PanelTopOpen className="h-8 w-8 text-white" />
+                    <div className="absolute -right-1 -bottom-1 w-8 h-8 rounded-full bg-green-700 flex items-center justify-center shadow">
+                      <FileText className="h-4 w-4 text-green-100" />
                     </div>
                   </div>
-                </div>
-                <div className="p-5">
-                  <p className="text-xs font-medium text-gray-700 mb-3 flex items-center">
-                    <span className="w-4 h-0.5 bg-amber-600 mr-2"></span>
-                    Documents Managed
-                  </p>
-                  <ul className="text-xs text-gray-600 space-y-2">
-                    <li className="flex items-center">
-                      <div className="w-1.5 h-1.5 rounded-full bg-amber-600 mr-2"></div>
-                      <span>COIs</span>
-                    </li>
-                    <li className="flex items-center">
-                      <div className="w-1.5 h-1.5 rounded-full bg-amber-600 mr-2"></div>
-                      <span>Additional insured endorsements</span>
-                    </li>
-                    <li className="flex items-center">
-                      <div className="w-1.5 h-1.5 rounded-full bg-amber-600 mr-2"></div>
-                      <span>Contracts / work agreements</span>
-                    </li>
-                    <li className="flex items-center">
-                      <div className="w-1.5 h-1.5 rounded-full bg-amber-600 mr-2"></div>
-                      <span>Safety plans</span>
-                    </li>
-                  </ul>
-                  <div className="mt-5 pt-3 border-t border-gray-100">
-                    <p className="text-xs font-medium text-gray-700 mb-3 flex items-center">
-                      <span className="w-4 h-0.5 bg-amber-600 mr-2"></span>
-                      Lifecycle Stages
-                    </p>
-                    <div className="flex flex-wrap gap-2">
-                      <span className="text-[10px] bg-amber-100 text-amber-600 px-2 py-1 rounded-full flex items-center">
-                        <div className="w-1.5 h-1.5 rounded-full bg-amber-600 mr-1"></div>
-                        Vendor Onboarding
-                      </span>
-                      <span className="text-[10px] bg-amber-100 text-amber-600 px-2 py-1 rounded-full flex items-center">
-                        <div className="w-1.5 h-1.5 rounded-full bg-amber-600 mr-1"></div>
-                        Document Upload
-                      </span>
-                    </div>
+                  <div className="bg-white rounded-xl shadow px-3 py-2 text-center">
+                    <p className="font-medium text-gray-900">Clients</p>
+                    <p className="text-xs text-green-700">Risk, Ops, HR, Legal</p>
                   </div>
                 </div>
                 
-                {/* Connection to center - Animated */}
-                <div className="hidden lg:block absolute right-[calc(70%+30px)] top-[calc(50%)] h-px w-[80px] bg-gradient-to-l from-transparent via-[#2B8C74] to-transparent z-10">
-                  <div className="absolute inset-0 animate-connection-pulse-horizontal"></div>
-                </div>
+                {/* Connection line to center */}
+                <div className="absolute left-1/2 bottom-[60px] w-px h-[98px] bg-gradient-to-t from-green-500/30 to-[#2B8C74]/50"></div>
               </div>
               
-              {/* 5. COMPLIANCE / LEGAL / EHS TEAMS */}
-              <div className="bg-white rounded-xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 group border border-red-100">
-                <div className="bg-gradient-to-r from-red-600 to-red-700 text-white p-5">
-                  <div className="flex items-center">
-                    <div className="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center mr-3 group-hover:scale-110 transition-transform duration-300">
-                      <BarChart3 className="h-6 w-6 text-white" />
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-lg">Compliance</h4>
-                      <p className="text-xs text-red-100">Legal & EHS teams</p>
+              {/* 5. VENDORS - Bottom Left */}
+              <div className="absolute bottom-[25%] left-[15%] transform translate-y-1/2 transition-all duration-300 hover:translate-y-0 group">
+                <div className="flex flex-col items-center">
+                  <div className="w-20 h-20 rounded-full bg-gradient-to-br from-amber-500/90 to-amber-600 shadow-lg flex items-center justify-center relative mb-3 group-hover:shadow-xl">
+                    <Tag className="h-8 w-8 text-white" />
+                    <div className="absolute -right-1 -bottom-1 w-8 h-8 rounded-full bg-amber-700 flex items-center justify-center shadow">
+                      <FileText className="h-4 w-4 text-amber-100" />
                     </div>
                   </div>
-                </div>
-                <div className="p-5">
-                  <p className="text-xs font-medium text-gray-700 mb-3 flex items-center">
-                    <span className="w-4 h-0.5 bg-red-600 mr-2"></span>
-                    Documents Managed
-                  </p>
-                  <ul className="text-xs text-gray-600 space-y-2">
-                    <li className="flex items-center">
-                      <div className="w-1.5 h-1.5 rounded-full bg-red-600 mr-2"></div>
-                      <span>Risk register</span>
-                    </li>
-                    <li className="flex items-center">
-                      <div className="w-1.5 h-1.5 rounded-full bg-red-600 mr-2"></div>
-                      <span>EHS documentation</span>
-                    </li>
-                    <li className="flex items-center">
-                      <div className="w-1.5 h-1.5 rounded-full bg-red-600 mr-2"></div>
-                      <span>Audit logs</span>
-                    </li>
-                    <li className="flex items-center">
-                      <div className="w-1.5 h-1.5 rounded-full bg-red-600 mr-2"></div>
-                      <span>Contract language</span>
-                    </li>
-                  </ul>
-                  <div className="mt-5 pt-3 border-t border-gray-100">
-                    <p className="text-xs font-medium text-gray-700 mb-3 flex items-center">
-                      <span className="w-4 h-0.5 bg-red-600 mr-2"></span>
-                      Lifecycle Stages
-                    </p>
-                    <div className="flex flex-wrap gap-2">
-                      <span className="text-[10px] bg-red-100 text-red-600 px-2 py-1 rounded-full flex items-center">
-                        <div className="w-1.5 h-1.5 rounded-full bg-red-600 mr-1"></div>
-                        Risk Mitigation
-                      </span>
-                      <span className="text-[10px] bg-red-100 text-red-600 px-2 py-1 rounded-full flex items-center">
-                        <div className="w-1.5 h-1.5 rounded-full bg-red-600 mr-1"></div>
-                        Audit Prep
-                      </span>
-                    </div>
+                  <div className="bg-white rounded-xl shadow px-3 py-2 text-center">
+                    <p className="font-medium text-gray-900">Vendors</p>
+                    <p className="text-xs text-amber-700">Subcontractors & partners</p>
                   </div>
                 </div>
+                
+                {/* Connection line to center - slanted */}
+                <svg className="absolute bottom-[60px] right-[30px]" width="100" height="110" xmlns="http://www.w3.org/2000/svg">
+                  <defs>
+                    <linearGradient id="amberGradient" x1="100%" y1="100%" x2="0%" y2="0%">
+                      <stop offset="0%" stopColor="rgba(217, 119, 6, 0.3)" />
+                      <stop offset="100%" stopColor="rgba(43, 140, 116, 0.5)" />
+                    </linearGradient>
+                  </defs>
+                  <line x1="100" y1="110" x2="0" y2="0" stroke="url(#amberGradient)" strokeWidth="2" />
+                </svg>
+              </div>
+              
+              {/* Outer ring */}
+              <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] md:w-[500px] md:h-[500px] rounded-full border border-[#2B8C74]/20"></div>
+            </div>
+            
+            {/* Document Flow Indicators - Simple Dots */}
+            <div className="absolute inset-0 pointer-events-none z-0">
+              {/* Underwriter flow */}
+              <div className="absolute left-[calc(50%-2px)] top-[25%]">
+                <div className="w-4 h-4 rounded-full bg-blue-500/50 animate-ping"></div>
+              </div>
+              
+              {/* Broker flow */}
+              <div className="absolute right-[30%] top-[35%]">
+                <div className="w-4 h-4 rounded-full bg-purple-500/50 animate-ping" style={{ animationDelay: "0.5s" }}></div>
+              </div>
+              
+              {/* Compliance flow */}
+              <div className="absolute right-[30%] bottom-[35%]">
+                <div className="w-4 h-4 rounded-full bg-red-500/50 animate-ping" style={{ animationDelay: "1s" }}></div>
+              </div>
+              
+              {/* Client flow */}
+              <div className="absolute left-[calc(50%-2px)] bottom-[25%]">
+                <div className="w-4 h-4 rounded-full bg-green-500/50 animate-ping" style={{ animationDelay: "1.5s" }}></div>
+              </div>
+              
+              {/* Vendor flow */}
+              <div className="absolute left-[30%] bottom-[35%]">
+                <div className="w-4 h-4 rounded-full bg-amber-500/50 animate-ping" style={{ animationDelay: "2s" }}></div>
               </div>
             </div>
             
-            {/* Mobile Only - Center Node Text */}
-            <div className="md:hidden text-center my-12 p-6 rounded-xl bg-gradient-to-br from-[#0F1C3E] to-[#152045] shadow-lg">
-              <Shield className="h-10 w-10 text-[#2B8C74] mx-auto mb-3" />
-              <p className="text-white font-semibold text-xl">Kavaro AI</p>
-              <p className="text-[#2B8C74] text-sm">The Risk Intelligence Hub</p>
-              <p className="text-white/70 text-sm mt-2">Connects all stakeholders in the risk management lifecycle</p>
+            {/* Document Icons - Floating in the background */}
+            <div className="absolute inset-0 overflow-hidden">
+              <div className="absolute left-[40%] top-[30%] animate-float opacity-30">
+                <FileText className="h-5 w-5 text-[#0F1C3E]" />
+              </div>
+              
+              <div className="absolute right-[40%] top-[40%] animate-float-delay-1 opacity-30">
+                <FileText className="h-5 w-5 text-[#0F1C3E]" />
+              </div>
+              
+              <div className="absolute left-[35%] bottom-[45%] animate-float-delay-2 opacity-30">
+                <FileText className="h-5 w-5 text-[#0F1C3E]" />
+              </div>
+              
+              <div className="absolute right-[35%] bottom-[35%] animate-float-delay-3 opacity-30">
+                <FileText className="h-5 w-5 text-[#0F1C3E]" />
+              </div>
             </div>
             
-            {/* Risk Intelligence Features */}
-            <div className="mt-16 grid md:grid-cols-3 gap-6">
-              <div className="bg-gradient-to-br from-[#0F1C3E]/5 to-[#0F1C3E]/10 rounded-xl p-5 text-center shadow-sm hover:shadow-md transition-shadow">
-                <div className="w-12 h-12 rounded-full bg-[#0F1C3E]/10 mx-auto flex items-center justify-center mb-3">
-                  <Shield className="h-5 w-5 text-[#2B8C74]" />
-                </div>
-                <h4 className="text-[#0F1C3E] font-medium mb-1">Secure Document Vault</h4>
-                <p className="text-gray-700 text-xs">Blockchain-grade audit trails for every document action</p>
+            {/* Legend - Bottom */}
+            <div className="absolute bottom-6 left-0 right-0 flex justify-center space-x-6 text-xs text-gray-700">
+              <div className="flex items-center">
+                <div className="w-3 h-3 rounded-full bg-blue-500 mr-2"></div>
+                <span>Risk Data</span>
               </div>
               
-              <div className="bg-gradient-to-br from-[#0F1C3E]/5 to-[#0F1C3E]/10 rounded-xl p-5 text-center shadow-sm hover:shadow-md transition-shadow">
-                <div className="w-12 h-12 rounded-full bg-[#0F1C3E]/10 mx-auto flex items-center justify-center mb-3">
-                  <Brain className="h-5 w-5 text-[#2B8C74]" />
-                </div>
-                <h4 className="text-[#0F1C3E] font-medium mb-1">AI Understanding</h4>
-                <p className="text-gray-700 text-xs">Intelligent analysis of policies, contracts and exposures</p>
+              <div className="flex items-center">
+                <div className="w-3 h-3 rounded-full bg-purple-500 mr-2"></div>
+                <span>Policies</span>
               </div>
               
-              <div className="bg-gradient-to-br from-[#0F1C3E]/5 to-[#0F1C3E]/10 rounded-xl p-5 text-center shadow-sm hover:shadow-md transition-shadow">
-                <div className="w-12 h-12 rounded-full bg-[#0F1C3E]/10 mx-auto flex items-center justify-center mb-3">
-                  <Bell className="h-5 w-5 text-[#2B8C74]" />
-                </div>
-                <h4 className="text-[#0F1C3E] font-medium mb-1">Intelligent Alerts</h4>
-                <p className="text-gray-700 text-xs">Automatic renewal tracking and compliance notifications</p>
+              <div className="flex items-center">
+                <div className="w-3 h-3 rounded-full bg-green-500 mr-2"></div>
+                <span>Claims</span>
               </div>
+              
+              <div className="flex items-center">
+                <div className="w-3 h-3 rounded-full bg-red-500 mr-2"></div>
+                <span>Compliance</span>
+              </div>
+            </div>
+            
+            {/* Mobile explanatory text */}
+            <div className="md:hidden mt-6 text-center">
+              <p className="text-sm text-gray-600">
+                Kavaro AI connects all stakeholders in the risk management ecosystem.
+              </p>
             </div>
           </div>
           

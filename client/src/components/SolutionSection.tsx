@@ -61,237 +61,259 @@ export default function SolutionSection() {
           </div>
         </div>
         
-        {/* Simplified Risk Intelligence Hub - Clean, Icon-focused Layout */}
+        {/* Apple-inspired Risk Intelligence Hub */}
         <div className="max-w-6xl mx-auto px-6 py-16">
-          <h3 className="text-2xl md:text-3xl font-semibold mb-6 text-[#0F1C3E] text-center">
+          <h3 className="text-2xl md:text-3xl font-semibold mb-4 text-[#0F1C3E] text-center tracking-tight">
             The Risk Management Intelligence Hub
           </h3>
-          <p className="text-gray-700 text-lg leading-relaxed mb-16 text-center max-w-3xl mx-auto">
+          <p className="text-gray-600 text-lg leading-relaxed mb-16 text-center max-w-3xl mx-auto font-light">
             Kavaro AI connects every stakeholder throughout the insurance ecosystem, providing integrated document flows and real-time risk intelligence.
           </p>
           
-          {/* Simple circular hub visualization */}
+          {/* Apple-inspired hub visualization */}
           <div className="relative h-[500px] md:h-[600px] mx-auto max-w-5xl">
-            {/* Subtle gradient background */}
-            <div className="absolute inset-0 bg-[#0F1C3E]/5 rounded-3xl"></div>
+            {/* Clean white background */}
+            <div className="absolute inset-0 bg-gradient-to-b from-white to-gray-50 rounded-[32px] shadow-sm border border-gray-100"></div>
+            
+            {/* Subtle grid pattern */}
+            <div className="absolute inset-0 opacity-5">
+              <div className="h-full w-full" style={{ 
+                backgroundImage: 'radial-gradient(circle, #0F1C3E 1px, transparent 1px)',
+                backgroundSize: '30px 30px' 
+              }}></div>
+            </div>
             
             {/* Central Kavaro Hub */}
-            <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-36 h-36 md:w-48 md:h-48 rounded-full bg-gradient-to-br from-[#0F1C3E] to-[#152045] flex items-center justify-center z-10 shadow-xl">
-              <div className="absolute inset-0 rounded-full border-4 border-[#2B8C74]/20"></div>
+            <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-36 h-36 md:w-48 md:h-48 rounded-full bg-gradient-to-br from-[#0F1C3E] to-[#152045] flex items-center justify-center z-10 shadow-lg">
+              <div className="absolute inset-0 rounded-full border-2 border-[#2B8C74]/10"></div>
+              
+              {/* Subtle glow effect */}
+              <div className="absolute -inset-3 rounded-full bg-[#2B8C74]/5 blur-xl"></div>
+              
+              {/* Content */}
               <div className="text-center">
-                <Shield className="h-10 w-10 md:h-12 md:w-12 text-[#2B8C74] mx-auto mb-2" />
-                <p className="text-white font-semibold text-lg md:text-xl">Kavaro AI</p>
-                <p className="text-[#2B8C74]/80 text-xs">Risk Intelligence Hub</p>
+                <Shield className="h-12 w-12 md:h-14 md:w-14 text-[#2B8C74] mx-auto mb-2" />
+                <p className="text-white font-medium text-lg md:text-xl">Kavaro AI</p>
+                <p className="text-[#2B8C74]/90 text-xs font-light">Risk Intelligence Hub</p>
               </div>
             </div>
             
-            {/* Stakeholder nodes in a circle */}
+            {/* Outer ring - Apple-style thin border */}
+            <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] md:w-[500px] md:h-[500px] rounded-full border border-gray-200"></div>
+            
+            {/* Stakeholder nodes in a circle - Apple-inspired clean design */}
             <div className="absolute inset-0">
               {/* 1. UNDERWRITERS - Top */}
               <div className="absolute top-8 left-1/2 transform -translate-x-1/2 transition-all duration-300 hover:-translate-y-1 group">
                 <div className="flex flex-col items-center">
-                  <div className="w-20 h-20 rounded-full bg-gradient-to-br from-blue-500/90 to-blue-600 shadow-lg flex items-center justify-center relative mb-3 group-hover:shadow-xl">
+                  <div className="w-20 h-20 rounded-full bg-gradient-to-br from-[#3584E4] to-[#0A65C2] shadow-md flex items-center justify-center relative mb-3 group-hover:shadow-lg">
                     <FileText className="h-8 w-8 text-white" />
-                    <div className="absolute -right-1 -bottom-1 w-8 h-8 rounded-full bg-blue-700 flex items-center justify-center shadow">
-                      <FileText className="h-4 w-4 text-blue-100" />
+                    <div className="absolute -right-1 -bottom-1 w-8 h-8 rounded-full bg-white flex items-center justify-center shadow-sm border border-gray-100">
+                      <FileText className="h-4 w-4 text-[#3584E4]" />
                     </div>
                   </div>
-                  <div className="bg-white rounded-xl shadow px-3 py-2 text-center">
-                    <p className="font-medium text-gray-900">Underwriters</p>
-                    <p className="text-xs text-blue-700">Risk evaluation & pricing</p>
+                  <div className="bg-white rounded-2xl shadow-sm px-3 py-2 text-center border border-gray-100">
+                    <p className="font-medium text-[#0F1C3E]">Underwriters</p>
+                    <p className="text-xs text-gray-500 font-light">Risk evaluation & pricing</p>
                   </div>
                 </div>
                 
-                {/* Connection line to center */}
-                <div className="absolute left-1/2 top-[60px] w-px h-[98px] bg-gradient-to-b from-blue-500/30 to-[#2B8C74]/50"></div>
+                {/* Connection line to center - clean thin line */}
+                <div className="absolute left-1/2 top-[60px] w-px h-[98px] bg-gradient-to-b from-[#3584E4]/20 to-[#2B8C74]/30"></div>
               </div>
               
               {/* 2. BROKERS - Top Right */}
               <div className="absolute top-[25%] right-[15%] transform -translate-y-1/2 transition-all duration-300 hover:-translate-y-1 group">
                 <div className="flex flex-col items-center">
-                  <div className="w-20 h-20 rounded-full bg-gradient-to-br from-purple-500/90 to-purple-600 shadow-lg flex items-center justify-center relative mb-3 group-hover:shadow-xl">
+                  <div className="w-20 h-20 rounded-full bg-gradient-to-br from-[#9563DE] to-[#7540BA] shadow-md flex items-center justify-center relative mb-3 group-hover:shadow-lg">
                     <Users className="h-8 w-8 text-white" />
-                    <div className="absolute -right-1 -bottom-1 w-8 h-8 rounded-full bg-purple-700 flex items-center justify-center shadow">
-                      <FileText className="h-4 w-4 text-purple-100" />
+                    <div className="absolute -right-1 -bottom-1 w-8 h-8 rounded-full bg-white flex items-center justify-center shadow-sm border border-gray-100">
+                      <FileText className="h-4 w-4 text-[#9563DE]" />
                     </div>
                   </div>
-                  <div className="bg-white rounded-xl shadow px-3 py-2 text-center">
-                    <p className="font-medium text-gray-900">Brokers</p>
-                    <p className="text-xs text-purple-700">Client support & renewals</p>
+                  <div className="bg-white rounded-2xl shadow-sm px-3 py-2 text-center border border-gray-100">
+                    <p className="font-medium text-[#0F1C3E]">Brokers</p>
+                    <p className="text-xs text-gray-500 font-light">Client support & renewals</p>
                   </div>
                 </div>
                 
-                {/* Connection line to center - slanted */}
+                {/* Connection line to center - clean thin line */}
                 <svg className="absolute top-[60px] left-[30px]" width="100" height="110" xmlns="http://www.w3.org/2000/svg">
                   <defs>
                     <linearGradient id="purpleGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                      <stop offset="0%" stopColor="rgba(147, 51, 234, 0.3)" />
-                      <stop offset="100%" stopColor="rgba(43, 140, 116, 0.5)" />
+                      <stop offset="0%" stopColor="rgba(149, 99, 222, 0.2)" />
+                      <stop offset="100%" stopColor="rgba(43, 140, 116, 0.3)" />
                     </linearGradient>
                   </defs>
-                  <line x1="0" y1="0" x2="100" y2="110" stroke="url(#purpleGradient)" strokeWidth="2" />
+                  <line x1="0" y1="0" x2="100" y2="110" stroke="url(#purpleGradient)" strokeWidth="1" />
                 </svg>
               </div>
               
               {/* 3. COMPLIANCE - Bottom Right */}
               <div className="absolute bottom-[25%] right-[15%] transform translate-y-1/2 transition-all duration-300 hover:translate-y-0 group">
                 <div className="flex flex-col items-center">
-                  <div className="w-20 h-20 rounded-full bg-gradient-to-br from-red-500/90 to-red-600 shadow-lg flex items-center justify-center relative mb-3 group-hover:shadow-xl">
+                  <div className="w-20 h-20 rounded-full bg-gradient-to-br from-[#E25C5C] to-[#D12F2F] shadow-md flex items-center justify-center relative mb-3 group-hover:shadow-lg">
                     <BarChart3 className="h-8 w-8 text-white" />
-                    <div className="absolute -right-1 -bottom-1 w-8 h-8 rounded-full bg-red-700 flex items-center justify-center shadow">
-                      <FileText className="h-4 w-4 text-red-100" />
+                    <div className="absolute -right-1 -bottom-1 w-8 h-8 rounded-full bg-white flex items-center justify-center shadow-sm border border-gray-100">
+                      <FileText className="h-4 w-4 text-[#E25C5C]" />
                     </div>
                   </div>
-                  <div className="bg-white rounded-xl shadow px-3 py-2 text-center">
-                    <p className="font-medium text-gray-900">Compliance</p>
-                    <p className="text-xs text-red-700">Legal & EHS teams</p>
+                  <div className="bg-white rounded-2xl shadow-sm px-3 py-2 text-center border border-gray-100">
+                    <p className="font-medium text-[#0F1C3E]">Compliance</p>
+                    <p className="text-xs text-gray-500 font-light">Legal & EHS teams</p>
                   </div>
                 </div>
                 
-                {/* Connection line to center - slanted */}
+                {/* Connection line to center - clean thin line */}
                 <svg className="absolute bottom-[60px] left-[30px]" width="100" height="110" xmlns="http://www.w3.org/2000/svg">
                   <defs>
                     <linearGradient id="redGradient" x1="0%" y1="100%" x2="100%" y2="0%">
-                      <stop offset="0%" stopColor="rgba(239, 68, 68, 0.3)" />
-                      <stop offset="100%" stopColor="rgba(43, 140, 116, 0.5)" />
+                      <stop offset="0%" stopColor="rgba(226, 92, 92, 0.2)" />
+                      <stop offset="100%" stopColor="rgba(43, 140, 116, 0.3)" />
                     </linearGradient>
                   </defs>
-                  <line x1="0" y1="110" x2="100" y2="0" stroke="url(#redGradient)" strokeWidth="2" />
+                  <line x1="0" y1="110" x2="100" y2="0" stroke="url(#redGradient)" strokeWidth="1" />
                 </svg>
               </div>
               
               {/* 4. CLIENTS - Bottom */}
               <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 transition-all duration-300 hover:translate-y-1 group">
                 <div className="flex flex-col items-center">
-                  <div className="w-20 h-20 rounded-full bg-gradient-to-br from-green-500/90 to-green-600 shadow-lg flex items-center justify-center relative mb-3 group-hover:shadow-xl">
+                  <div className="w-20 h-20 rounded-full bg-gradient-to-br from-[#2B8C74] to-[#1D6A59] shadow-md flex items-center justify-center relative mb-3 group-hover:shadow-lg">
                     <PanelTopOpen className="h-8 w-8 text-white" />
-                    <div className="absolute -right-1 -bottom-1 w-8 h-8 rounded-full bg-green-700 flex items-center justify-center shadow">
-                      <FileText className="h-4 w-4 text-green-100" />
+                    <div className="absolute -right-1 -bottom-1 w-8 h-8 rounded-full bg-white flex items-center justify-center shadow-sm border border-gray-100">
+                      <FileText className="h-4 w-4 text-[#2B8C74]" />
                     </div>
                   </div>
-                  <div className="bg-white rounded-xl shadow px-3 py-2 text-center">
-                    <p className="font-medium text-gray-900">Clients</p>
-                    <p className="text-xs text-green-700">Risk, Ops, HR, Legal</p>
+                  <div className="bg-white rounded-2xl shadow-sm px-3 py-2 text-center border border-gray-100">
+                    <p className="font-medium text-[#0F1C3E]">Clients</p>
+                    <p className="text-xs text-gray-500 font-light">Risk, Ops, HR, Legal</p>
                   </div>
                 </div>
                 
-                {/* Connection line to center */}
-                <div className="absolute left-1/2 bottom-[60px] w-px h-[98px] bg-gradient-to-t from-green-500/30 to-[#2B8C74]/50"></div>
+                {/* Connection line to center - clean thin line */}
+                <div className="absolute left-1/2 bottom-[60px] w-px h-[98px] bg-gradient-to-t from-[#2B8C74]/20 to-[#2B8C74]/30"></div>
               </div>
               
               {/* 5. VENDORS - Bottom Left */}
               <div className="absolute bottom-[25%] left-[15%] transform translate-y-1/2 transition-all duration-300 hover:translate-y-0 group">
                 <div className="flex flex-col items-center">
-                  <div className="w-20 h-20 rounded-full bg-gradient-to-br from-amber-500/90 to-amber-600 shadow-lg flex items-center justify-center relative mb-3 group-hover:shadow-xl">
+                  <div className="w-20 h-20 rounded-full bg-gradient-to-br from-[#F0B86E] to-[#E39E41] shadow-md flex items-center justify-center relative mb-3 group-hover:shadow-lg">
                     <Tag className="h-8 w-8 text-white" />
-                    <div className="absolute -right-1 -bottom-1 w-8 h-8 rounded-full bg-amber-700 flex items-center justify-center shadow">
-                      <FileText className="h-4 w-4 text-amber-100" />
+                    <div className="absolute -right-1 -bottom-1 w-8 h-8 rounded-full bg-white flex items-center justify-center shadow-sm border border-gray-100">
+                      <FileText className="h-4 w-4 text-[#F0B86E]" />
                     </div>
                   </div>
-                  <div className="bg-white rounded-xl shadow px-3 py-2 text-center">
-                    <p className="font-medium text-gray-900">Vendors</p>
-                    <p className="text-xs text-amber-700">Subcontractors & partners</p>
+                  <div className="bg-white rounded-2xl shadow-sm px-3 py-2 text-center border border-gray-100">
+                    <p className="font-medium text-[#0F1C3E]">Vendors</p>
+                    <p className="text-xs text-gray-500 font-light">Subcontractors & partners</p>
                   </div>
                 </div>
                 
-                {/* Connection line to center - slanted */}
+                {/* Connection line to center - clean thin line */}
                 <svg className="absolute bottom-[60px] right-[30px]" width="100" height="110" xmlns="http://www.w3.org/2000/svg">
                   <defs>
                     <linearGradient id="amberGradient" x1="100%" y1="100%" x2="0%" y2="0%">
-                      <stop offset="0%" stopColor="rgba(217, 119, 6, 0.3)" />
-                      <stop offset="100%" stopColor="rgba(43, 140, 116, 0.5)" />
+                      <stop offset="0%" stopColor="rgba(240, 184, 110, 0.2)" />
+                      <stop offset="100%" stopColor="rgba(43, 140, 116, 0.3)" />
                     </linearGradient>
                   </defs>
-                  <line x1="100" y1="110" x2="0" y2="0" stroke="url(#amberGradient)" strokeWidth="2" />
+                  <line x1="100" y1="110" x2="0" y2="0" stroke="url(#amberGradient)" strokeWidth="1" />
                 </svg>
               </div>
-              
-              {/* Outer ring */}
-              <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] md:w-[500px] md:h-[500px] rounded-full border border-[#2B8C74]/20"></div>
             </div>
             
-            {/* Document Flow Indicators - Simple Dots */}
+            {/* Document Flow Indicators - Subtle Apple-style dots */}
             <div className="absolute inset-0 pointer-events-none z-0">
               {/* Underwriter flow */}
               <div className="absolute left-[calc(50%-2px)] top-[25%]">
-                <div className="w-4 h-4 rounded-full bg-blue-500/50 animate-ping"></div>
+                <div className="w-2 h-2 rounded-full bg-[#3584E4]/50 animate-pulse"></div>
               </div>
               
               {/* Broker flow */}
               <div className="absolute right-[30%] top-[35%]">
-                <div className="w-4 h-4 rounded-full bg-purple-500/50 animate-ping" style={{ animationDelay: "0.5s" }}></div>
+                <div className="w-2 h-2 rounded-full bg-[#9563DE]/50 animate-pulse" style={{ animationDelay: "0.5s" }}></div>
               </div>
               
               {/* Compliance flow */}
               <div className="absolute right-[30%] bottom-[35%]">
-                <div className="w-4 h-4 rounded-full bg-red-500/50 animate-ping" style={{ animationDelay: "1s" }}></div>
+                <div className="w-2 h-2 rounded-full bg-[#E25C5C]/50 animate-pulse" style={{ animationDelay: "1s" }}></div>
               </div>
               
               {/* Client flow */}
               <div className="absolute left-[calc(50%-2px)] bottom-[25%]">
-                <div className="w-4 h-4 rounded-full bg-green-500/50 animate-ping" style={{ animationDelay: "1.5s" }}></div>
+                <div className="w-2 h-2 rounded-full bg-[#2B8C74]/50 animate-pulse" style={{ animationDelay: "1.5s" }}></div>
               </div>
               
               {/* Vendor flow */}
               <div className="absolute left-[30%] bottom-[35%]">
-                <div className="w-4 h-4 rounded-full bg-amber-500/50 animate-ping" style={{ animationDelay: "2s" }}></div>
+                <div className="w-2 h-2 rounded-full bg-[#F0B86E]/50 animate-pulse" style={{ animationDelay: "2s" }}></div>
               </div>
             </div>
             
-            {/* Document Icons - Floating in the background */}
+            {/* Document Icons - Floating with Apple aesthetics */}
             <div className="absolute inset-0 overflow-hidden">
-              <div className="absolute left-[40%] top-[30%] animate-float opacity-30">
-                <FileText className="h-5 w-5 text-[#0F1C3E]" />
+              <div className="absolute left-[40%] top-[35%] animate-float opacity-10">
+                <FileText className="h-4 w-4 text-[#0F1C3E]" />
               </div>
               
-              <div className="absolute right-[40%] top-[40%] animate-float-delay-1 opacity-30">
-                <FileText className="h-5 w-5 text-[#0F1C3E]" />
+              <div className="absolute right-[40%] top-[40%] animate-float opacity-10" style={{ animationDelay: "2s" }}>
+                <FileText className="h-4 w-4 text-[#0F1C3E]" />
               </div>
               
-              <div className="absolute left-[35%] bottom-[45%] animate-float-delay-2 opacity-30">
-                <FileText className="h-5 w-5 text-[#0F1C3E]" />
+              <div className="absolute left-[35%] bottom-[40%] animate-float opacity-10" style={{ animationDelay: "4s" }}>
+                <FileText className="h-4 w-4 text-[#0F1C3E]" />
               </div>
               
-              <div className="absolute right-[35%] bottom-[35%] animate-float-delay-3 opacity-30">
-                <FileText className="h-5 w-5 text-[#0F1C3E]" />
+              <div className="absolute right-[35%] bottom-[35%] animate-float opacity-10" style={{ animationDelay: "6s" }}>
+                <FileText className="h-4 w-4 text-[#0F1C3E]" />
               </div>
             </div>
             
-            {/* Legend - Bottom */}
-            <div className="absolute bottom-6 left-0 right-0 flex justify-center space-x-6 text-xs text-gray-700">
-              <div className="flex items-center">
-                <div className="w-3 h-3 rounded-full bg-blue-500 mr-2"></div>
-                <span>Risk Data</span>
+            {/* Legend - Apple-styled subtle pill buttons */}
+            <div className="absolute bottom-6 left-0 right-0 flex justify-center gap-3">
+              <div className="bg-white/70 backdrop-blur-sm px-3 py-1.5 rounded-full text-xs text-[#0F1C3E] font-light flex items-center shadow-sm border border-gray-100">
+                <div className="w-2 h-2 rounded-full bg-[#3584E4] mr-2"></div>
+                <span>Exposure Data</span>
               </div>
               
-              <div className="flex items-center">
-                <div className="w-3 h-3 rounded-full bg-purple-500 mr-2"></div>
+              <div className="bg-white/70 backdrop-blur-sm px-3 py-1.5 rounded-full text-xs text-[#0F1C3E] font-light flex items-center shadow-sm border border-gray-100">
+                <div className="w-2 h-2 rounded-full bg-[#9563DE] mr-2"></div>
                 <span>Policies</span>
               </div>
               
-              <div className="flex items-center">
-                <div className="w-3 h-3 rounded-full bg-green-500 mr-2"></div>
-                <span>Claims</span>
+              <div className="bg-white/70 backdrop-blur-sm px-3 py-1.5 rounded-full text-xs text-[#0F1C3E] font-light flex items-center shadow-sm border border-gray-100">
+                <div className="w-2 h-2 rounded-full bg-[#2B8C74] mr-2"></div>
+                <span>Certificates</span>
               </div>
-              
-              <div className="flex items-center">
-                <div className="w-3 h-3 rounded-full bg-red-500 mr-2"></div>
-                <span>Compliance</span>
-              </div>
-            </div>
-            
-            {/* Mobile explanatory text */}
-            <div className="md:hidden mt-6 text-center">
-              <p className="text-sm text-gray-600">
-                Kavaro AI connects all stakeholders in the risk management ecosystem.
-              </p>
             </div>
           </div>
           
-          <div className="mt-12 text-center">
-            <p className="text-[#0F1C3E] font-medium text-xl max-w-3xl mx-auto">
+          <div className="mt-16 text-center">
+            <p className="text-[#0F1C3E] font-normal text-xl max-w-3xl mx-auto leading-relaxed">
               One platform that connects every stakeholder in the risk management ecosystem with complete visibility.
             </p>
+            
+            {/* Bottom feature summary - Apple style */}
+            <div className="grid grid-cols-3 gap-6 max-w-3xl mx-auto mt-12">
+              <div className="text-center">
+                <Shield className="h-6 w-6 text-[#2B8C74] mx-auto mb-2" />
+                <h4 className="text-sm font-medium text-[#0F1C3E] mb-1">Secure Vault</h4>
+                <p className="text-xs text-gray-500 font-light">End-to-end encrypted document storage</p>
+              </div>
+              
+              <div className="text-center">
+                <Bell className="h-6 w-6 text-[#2B8C74] mx-auto mb-2" />
+                <h4 className="text-sm font-medium text-[#0F1C3E] mb-1">Smart Alerts</h4>
+                <p className="text-xs text-gray-500 font-light">Automated renewal & compliance monitoring</p>
+              </div>
+              
+              <div className="text-center">
+                <Brain className="h-6 w-6 text-[#2B8C74] mx-auto mb-2" />
+                <h4 className="text-sm font-medium text-[#0F1C3E] mb-1">AI Analysis</h4>
+                <p className="text-xs text-gray-500 font-light">Intelligent document & risk assessment</p>
+              </div>
+            </div>
           </div>
         </div>
         

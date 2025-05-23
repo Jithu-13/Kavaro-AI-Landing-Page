@@ -14,46 +14,72 @@ export default function SolutionSection() {
           </p>
         </div>
         
-        {/* Key Benefits - Apple-style cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-8 mb-24">
-          <div className="flex flex-col items-center text-center group cursor-default">
-            <div className="w-16 h-16 flex items-center justify-center rounded-full bg-[#3584E4]/10 mb-6 group-hover:scale-105 transition-transform duration-300">
-              <Lock className="text-[#3584E4] h-7 w-7" />
+        {/* Key Benefits - Modern Apple-style horizontal showcase */}
+        <div className="mb-24 overflow-hidden">
+          <div className="relative">
+            {/* Large feature imagery */}
+            <div className="w-full relative z-10 bg-white">
+              {/* Feature 1 */}
+              <div className="py-20 flex flex-col md:flex-row items-center justify-between">
+                <div className="w-full md:w-1/2 px-10 md:pr-20">
+                  <div className="mb-6 inline-block">
+                    <div className="w-16 h-16 flex items-center justify-center rounded-full bg-[#3584E4]/10">
+                      <Lock className="text-[#3584E4] h-7 w-7" />
+                    </div>
+                  </div>
+                  <h3 className="text-[#0F1C3E] text-3xl font-medium mb-4">Secure Vault</h3>
+                  <p className="text-gray-500 text-lg font-light leading-relaxed">
+                    Enterprise-grade document security with immutable audit trails tracking every action.
+                  </p>
+                </div>
+                <div className="w-full md:w-1/2 flex justify-center p-8">
+                  <div className="w-full max-w-md h-64 bg-gradient-to-br from-[#3584E4]/5 to-[#3584E4]/20 rounded-2xl overflow-hidden relative border border-[#3584E4]/20">
+                    <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                      <div className="relative">
+                        <div className="absolute -inset-4 bg-[#3584E4]/5 blur-xl rounded-full"></div>
+                        <Lock className="h-16 w-16 text-[#3584E4]" />
+                      </div>
+                    </div>
+                    <div className="absolute inset-0 flex items-center justify-center opacity-20">
+                      <div className="w-32 h-32 border-2 border-[#3584E4] rounded-lg transform rotate-12"></div>
+                      <div className="w-32 h-32 border-2 border-[#3584E4] rounded-lg absolute transform -rotate-12"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              {/* Feature navigation - Apple-style dots */}
+              <div className="flex justify-center space-x-3 pb-16">
+                <div className="w-2 h-2 rounded-full bg-[#0F1C3E]"></div>
+                <div className="w-2 h-2 rounded-full bg-gray-200"></div>
+                <div className="w-2 h-2 rounded-full bg-gray-200"></div>
+                <div className="w-2 h-2 rounded-full bg-gray-200"></div>
+                <div className="w-2 h-2 rounded-full bg-gray-200"></div>
+              </div>
+              
+              {/* Small feature previews */}
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-3 px-6 pb-12">
+                <div className="p-4 bg-gray-50 rounded-xl border border-gray-100 flex flex-col items-center text-center group hover:border-[#9563DE]/30 transition-colors cursor-pointer">
+                  <Brain className="text-[#9563DE] h-6 w-6 mb-2" />
+                  <h4 className="text-[#0F1C3E] text-sm font-medium">AI Analysis</h4>
+                </div>
+                
+                <div className="p-4 bg-gray-50 rounded-xl border border-gray-100 flex flex-col items-center text-center group hover:border-[#2B8C74]/30 transition-colors cursor-pointer">
+                  <BarChart3 className="text-[#2B8C74] h-6 w-6 mb-2" />
+                  <h4 className="text-[#0F1C3E] text-sm font-medium">Real-time Insights</h4>
+                </div>
+                
+                <div className="p-4 bg-gray-50 rounded-xl border border-gray-100 flex flex-col items-center text-center group hover:border-[#F0B86E]/30 transition-colors cursor-pointer">
+                  <Workflow className="text-[#F0B86E] h-6 w-6 mb-2" />
+                  <h4 className="text-[#0F1C3E] text-sm font-medium">Role-based Access</h4>
+                </div>
+                
+                <div className="p-4 bg-gray-50 rounded-xl border border-gray-100 flex flex-col items-center text-center group hover:border-[#E25C5C]/30 transition-colors cursor-pointer">
+                  <Bell className="text-[#E25C5C] h-6 w-6 mb-2" />
+                  <h4 className="text-[#0F1C3E] text-sm font-medium">Smart Alerts</h4>
+                </div>
+              </div>
             </div>
-            <h3 className="text-[#0F1C3E] text-lg font-medium mb-2">Secure Vault</h3>
-            <p className="text-gray-500 text-sm font-light">Document storage with blockchain-grade audit trails</p>
-          </div>
-          
-          <div className="flex flex-col items-center text-center group cursor-default">
-            <div className="w-16 h-16 flex items-center justify-center rounded-full bg-[#9563DE]/10 mb-6 group-hover:scale-105 transition-transform duration-300">
-              <Brain className="text-[#9563DE] h-7 w-7" />
-            </div>
-            <h3 className="text-[#0F1C3E] text-lg font-medium mb-2">AI Analysis</h3>
-            <p className="text-gray-500 text-sm font-light">Intelligent processing of policies and risk data</p>
-          </div>
-          
-          <div className="flex flex-col items-center text-center group cursor-default">
-            <div className="w-16 h-16 flex items-center justify-center rounded-full bg-[#2B8C74]/10 mb-6 group-hover:scale-105 transition-transform duration-300">
-              <BarChart3 className="text-[#2B8C74] h-7 w-7" />
-            </div>
-            <h3 className="text-[#0F1C3E] text-lg font-medium mb-2">Real-time Insights</h3>
-            <p className="text-gray-500 text-sm font-light">Customized views for all stakeholders</p>
-          </div>
-          
-          <div className="flex flex-col items-center text-center group cursor-default">
-            <div className="w-16 h-16 flex items-center justify-center rounded-full bg-[#F0B86E]/10 mb-6 group-hover:scale-105 transition-transform duration-300">
-              <Workflow className="text-[#F0B86E] h-7 w-7" />
-            </div>
-            <h3 className="text-[#0F1C3E] text-lg font-medium mb-2">Role-based Access</h3>
-            <p className="text-gray-500 text-sm font-light">Tailored workflows for every department</p>
-          </div>
-          
-          <div className="flex flex-col items-center text-center group cursor-default">
-            <div className="w-16 h-16 flex items-center justify-center rounded-full bg-[#E25C5C]/10 mb-6 group-hover:scale-105 transition-transform duration-300">
-              <Bell className="text-[#E25C5C] h-7 w-7" />
-            </div>
-            <h3 className="text-[#0F1C3E] text-lg font-medium mb-2">Smart Alerts</h3>
-            <p className="text-gray-500 text-sm font-light">Automated compliance monitoring</p>
           </div>
         </div>
         

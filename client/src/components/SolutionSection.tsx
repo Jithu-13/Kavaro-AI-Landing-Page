@@ -1,5 +1,5 @@
 import { Lock, FileText, Check, Tag, Clock, Shield, Brain, Bell, AlertCircle, BarChart3, Workflow, PanelTopOpen, Users } from "lucide-react";
-import { KavaroLogoWithText } from "./KavaroLogoNew";
+import { KavaroLogoWithTextDark } from "./KavaroFinalLogo";
 
 export default function SolutionSection() {
   return (
@@ -208,7 +208,7 @@ export default function SolutionSection() {
             </div>
             
             {/* Central Kavaro Hub */}
-            <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-40 h-40 md:w-52 md:h-52 rounded-full bg-[#0F1C3E] flex items-center justify-center z-10 shadow-lg">
+            <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-40 h-40 md:w-52 md:h-52 rounded-full bg-[#0A0B1D] flex items-center justify-center z-10 shadow-lg">
               <div className="absolute inset-0 rounded-full border-2 border-[#B3DBC4]/10"></div>
               
               {/* Subtle glow effect */}
@@ -216,8 +216,7 @@ export default function SolutionSection() {
               
               {/* Content */}
               <div className="text-center p-3">
-                <KavaroLogoWithText size={100} />
-                <p className="text-[#B3DBC4] text-xs font-light mt-2">Risk Intelligence Network</p>
+                <KavaroLogoWithTextDark size={100} />
               </div>
             </div>
             

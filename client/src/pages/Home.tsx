@@ -2,6 +2,7 @@ import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
 import ProblemSection from "@/components/ProblemSection";
 import ComparisonSection from "@/components/ComparisonSection";
+import SolutionSection from "@/components/SolutionSection";
 import FeaturesSection from "@/components/FeaturesSection";
 import BenefitsSection from "@/components/BenefitsSection";
 import ContactSection from "@/components/ContactSection";
@@ -15,6 +16,7 @@ export default function Home() {
       <HeroSection />
       <div className="bg-[var(--light-background)] text-[var(--light-kavaro)]">
         <ComparisonSection />
+        <SolutionSection />
         <FeaturesSection />
         <BenefitsSection />
         <ContactSection />

@@ -150,7 +150,7 @@ export default function DocumentUploadDemo() {
                   exit={{ opacity: 0, y: -10 }}
                   className="text-center"
                 >
-                  <div className="w-20 h-20 mx-auto mb-4 rounded-full border-4 border-gray-200 border-t-[var(--light-ai)] animate-spin"></div>
+                  <div className="w-20 h-20 mx-auto mb-4 rounded-full border-4 border-gray-200 border-t-[#2B8C74] animate-spin"></div>
                   <p className="text-gray-700">Uploading document...</p>
                 </motion.div>
               )}
@@ -166,28 +166,28 @@ export default function DocumentUploadDemo() {
                   <div className="relative w-20 h-20 mx-auto mb-4">
                     <div className="absolute inset-0 rounded-full border-4 border-gray-200"></div>
                     <motion.div 
-                      className="absolute inset-0 rounded-full border-4 border-[var(--light-ai)] border-t-transparent"
+                      className="absolute inset-0 rounded-full border-4 border-[#2B8C74] border-t-transparent"
                       animate={{ rotate: 360 }}
                       transition={{ duration: 2, repeat: Infinity, ease: "linear" }}
                     ></motion.div>
                     <div className="absolute inset-0 flex items-center justify-center">
-                      <FileText className="h-8 w-8 text-[var(--light-ai)]" />
+                      <FileText className="h-8 w-8 text-[#2B8C74]" />
                     </div>
                   </div>
                   <p className="text-gray-700">AI is analyzing the document</p>
                   <div className="mt-4 flex justify-center gap-2">
                     <motion.div 
-                      className="h-1.5 w-1.5 rounded-full bg-[var(--light-ai)]"
+                      className="h-1.5 w-1.5 rounded-full bg-[#2B8C74]"
                       animate={{ scale: [1, 1.5, 1] }}
                       transition={{ duration: 1, repeat: Infinity, repeatDelay: 0.2 }}
                     ></motion.div>
                     <motion.div 
-                      className="h-1.5 w-1.5 rounded-full bg-[var(--light-ai)]"
+                      className="h-1.5 w-1.5 rounded-full bg-[#2B8C74]"
                       animate={{ scale: [1, 1.5, 1] }}
                       transition={{ duration: 1, repeat: Infinity, repeatDelay: 0.4, delay: 0.2 }}
                     ></motion.div>
                     <motion.div 
-                      className="h-1.5 w-1.5 rounded-full bg-[var(--light-ai)]"
+                      className="h-1.5 w-1.5 rounded-full bg-[#2B8C74]"
                       animate={{ scale: [1, 1.5, 1] }}
                       transition={{ duration: 1, repeat: Infinity, repeatDelay: 0.6, delay: 0.4 }}
                     ></motion.div>
@@ -276,7 +276,7 @@ export default function DocumentUploadDemo() {
               className={`w-full py-6 rounded-lg text-white ${
                 uploadState === 'error' 
                   ? 'bg-red-500 hover:bg-red-600' 
-                  : 'bg-[var(--light-ai)] hover:bg-[var(--light-ai)]/90'
+                  : 'bg-[#2B8C74] hover:bg-[#2B8C74]/90'
               }`}
             >
               {getUploadButtonText()}

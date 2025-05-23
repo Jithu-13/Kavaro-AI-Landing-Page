@@ -20,8 +20,8 @@ export default function HeroSection() {
 
         <div className="md:w-1/2 flex justify-center items-center">
           <img 
-            src="/assets/kavaro-placeholder-logo.svg" 
-            alt="Kavaro AI Logo" 
+            src="/assets/insurance-hero-graphic.svg" 
+            alt="Insurance management illustration" 
             className="w-72 md:w-96 hero-animation"
             aria-hidden="true"
           />

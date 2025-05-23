@@ -66,57 +66,111 @@ export default function ProblemSection() {
               </p>
             </div>
             
-            <div className="bg-white p-8 h-[400px] relative border-l-4 border-red-300 bg-gradient-to-br from-white to-red-50/80">
-              {/* Cluttered Desktop Illustration */}
+            <div className="bg-white p-8 h-[400px] relative border-l-4 border-red-300 bg-gradient-to-br from-white to-red-50/80 overflow-hidden">
+              {/* Cluttered Desktop Illustration - EXTRA CLUTTER */}
               <div className="absolute inset-0 p-8">
+                {/* Messy Background with Post-its */}
+                <div className="absolute top-2 right-2 w-16 h-16 bg-yellow-200 transform rotate-6 shadow-sm z-20">
+                  <p className="text-[8px] p-1 font-mono text-gray-700">URGENT: Check vendor COIs!!!</p>
+                </div>
+                
+                <div className="absolute top-16 right-10 w-14 h-14 bg-pink-200 transform -rotate-3 shadow-sm z-20">
+                  <p className="text-[8px] p-1 font-mono text-gray-700">Call broker re: renewal</p>
+                </div>
+                
+                {/* Scattered Icons */}
+                <div className="absolute right-4 bottom-20 flex space-x-2">
+                  {[...Array(5)].map((_, i) => (
+                    <div key={i} className="w-8 h-8 bg-gray-100 rounded shadow-sm flex items-center justify-center">
+                      <FileText className="h-4 w-4 text-gray-400" />
+                    </div>
+                  ))}
+                </div>
+                
                 {/* Email Window */}
                 <div className="absolute left-6 top-4 w-3/4 h-1/3 bg-gray-50 rounded-lg shadow border border-gray-200 z-10">
                   <div className="bg-gray-200 px-4 py-2 rounded-t-lg flex items-center space-x-2">
                     <div className="w-3 h-3 rounded-full bg-red-400"></div>
                     <div className="w-3 h-3 rounded-full bg-yellow-400"></div>
                     <div className="w-3 h-3 rounded-full bg-green-400"></div>
-                    <span className="text-xs text-gray-600 ml-2">Emails - Risk/Insurance Requests</span>
+                    <span className="text-xs text-gray-600 ml-2">Emails - Risk/Insurance Requests (238 unread)</span>
                   </div>
                   <div className="p-4">
                     <div className="flex items-center mb-3">
                       <div className="w-8 h-8 rounded-full bg-gray-300 flex-shrink-0"></div>
                       <div className="ml-2">
                         <p className="text-xs font-medium text-gray-800">Broker Support</p>
-                        <p className="text-xs text-gray-500">Policy Coverage Question</p>
+                        <p className="text-xs text-gray-500">Policy Coverage Question <span className="text-red-500">URGENT</span></p>
                       </div>
                     </div>
                     <div className="h-16 bg-gray-100 rounded-md w-full"></div>
                   </div>
                 </div>
                 
-                {/* Spreadsheet Window */}
+                {/* Notification Pop-up */}
+                <div className="absolute left-10 top-[40%] w-60 h-20 bg-white rounded-lg shadow-lg border border-gray-300 z-30">
+                  <div className="bg-red-500 px-3 py-2 rounded-t-lg">
+                    <p className="text-xs text-white font-medium">ALERT: 12 Certificates Expired</p>
+                  </div>
+                  <div className="p-3">
+                    <p className="text-xs text-gray-600">Multiple vendors out of compliance. Click to view report.</p>
+                    <div className="flex justify-end mt-1">
+                      <button className="text-[9px] bg-gray-200 px-2 py-0.5 rounded mr-1">Later</button>
+                      <button className="text-[9px] bg-blue-500 text-white px-2 py-0.5 rounded">View</button>
+                    </div>
+                  </div>
+                </div>
+                
+                {/* Spreadsheet Window - More complex and chaotic */}
                 <div className="absolute right-8 top-12 w-2/3 h-2/5 bg-white rounded-lg shadow border border-gray-200 z-20">
                   <div className="bg-gray-200 px-4 py-2 rounded-t-lg flex items-center space-x-2">
                     <div className="w-3 h-3 rounded-full bg-red-400"></div>
                     <div className="w-3 h-3 rounded-full bg-yellow-400"></div>
                     <div className="w-3 h-3 rounded-full bg-green-400"></div>
-                    <span className="text-xs text-gray-600 ml-2">Risk_Tracking_Master.xlsx</span>
+                    <span className="text-xs text-gray-600 ml-2">Risk_Tracking_Master_v13_FINAL_USE-THIS-ONE.xlsx</span>
                   </div>
                   <div className="p-2">
-                    <div className="grid grid-cols-4 gap-1">
-                      {[...Array(12)].map((_, i) => (
-                        <div key={i} className={`h-8 border border-gray-200 ${i % 5 === 0 ? 'bg-red-50' : 'bg-white'} rounded-sm flex items-center justify-center`}>
-                          <span className="text-[8px] text-gray-400">{i % 5 === 0 ? 'EXPIRED' : ''}</span>
+                    <div className="grid grid-cols-5 gap-0.5">
+                      {[...Array(25)].map((_, i) => (
+                        <div key={i} className={`h-6 border border-gray-200 
+                          ${i % 5 === 0 ? 'bg-red-50' : i % 7 === 0 ? 'bg-yellow-50' : i % 3 === 0 ? 'bg-orange-50' : 'bg-white'} 
+                          text-[7px] px-0.5 flex items-center justify-center overflow-hidden`}>
+                          {i % 5 === 0 ? 'EXPIRED' : i % 7 === 0 ? 'MISSING' : i % 3 === 0 ? 'CHECK' : ''}
                         </div>
                       ))}
                     </div>
                   </div>
                 </div>
                 
-                {/* Folders */}
+                {/* Folders - More of them, scattered */}
                 <div className="absolute left-12 bottom-12 w-3/5 h-2/5 flex">
-                  <div className="w-24 h-16 bg-yellow-100 transform -rotate-6 rounded-md flex items-center justify-center mr-4 z-10">
-                    <Folder className="h-6 w-6 text-yellow-500" />
+                  <div className="w-20 h-16 bg-yellow-100 transform -rotate-6 rounded-md flex items-center justify-center mr-4 z-10">
+                    <Folder className="h-5 w-5 text-yellow-500" />
+                    <span className="text-[7px] text-yellow-700 ml-1">2024 Policies</span>
                   </div>
-                  <div className="w-24 h-16 bg-blue-100 transform rotate-3 rounded-md flex items-center justify-center z-20">
-                    <Folder className="h-6 w-6 text-blue-500" />
+                  <div className="w-20 h-16 bg-blue-100 transform rotate-3 rounded-md flex items-center justify-center z-20">
+                    <Folder className="h-5 w-5 text-blue-500" />
+                    <span className="text-[7px] text-blue-700 ml-1">Claims</span>
+                  </div>
+                  <div className="w-20 h-16 bg-green-100 transform -rotate-2 rounded-md flex items-center justify-center absolute top-4 left-20 z-15">
+                    <Folder className="h-5 w-5 text-green-500" />
+                    <span className="text-[7px] text-green-700 ml-1">Vendors</span>
+                  </div>
+                  <div className="w-20 h-16 bg-purple-100 transform rotate-5 rounded-md flex items-center justify-center absolute bottom-0 left-32 z-25">
+                    <Folder className="h-5 w-5 text-purple-500" />
+                    <span className="text-[7px] text-purple-700 ml-1">Renewals</span>
                   </div>
                   <div className="absolute bottom-2 left-20 text-xs text-gray-400">Siloed department folders</div>
+                </div>
+                
+                {/* Calendar Reminder */}
+                <div className="absolute right-4 bottom-6 w-32 h-16 bg-white rounded shadow border border-gray-200 z-30">
+                  <div className="bg-red-100 py-1 px-2 border-b border-gray-200">
+                    <p className="text-[9px] text-red-800 font-medium">Renewal Meeting - Overdue</p>
+                  </div>
+                  <div className="p-2">
+                    <p className="text-[8px] text-gray-600">Client Policy Review - 3 days past due</p>
+                  </div>
                 </div>
               </div>
             </div>

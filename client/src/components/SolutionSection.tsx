@@ -4,70 +4,66 @@ export default function SolutionSection() {
   return (
     <section id="solution" className="py-20 md:py-32 bg-white border-b border-gray-100 text-[#0F1C3E]">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="max-w-3xl mx-auto text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-semibold tracking-tight mb-8 text-black">
-            One Platform. Every Risk Stakeholder. <span className="text-[#2B8C74]">Total Visibility.</span>
+        <div className="max-w-3xl mx-auto text-center mb-20">
+          <h2 className="text-4xl md:text-5xl font-medium tracking-tight mb-8 text-[#0F1C3E]">
+            The Risk Management Bridge
           </h2>
           
-          <p className="text-gray-800 text-xl leading-relaxed mb-5">
-            Kavaro AI is more than a document system — it's your risk command center. We intake unstructured risk data from every source and use AI to classify, organize, and keep it all current, secure, and usable.
-          </p>
-          
-          <p className="text-gray-800 text-xl leading-relaxed mb-5">
-            With role-based workflows, real-time insights, and automated compliance checks, every part of the insurance ecosystem stays connected and protected.
+          <p className="text-gray-600 text-xl leading-relaxed font-light">
+            One platform connecting underwriters, brokers, clients, vendors, and compliance teams with total visibility.
           </p>
         </div>
         
-        {/* Key Benefits */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6 mb-20">
-          <div className="p-6 bg-[#F5F9FF] rounded-xl border border-blue-100">
-            <div className="w-12 h-12 flex items-center justify-center rounded-full bg-blue-50 mb-4">
-              <Lock className="text-blue-600 h-6 w-6" />
+        {/* Key Benefits - Apple-style cards */}
+        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-8 mb-24">
+          <div className="flex flex-col items-center text-center group cursor-default">
+            <div className="w-16 h-16 flex items-center justify-center rounded-full bg-[#3584E4]/10 mb-6 group-hover:scale-105 transition-transform duration-300">
+              <Lock className="text-[#3584E4] h-7 w-7" />
             </div>
-            <h3 className="text-lg font-medium mb-2">Secure Document Vault</h3>
-            <p className="text-gray-600 text-sm">Centralized storage with blockchain-grade audit trails for every document action</p>
+            <h3 className="text-[#0F1C3E] text-lg font-medium mb-2">Secure Vault</h3>
+            <p className="text-gray-500 text-sm font-light">Document storage with blockchain-grade audit trails</p>
           </div>
           
-          <div className="p-6 bg-[#F8F5FF] rounded-xl border border-purple-100">
-            <div className="w-12 h-12 flex items-center justify-center rounded-full bg-purple-50 mb-4">
-              <Brain className="text-purple-600 h-6 w-6" />
+          <div className="flex flex-col items-center text-center group cursor-default">
+            <div className="w-16 h-16 flex items-center justify-center rounded-full bg-[#9563DE]/10 mb-6 group-hover:scale-105 transition-transform duration-300">
+              <Brain className="text-[#9563DE] h-7 w-7" />
             </div>
-            <h3 className="text-lg font-medium mb-2">AI Understanding</h3>
-            <p className="text-gray-600 text-sm">Intelligent analysis of policies, contracts, exposures, and loss runs</p>
+            <h3 className="text-[#0F1C3E] text-lg font-medium mb-2">AI Analysis</h3>
+            <p className="text-gray-500 text-sm font-light">Intelligent processing of policies and risk data</p>
           </div>
           
-          <div className="p-6 bg-[#F5FFFC] rounded-xl border border-teal-100">
-            <div className="w-12 h-12 flex items-center justify-center rounded-full bg-teal-50 mb-4">
-              <BarChart3 className="text-teal-600 h-6 w-6" />
+          <div className="flex flex-col items-center text-center group cursor-default">
+            <div className="w-16 h-16 flex items-center justify-center rounded-full bg-[#2B8C74]/10 mb-6 group-hover:scale-105 transition-transform duration-300">
+              <BarChart3 className="text-[#2B8C74] h-7 w-7" />
             </div>
-            <h3 className="text-lg font-medium mb-2">Real-time Analytics</h3>
-            <p className="text-gray-600 text-sm">Customized dashboards for brokers, underwriters, and clients</p>
+            <h3 className="text-[#0F1C3E] text-lg font-medium mb-2">Real-time Insights</h3>
+            <p className="text-gray-500 text-sm font-light">Customized views for all stakeholders</p>
           </div>
           
-          <div className="p-6 bg-[#FFF9F5] rounded-xl border border-orange-100">
-            <div className="w-12 h-12 flex items-center justify-center rounded-full bg-orange-50 mb-4">
-              <Workflow className="text-orange-600 h-6 w-6" />
+          <div className="flex flex-col items-center text-center group cursor-default">
+            <div className="w-16 h-16 flex items-center justify-center rounded-full bg-[#F0B86E]/10 mb-6 group-hover:scale-105 transition-transform duration-300">
+              <Workflow className="text-[#F0B86E] h-7 w-7" />
             </div>
-            <h3 className="text-lg font-medium mb-2">Role-based Workflows</h3>
-            <p className="text-gray-600 text-sm">Customized access and views across departments and vendors</p>
+            <h3 className="text-[#0F1C3E] text-lg font-medium mb-2">Role-based Access</h3>
+            <p className="text-gray-500 text-sm font-light">Tailored workflows for every department</p>
           </div>
           
-          <div className="p-6 bg-[#FFF5F9] rounded-xl border border-pink-100">
-            <div className="w-12 h-12 flex items-center justify-center rounded-full bg-pink-50 mb-4">
-              <Bell className="text-pink-600 h-6 w-6" />
+          <div className="flex flex-col items-center text-center group cursor-default">
+            <div className="w-16 h-16 flex items-center justify-center rounded-full bg-[#E25C5C]/10 mb-6 group-hover:scale-105 transition-transform duration-300">
+              <Bell className="text-[#E25C5C] h-7 w-7" />
             </div>
-            <h3 className="text-lg font-medium mb-2">Compliance Alerts</h3>
-            <p className="text-gray-600 text-sm">Automatic renewal tracking and compliance notifications</p>
+            <h3 className="text-[#0F1C3E] text-lg font-medium mb-2">Smart Alerts</h3>
+            <p className="text-gray-500 text-sm font-light">Automated compliance monitoring</p>
           </div>
         </div>
         
         {/* Apple-inspired Risk Intelligence Hub */}
         <div className="max-w-6xl mx-auto px-6 py-16">
-          <h3 className="text-2xl md:text-3xl font-semibold mb-4 text-[#0F1C3E] text-center tracking-tight">
-            The Risk Management Intelligence Hub
+          <h3 className="text-2xl md:text-3xl font-medium mb-4 text-[#0F1C3E] text-center tracking-tight">
+            Risk Intelligence Network
           </h3>
-          <p className="text-gray-600 text-lg leading-relaxed mb-16 text-center max-w-3xl mx-auto font-light">
-            Kavaro AI connects every stakeholder throughout the insurance ecosystem, providing integrated document flows and real-time risk intelligence.
+          <p className="text-gray-500 text-lg leading-relaxed mb-16 text-center max-w-2xl mx-auto font-light">
+            An intelligent ecosystem where all risk stakeholders share a unified view of documents, policies, and insights.
           </p>
           
           {/* Apple-inspired hub visualization */}

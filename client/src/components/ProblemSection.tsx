@@ -16,37 +16,107 @@ export default function ProblemSection() {
           </p>
         </div>
           
-        <div className="grid md:grid-cols-3 gap-8 mb-20">
-          <div className="p-8 rounded-2xl bg-gradient-to-br from-[#1A2950] to-[#0F1C3E] border border-[#2B8C74]/20 flex flex-col items-center text-center shadow-lg transform transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
-            <div className="w-20 h-20 flex items-center justify-center rounded-full bg-gradient-to-br from-[#2B8C74]/30 to-[#2B8C74]/10 mb-6 shadow-inner">
-              <Users className="text-[#2B8C74] h-9 w-9" />
-            </div>
-            <h3 className="text-xl font-medium mb-4 text-white">Stakeholder Disconnect</h3>
-            <div className="h-0.5 w-12 bg-[#2B8C74]/30 mb-4"></div>
-            <p className="text-gray-300 leading-relaxed">
-              Underwriters, brokers, clients, and vendors all operate in separate systems with no shared visibility or context.
-            </p>
-          </div>
+        {/* Apple-style interactive landscape of problems */}
+        <div className="relative mb-20 pt-16 px-2">
+          {/* Horizontal scrolling timeline/path of problems */}
+          <div className="relative max-w-5xl mx-auto h-[400px] overflow-hidden">
+            {/* Background path */}
+            <div className="absolute top-[50%] left-0 right-0 h-px bg-gradient-to-r from-[#2B8C74]/0 via-[#2B8C74]/30 to-[#2B8C74]/0"></div>
             
-          <div className="p-8 rounded-2xl bg-gradient-to-br from-[#1A2950] to-[#0F1C3E] border border-[#2B8C74]/20 flex flex-col items-center text-center shadow-lg transform transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
-            <div className="w-20 h-20 flex items-center justify-center rounded-full bg-gradient-to-br from-[#2B8C74]/30 to-[#2B8C74]/10 mb-6 shadow-inner">
-              <Database className="text-[#2B8C74] h-9 w-9" />
+            {/* Nodes with animated pulsing effect */}
+            <div className="absolute top-[50%] left-[15%] transform -translate-y-1/2 flex flex-col items-center">
+              <div className="relative mb-6">
+                <div className="w-24 h-24 rounded-full bg-gradient-to-br from-[#1A2950] to-[#0F1C3E] flex items-center justify-center shadow-lg border border-[#2B8C74]/20 z-10">
+                  <Users className="text-[#2B8C74] h-10 w-10" />
+                </div>
+                <div className="absolute inset-0 rounded-full bg-[#2B8C74]/20 animate-ping-slow"></div>
+              </div>
+              <div className="bg-gradient-to-br from-[#1A2950] to-[#0F1C3E] p-6 rounded-xl shadow-lg max-w-xs border border-[#2B8C74]/20">
+                <h3 className="text-xl font-medium mb-3 text-white">Stakeholder Disconnect</h3>
+                <p className="text-gray-300 text-sm leading-relaxed">
+                  Each stakeholder operates in isolation, with no shared understanding or collaborative platform.
+                </p>
+                <div className="mt-4">
+                  <div className="flex items-center gap-2 mb-1">
+                    <span className="w-2 h-2 rounded-full bg-red-400"></span>
+                    <span className="text-xs text-gray-400">Different systems</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <span className="w-2 h-2 rounded-full bg-orange-400"></span>
+                    <span className="text-xs text-gray-400">No shared context</span>
+                  </div>
+                </div>
+              </div>
+              {/* Vertical line connecting to timeline */}
+              <div className="absolute top-[50%] h-12 w-px bg-gradient-to-b from-[#2B8C74]/30 to-[#2B8C74]/0"></div>
             </div>
-            <h3 className="text-xl font-medium mb-4 text-white">No Source of Truth</h3>
-            <div className="h-0.5 w-12 bg-[#2B8C74]/30 mb-4"></div>
-            <p className="text-gray-300 leading-relaxed">
-              Documents scatter across emails, drives, and systems, creating version confusion and outdated information.
-            </p>
-          </div>
             
-          <div className="p-8 rounded-2xl bg-gradient-to-br from-[#1A2950] to-[#0F1C3E] border border-[#2B8C74]/20 flex flex-col items-center text-center shadow-lg transform transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
-            <div className="w-20 h-20 flex items-center justify-center rounded-full bg-gradient-to-br from-[#2B8C74]/30 to-[#2B8C74]/10 mb-6 shadow-inner">
-              <AlertTriangle className="text-[#2B8C74] h-9 w-9" />
+            <div className="absolute top-[50%] left-[50%] transform -translate-y-1/2 -translate-x-1/2 flex flex-col items-center">
+              <div className="bg-gradient-to-br from-[#1A2950] to-[#0F1C3E] p-6 rounded-xl shadow-lg max-w-xs border border-[#2B8C74]/20 mb-6">
+                <h3 className="text-xl font-medium mb-3 text-white">No Source of Truth</h3>
+                <p className="text-gray-300 text-sm leading-relaxed">
+                  Critical documents scattered across systems lead to version confusion and data fragmentation.
+                </p>
+                <div className="mt-4">
+                  <div className="flex items-center gap-2 mb-1">
+                    <span className="w-2 h-2 rounded-full bg-red-400"></span>
+                    <span className="text-xs text-gray-400">Multiple copies</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <span className="w-2 h-2 rounded-full bg-orange-400"></span>
+                    <span className="text-xs text-gray-400">Outdated information</span>
+                  </div>
+                </div>
+              </div>
+              <div className="relative">
+                <div className="w-24 h-24 rounded-full bg-gradient-to-br from-[#1A2950] to-[#0F1C3E] flex items-center justify-center shadow-lg border border-[#2B8C74]/20 z-10">
+                  <Database className="text-[#2B8C74] h-10 w-10" />
+                </div>
+                <div className="absolute inset-0 rounded-full bg-[#2B8C74]/20 animate-ping-slow" style={{ animationDelay: "0.5s" }}></div>
+              </div>
+              {/* Vertical line connecting to timeline */}
+              <div className="absolute bottom-[50%] h-12 w-px bg-gradient-to-t from-[#2B8C74]/30 to-[#2B8C74]/0"></div>
             </div>
-            <h3 className="text-xl font-medium mb-4 text-white">Compliance Risk</h3>
-            <div className="h-0.5 w-12 bg-[#2B8C74]/30 mb-4"></div>
-            <p className="text-gray-300 leading-relaxed">
-              Manual tracking leads to missed renewals, expired documents, and potential contract violations across stakeholders.
+            
+            <div className="absolute top-[50%] right-[15%] transform -translate-y-1/2 flex flex-col items-center">
+              <div className="relative mb-6">
+                <div className="w-24 h-24 rounded-full bg-gradient-to-br from-[#1A2950] to-[#0F1C3E] flex items-center justify-center shadow-lg border border-[#2B8C74]/20 z-10">
+                  <AlertTriangle className="text-[#2B8C74] h-10 w-10" />
+                </div>
+                <div className="absolute inset-0 rounded-full bg-[#2B8C74]/20 animate-ping-slow" style={{ animationDelay: "1s" }}></div>
+              </div>
+              <div className="bg-gradient-to-br from-[#1A2950] to-[#0F1C3E] p-6 rounded-xl shadow-lg max-w-xs border border-[#2B8C74]/20">
+                <h3 className="text-xl font-medium mb-3 text-white">Compliance Risk</h3>
+                <p className="text-gray-300 text-sm leading-relaxed">
+                  Manual tracking creates blind spots, leading to missed renewals and potential regulatory violations.
+                </p>
+                <div className="mt-4">
+                  <div className="flex items-center gap-2 mb-1">
+                    <span className="w-2 h-2 rounded-full bg-red-400"></span>
+                    <span className="text-xs text-gray-400">Expired documents</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <span className="w-2 h-2 rounded-full bg-orange-400"></span>
+                    <span className="text-xs text-gray-400">Missed deadlines</span>
+                  </div>
+                </div>
+              </div>
+              {/* Vertical line connecting to timeline */}
+              <div className="absolute top-[50%] h-12 w-px bg-gradient-to-b from-[#2B8C74]/30 to-[#2B8C74]/0"></div>
+            </div>
+            
+            {/* Connecting dots on the path */}
+            <div className="absolute left-[15%] top-[50%] transform -translate-y-1/2 w-3 h-3 rounded-full bg-[#2B8C74]"></div>
+            <div className="absolute left-[50%] top-[50%] transform -translate-x-1/2 -translate-y-1/2 w-3 h-3 rounded-full bg-[#2B8C74]"></div>
+            <div className="absolute right-[15%] top-[50%] transform -translate-y-1/2 w-3 h-3 rounded-full bg-[#2B8C74]"></div>
+          </div>
+          
+          {/* Apple-style caption */}
+          <div className="text-center mt-8 max-w-xl mx-auto">
+            <p className="text-gray-400 text-sm font-light tracking-wide">
+              These disconnected systems and processes create significant 
+              <span className="text-[#2B8C74]"> operational friction </span> 
+              and <span className="text-[#2B8C74]">risk exposure</span> across the entire insurance ecosystem.
             </p>
           </div>
         </div>

@@ -39,20 +39,20 @@ export default function Navbar() {
 
   return (
     <>
-      <header className={`sticky top-0 z-50 ${isScrolled ? "bg-[#0A0B1D]/90 backdrop-blur-sm border-b border-white/10" : "bg-[#0A0B1D]"} transition-all duration-300`}>
+      <header className={`sticky top-0 z-50 ${isScrolled ? "bg-[var(--dark-background)]/90 backdrop-blur-sm border-b border-white/10" : "bg-[var(--dark-background)]"} transition-all duration-300`}>
         <div className="flex justify-between items-center p-6 max-w-6xl mx-auto">
           <div className="flex items-center">
             <img src="/assets/kavaro-logo.png" alt="Kavaro AI Logo" className="h-10" />
           </div>
           
           <nav className="hidden md:flex gap-8 text-sm text-gray-300">
-            <a href="#" className="hover:text-white transition-colors">Home</a>
-            <a href="#about" className="hover:text-white transition-colors">About</a>
-            <a href="#contact" className="hover:text-white transition-colors">Contact</a>
+            <a href="#" className="hover:text-white transition-colors font-medium">Home</a>
+            <a href="#about" className="hover:text-white transition-colors font-medium">About</a>
+            <a href="#contact" className="hover:text-white transition-colors font-medium">Contact</a>
           </nav>
           
           <div className="flex items-center gap-4">
-            <Button className="bg-accent hover:bg-accent/90 text-white">
+            <Button className="bg-[var(--dark-ai)] hover:bg-[var(--dark-ai)]/90 text-white font-medium">
               Sign Up
             </Button>
             <button 

@@ -71,7 +71,7 @@ export default function ContactSection() {
           </div>
         </div>
         
-        <div className="bg-gray-50 dark:bg-[#0F1C3E]/80 p-6 rounded-xl border border-gray-200 dark:border-[#2B8C74]/20 shadow-md">
+        <div className="bg-gray-50 p-8 rounded-2xl border border-gray-200 shadow-md backdrop-blur-sm">
           <h3 className="text-xl font-bold mb-4">Send us a message</h3>
           <form className="space-y-4" onSubmit={handleSubmit}>
             <div>

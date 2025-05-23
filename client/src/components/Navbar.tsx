@@ -69,6 +69,9 @@ export default function Navbar() {
         <div className="flex justify-between items-center py-5 px-6 max-w-7xl mx-auto">
           <div className="flex items-center">
             <span className="text-xl font-semibold tracking-tight text-[#0F1C3E] dark:text-white">Kavaro <span className="text-[#2B8C74]">AI</span></span>
+            <div className="hidden md:flex items-center ml-2">
+              <span className="text-xs px-2 py-0.5 rounded-full bg-[#2B8C74]/10 text-[#2B8C74] dark:bg-[#2B8C74]/20 dark:text-[#2B8C74]">Beta</span>
+            </div>
           </div>
           
           <nav className="hidden md:flex gap-8 text-sm">

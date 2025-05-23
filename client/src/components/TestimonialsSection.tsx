@@ -34,34 +34,34 @@ export default function TestimonialsSection() {
           {testimonials.map((testimonial, index) => (
             <div 
               key={index} 
-              className="bg-[#0F1C3E]/80 p-8 rounded-xl border border-[#2B8C74]/20 relative hover:shadow-lg transition-shadow"
+              className="bg-white/10 backdrop-blur-sm p-8 rounded-3xl border border-white/10 relative hover:shadow-xl hover:translate-y-[-5px] transition-all duration-300"
             >
-              <Quote className="absolute top-4 right-4 h-10 w-10 text-[#2B8C74]/30" />
+              <Quote className="absolute top-4 right-4 h-10 w-10 text-[#2B8C74]/40" />
               <div className="mb-8 relative z-10">
-                <p className="text-white italic leading-relaxed text-lg">"{testimonial.quote}"</p>
+                <p className="text-white leading-relaxed text-lg font-light">"{testimonial.quote}"</p>
               </div>
               <div className="flex items-center">
-                <div className="w-12 h-12 rounded-full bg-[#2B8C74]/20 flex items-center justify-center mr-4">
+                <div className="w-12 h-12 rounded-full bg-[#2B8C74]/20 flex items-center justify-center mr-4 border border-[#2B8C74]/30">
                   <span className="text-[#2B8C74] text-xl font-medium">{testimonial.author.charAt(0)}</span>
                 </div>
                 <div>
                   <p className="font-medium text-white text-lg">{testimonial.author}</p>
-                  <p className="text-sm text-[#2B8C74]/80">{testimonial.title}</p>
+                  <p className="text-sm text-[#2B8C74]">{testimonial.title}</p>
                 </div>
               </div>
             </div>
           ))}
         </div>
         
-        <div className="text-center border-t border-[#2B8C74]/20 pt-12">
-          <p className="text-gray-300 mb-8">
-            Trusted by growing teams in events, logistics, retail, and construction.
+        <div className="text-center border-t border-white/10 pt-12">
+          <p className="text-gray-300 mb-8 max-w-2xl mx-auto">
+            Trusted by growing teams in events, logistics, retail, and construction who need a simpler way to manage insurance documents.
           </p>
           
-          <div className="flex flex-wrap justify-center gap-6 md:gap-12">
+          <div className="flex flex-wrap justify-center gap-8 md:gap-16">
             {companies.map((company, index) => (
-              <div key={index} className="text-[#2B8C74] font-medium opacity-80 hover:opacity-100 transition-opacity">
-                [ {company} ]
+              <div key={index} className="px-6 py-3 rounded-full bg-white/5 backdrop-blur-sm text-white font-light hover:bg-[#2B8C74]/20 transition-all duration-300 border border-white/5">
+                {company}
               </div>
             ))}
           </div>

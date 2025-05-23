@@ -12,11 +12,14 @@ export default function HeroSection() {
             Kavaro AI helps non-risk professionals manage COIs, contracts, and other insurance documents with confidence.
           </p>
           <div className="flex flex-col sm:flex-row justify-center items-center gap-4 mt-12">
-            <Button className="bg-[#2B8C74] hover:bg-[#2B8C74]/90 text-white px-8 py-7 h-auto text-lg rounded-full font-medium min-w-[200px]">
+            <Button className="bg-[#2B8C74] hover:bg-[#2B8C74]/90 text-white px-8 py-7 h-auto text-lg rounded-full font-medium min-w-[200px] shadow-lg hover:shadow-xl transition-all">
               Contact Us
             </Button>
-            <a href="#about" className="text-[#2B8C74] text-lg font-medium underline underline-offset-4 hover:text-[#2B8C74]/80 transition-colors">
+            <a href="#comparison" className="text-[#2B8C74] dark:text-[#2B8C74] text-lg font-medium flex items-center gap-2 hover:gap-3 transition-all">
               Learn more
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 7H13M13 7L7 1M13 7L7 13" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+              </svg>
             </a>
           </div>
         </div>

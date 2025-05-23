@@ -29,8 +29,8 @@ export default function BenefitsSection() {
     <section id="benefits" className="py-16 md:py-24 px-6 bg-gradient-to-b from-[#0A0B1D] to-[#1F2937]/50">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Why Choose Kavaro AI</h2>
-          <p className="text-gray-300 max-w-2xl mx-auto">We're dedicated to making AI security accessible, reliable, and effective for businesses of all sizes.</p>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">Key Advantages</h2>
+          <p className="text-gray-300 max-w-2xl mx-auto">Making insurance document management accessible, reliable, and effective for businesses of all sizes.</p>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">

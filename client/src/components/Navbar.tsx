@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Menu, X, Moon, Sun } from "lucide-react";
-import { KavaroLogo } from "./KavaroLogo";
+import { KavaroLogo } from "./KavaroLogoNew";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

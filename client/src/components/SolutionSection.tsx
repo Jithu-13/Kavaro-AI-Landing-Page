@@ -1,5 +1,5 @@
 import { Lock, FileText, Check, Tag, Clock, Shield, Brain, Bell, AlertCircle, BarChart3, Workflow, PanelTopOpen, Users } from "lucide-react";
-import { KavaroLogoWithText } from "./KavaroLogo";
+import { KavaroLogoWithText } from "./KavaroLogoNew";
 
 export default function SolutionSection() {
   return (

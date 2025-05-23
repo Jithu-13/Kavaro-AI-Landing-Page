@@ -285,30 +285,12 @@ export default function SolutionSection() {
             </div>
           </div>
           
+          {/* Simple concluding message */}
           <div className="mt-16 text-center">
-            <p className="text-[#0F1C3E] font-normal text-xl max-w-3xl mx-auto leading-relaxed">
-              One platform that connects every stakeholder in the risk management ecosystem with complete visibility.
-            </p>
-            
-            {/* Bottom feature summary - Apple style */}
-            <div className="grid grid-cols-3 gap-6 max-w-3xl mx-auto mt-12">
-              <div className="text-center">
-                <Shield className="h-6 w-6 text-[#2B8C74] mx-auto mb-2" />
-                <h4 className="text-sm font-medium text-[#0F1C3E] mb-1">Secure Vault</h4>
-                <p className="text-xs text-gray-500 font-light">End-to-end encrypted document storage</p>
-              </div>
-              
-              <div className="text-center">
-                <Bell className="h-6 w-6 text-[#2B8C74] mx-auto mb-2" />
-                <h4 className="text-sm font-medium text-[#0F1C3E] mb-1">Smart Alerts</h4>
-                <p className="text-xs text-gray-500 font-light">Automated renewal & compliance monitoring</p>
-              </div>
-              
-              <div className="text-center">
-                <Brain className="h-6 w-6 text-[#2B8C74] mx-auto mb-2" />
-                <h4 className="text-sm font-medium text-[#0F1C3E] mb-1">AI Analysis</h4>
-                <p className="text-xs text-gray-500 font-light">Intelligent document & risk assessment</p>
-              </div>
+            <div className="inline-block bg-[#0F1C3E]/5 px-5 py-2 rounded-full">
+              <p className="text-[#0F1C3E] font-medium text-sm">
+                Complete visibility across your entire risk landscape
+              </p>
             </div>
           </div>
         </div>

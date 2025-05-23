@@ -7,17 +7,25 @@
   
   /* Dark Mode Colors - Based on Brand Guide */
   --dark-background: #0A0B1D;
+  --dark-background-alt: #0F1433;
+  --dark-background-accent: #141C45;
+  
   --dark-shield: #B6E1C4;
   --dark-circuit: #1B1D2F;
   --dark-kavaro: #FFFFFF;
   --dark-ai: #2B8C74;
+  --dark-ai-hover: #1F7562;
   
   /* Light Mode Colors - Based on Brand Guide */
   --light-background: #FFFFFF;
+  --light-background-alt: #F5F7FA;
+  --light-background-accent: #EDF0F7;
+  
   --light-shield: #0F1C3E;
   --light-circuit: #3BA271;
   --light-kavaro: #0F1C3E;
   --light-ai: #3BA271;
+  --light-ai-hover: #2B8C74;
   
   /* System Variables */
   --background: 240 87% 8%; /* #0A0B1D */

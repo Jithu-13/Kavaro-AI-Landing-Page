@@ -42,7 +42,7 @@ export default function Navbar() {
       <header className={`sticky top-0 z-50 ${isScrolled ? "bg-[var(--dark-background)]/90 backdrop-blur-sm border-b border-white/10" : "bg-[var(--dark-background)]"} transition-all duration-300`}>
         <div className="flex justify-between items-center p-6 max-w-6xl mx-auto">
           <div className="flex items-center">
-            <img src="/assets/kavaro-logo.png" alt="Kavaro AI Logo" className="h-10" />
+            <img src="/assets/kavaro-placeholder-logo.svg" alt="Kavaro AI Logo" className="h-10" />
           </div>
           
           <nav className="hidden md:flex gap-8 text-sm text-gray-300">

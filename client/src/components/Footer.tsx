@@ -12,16 +12,17 @@ export default function Footer() {
               </div>
               <span className="text-xl font-semibold text-white">Kavaro <span className="text-[#2B8C74]">AI</span></span>
             </div>
-            <p className="text-gray-300 text-sm">Simplifying insurance document management with intelligent automation and secure workflows.</p>
+            <p className="text-gray-300 text-sm">The secure, AI-powered bridge connecting underwriters, brokers, clients, vendors, and customers — transforming risk documents into strategic insights.</p>
           </div>
           
           <div>
-            <h4 className="text-lg font-medium mb-4 text-white">Products</h4>
+            <h4 className="text-lg font-medium mb-4 text-white">Platform</h4>
             <ul className="space-y-2 text-sm text-gray-300">
-              <li><a href="#" className="hover:text-[#2B8C74] transition-colors">Document Management</a></li>
-              <li><a href="#" className="hover:text-[#2B8C74] transition-colors">Policy Tracking</a></li>
-              <li><a href="#" className="hover:text-[#2B8C74] transition-colors">COI Verification</a></li>
-              <li><a href="#" className="hover:text-[#2B8C74] transition-colors">Compliance Suite</a></li>
+              <li><a href="#" className="hover:text-[#2B8C74] transition-colors">Smart Intake</a></li>
+              <li><a href="#" className="hover:text-[#2B8C74] transition-colors">Exposure AI</a></li>
+              <li><a href="#" className="hover:text-[#2B8C74] transition-colors">Broker & Client Dashboards</a></li>
+              <li><a href="#" className="hover:text-[#2B8C74] transition-colors">Vendor Portal</a></li>
+              <li><a href="#" className="hover:text-[#2B8C74] transition-colors">Compliance Engine</a></li>
             </ul>
           </div>
           

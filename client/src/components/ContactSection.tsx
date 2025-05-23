@@ -35,8 +35,8 @@ export default function ContactSection() {
     <section id="contact" className="py-16 md:py-24 px-6 max-w-7xl mx-auto bg-white text-[#0F1C3E]">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
         <div>
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">Get in Touch</h2>
-          <p className="text-gray-600 mb-6">Have questions about our document management platform? Our team is here to help you streamline your insurance workflows.</p>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">Let's Rebuild Risk Together</h2>
+          <p className="text-gray-600 mb-6">Whether you're a broker, client, or risk leader — we'll show you what connected risk management really looks like.</p>
           
           <div className="bg-[#2B8C74]/10 p-8 rounded-xl mb-8">
             <div className="flex items-start space-x-4">
@@ -44,9 +44,9 @@ export default function ContactSection() {
                 <Mail className="h-6 w-6 text-[#2B8C74]" />
               </div>
               <div>
-                <h3 className="text-xl font-medium mb-2">We're here to help</h3>
+                <h3 className="text-xl font-medium mb-2">Connect With Our Risk Experts</h3>
                 <p className="text-gray-600 leading-relaxed">
-                  Fill out the form and our team will get back to you within one business day. We'd love to show you how Kavaro AI can transform your insurance document management.
+                  Fill out the form and our team will get back to you within one business day. We'd love to show you how Kavaro AI can transform unstructured risk data into a strategic advantage for every stakeholder in your insurance ecosystem.
                 </p>
               </div>
             </div>

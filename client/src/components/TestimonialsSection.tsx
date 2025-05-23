@@ -26,7 +26,7 @@ export default function TestimonialsSection() {
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-semibold mb-6">
-            Trusted by Teams Who Just Needed a Better Way
+            Trusted by Risk Professionals, Brokers, and Fast-Growing Teams
           </h2>
         </div>
         

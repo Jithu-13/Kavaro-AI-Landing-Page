@@ -105,7 +105,7 @@ export default function ScrollAnimationManager() {
       { scale: 0, opacity: 0 },
       { 
         scrollTrigger: {
-          trigger: '#problem .relative.max-w-5xl',
+          trigger: '#problem .relative.max-w-7xl',
           start: 'top 70%',
           toggleActions: 'play none none reverse'
         },

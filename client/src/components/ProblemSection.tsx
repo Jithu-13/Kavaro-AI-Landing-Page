@@ -19,12 +19,12 @@ export default function ProblemSection() {
         {/* Apple-style interactive landscape of problems */}
         <div className="relative mb-20 pt-16 px-2">
           {/* Horizontal scrolling timeline/path of problems */}
-          <div className="relative max-w-5xl mx-auto h-[400px] overflow-hidden">
+          <div className="relative max-w-7xl mx-auto h-[550px] overflow-hidden">
             {/* Background path */}
             <div className="absolute top-[50%] left-0 right-0 h-px bg-gradient-to-r from-[#2B8C74]/0 via-[#2B8C74]/30 to-[#2B8C74]/0"></div>
             
             {/* Problem 1: Stakeholder Disconnect */}
-            <div className="absolute top-[30%] left-[15%] transform -translate-y-1/2">
+            <div className="absolute top-[30%] left-[10%] transform -translate-y-1/2">
               <div className="relative mb-4">
                 <div className="w-20 h-20 rounded-full bg-white flex items-center justify-center shadow-md z-10">
                   <div className="w-16 h-16 rounded-full bg-gradient-to-br from-[#3584E4] to-[#0A65C2] flex items-center justify-center">
@@ -37,7 +37,7 @@ export default function ProblemSection() {
             </div>
             
             {/* Problem 1 Description - Separate from icon */}
-            <div className="absolute top-[65%] left-[15%] transform -translate-x-1/4">
+            <div className="absolute top-[65%] left-[10%] transform -translate-x-1/4">
               <div className="bg-[#0F1C3E]/80 backdrop-blur-sm p-4 rounded-xl shadow-lg max-w-[220px] border border-[#3584E4]/20">
                 <p className="text-gray-300 text-sm leading-relaxed">
                   Underwriters, brokers, clients, and vendors each use different systems.
@@ -56,7 +56,7 @@ export default function ProblemSection() {
             </div>
             
             {/* Problem 2: No Source of Truth */}
-            <div className="absolute top-[30%] left-[50%] transform -translate-y-1/2 -translate-x-1/2">
+            <div className="absolute top-[25%] left-[50%] transform -translate-y-1/2 -translate-x-1/2">
               <div className="relative mb-4">
                 <div className="w-20 h-20 rounded-full bg-white flex items-center justify-center shadow-md z-10">
                   <div className="w-16 h-16 rounded-full bg-gradient-to-br from-[#9563DE] to-[#7540BA] flex items-center justify-center">
@@ -69,7 +69,7 @@ export default function ProblemSection() {
             </div>
             
             {/* Problem 2 Description - Separate from icon */}
-            <div className="absolute top-[65%] left-[50%] transform -translate-x-1/2">
+            <div className="absolute top-[70%] left-[50%] transform -translate-x-1/2">
               <div className="bg-[#0F1C3E]/80 backdrop-blur-sm p-4 rounded-xl shadow-lg max-w-[220px] border border-[#9563DE]/20">
                 <p className="text-gray-300 text-sm leading-relaxed">
                   Documents scattered across emails, drives, and departments.
@@ -88,7 +88,7 @@ export default function ProblemSection() {
             </div>
             
             {/* Problem 3: Compliance Risk */}
-            <div className="absolute top-[30%] right-[15%] transform -translate-y-1/2">
+            <div className="absolute top-[30%] right-[10%] transform -translate-y-1/2">
               <div className="relative mb-4">
                 <div className="w-20 h-20 rounded-full bg-white flex items-center justify-center shadow-md z-10">
                   <div className="w-16 h-16 rounded-full bg-gradient-to-br from-[#E25C5C] to-[#D12F2F] flex items-center justify-center">
@@ -101,7 +101,7 @@ export default function ProblemSection() {
             </div>
             
             {/* Problem 3 Description - Separate from icon */}
-            <div className="absolute top-[65%] right-[15%] transform translate-x-1/4">
+            <div className="absolute top-[65%] right-[10%] transform translate-x-1/4">
               <div className="bg-[#0F1C3E]/80 backdrop-blur-sm p-4 rounded-xl shadow-lg max-w-[220px] border border-[#E25C5C]/20">
                 <p className="text-gray-300 text-sm leading-relaxed">
                   Manual tracking leads to critical compliance failures.

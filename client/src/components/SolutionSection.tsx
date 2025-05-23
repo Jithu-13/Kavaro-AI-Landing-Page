@@ -208,16 +208,16 @@ export default function SolutionSection() {
             </div>
             
             {/* Central Kavaro Hub */}
-            <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-36 h-36 md:w-48 md:h-48 rounded-full bg-gradient-to-br from-[#0F1C3E] to-[#152045] flex items-center justify-center z-10 shadow-lg">
-              <div className="absolute inset-0 rounded-full border-2 border-[#2B8C74]/10"></div>
+            <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-40 h-40 md:w-52 md:h-52 rounded-full bg-[#0F1C3E] flex items-center justify-center z-10 shadow-lg">
+              <div className="absolute inset-0 rounded-full border-2 border-[#B3DBC4]/10"></div>
               
               {/* Subtle glow effect */}
-              <div className="absolute -inset-3 rounded-full bg-[#2B8C74]/5 blur-xl"></div>
+              <div className="absolute -inset-3 rounded-full bg-[#2B8C74]/10 blur-xl"></div>
               
               {/* Content */}
-              <div className="text-center">
-                <img src={kavaroDarkLogo} alt="Kavaro AI" className="h-20 w-auto mx-auto mb-1" />
-                <p className="text-[#2B8C74]/90 text-xs font-light mt-1">Risk Intelligence Hub</p>
+              <div className="text-center bg-[#0F1C3E] rounded-full p-3">
+                <img src={kavaroDarkLogo} alt="Kavaro AI" className="h-24 w-auto mx-auto" />
+                <p className="text-[#B3DBC4] text-xs font-light mt-2">Risk Intelligence Network</p>
               </div>
             </div>
             

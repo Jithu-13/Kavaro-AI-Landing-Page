@@ -2,6 +2,8 @@ import { useState, useEffect } from "react";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Menu, X, Moon, Sun } from "lucide-react";
+import kavaroDarkLogo from "@assets/Kavaro Dark.png";
+import kavaroLightLogo from "@assets/Kavaro AI light vs dark.png";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -68,7 +70,13 @@ export default function Navbar() {
       <header className={`fixed w-full top-0 z-50 ${isScrolled ? "bg-white/95 dark:bg-[#0F1C3E]/95 backdrop-blur-md border-b border-gray-100 dark:border-[#2B8C74]/10 shadow-sm" : "bg-white dark:bg-[#0F1C3E]"} transition-all duration-300`}>
         <div className="flex justify-between items-center py-5 px-6 max-w-7xl mx-auto">
           <div className="flex items-center">
-            <span className="text-xl font-semibold tracking-tight text-[#0F1C3E] dark:text-white">Kavaro <span className="text-[#2B8C74]">AI</span></span>
+            <div className="flex items-center">
+              <img 
+                src={kavaroDarkLogo} 
+                alt="Kavaro AI Logo" 
+                className="h-8 md:h-10 w-auto" 
+              />
+            </div>
             <div className="hidden md:flex items-center ml-2">
               <span className="text-xs px-2 py-0.5 rounded-full bg-[#2B8C74]/10 text-[#2B8C74] dark:bg-[#2B8C74]/20 dark:text-[#2B8C74]">Beta</span>
             </div>

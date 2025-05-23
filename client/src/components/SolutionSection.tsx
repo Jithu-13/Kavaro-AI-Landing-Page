@@ -152,12 +152,7 @@ export default function SolutionSection() {
               </div>
             </div>
             
-            {/* Security Features */}
-            <div className="absolute bottom-4 left-4 bg-[#0A0B1D]/80 border border-[#B6E1C4]/20 rounded-lg p-2 flex items-center gap-2">
-              <Lock className="h-4 w-4 text-[#B6E1C4]" />
-              <span className="text-white text-xs">AES-256 Encrypted</span>
-            </div>
-            
+            {/* Alert Feature */}
             <div className="absolute bottom-4 right-4 bg-[#0A0B1D]/80 border border-[#B6E1C4]/20 rounded-lg p-2 flex items-center gap-2">
               <Bell className="h-4 w-4 text-[#B6E1C4]" />
               <span className="text-white text-xs">Auto alerts enabled</span>

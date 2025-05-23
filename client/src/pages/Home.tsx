@@ -14,7 +14,7 @@ export default function Home() {
       <Navbar />
       <HeroSection />
       <div className="bg-white dark:bg-[#0F1C3E] text-[#0F1C3E] dark:text-white">
-        <ComparisonSection />
+        <ProblemSection />
         <SolutionSection />
         <TestimonialsSection />
         <ContactSection />

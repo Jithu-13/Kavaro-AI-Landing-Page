@@ -393,21 +393,21 @@ export default function SolutionSection() {
               </div>
             </div>
             
-            {/* Legend - Apple-styled subtle pill buttons */}
-            <div className="absolute bottom-6 left-0 right-0 flex justify-center gap-3">
-              <div className="bg-white/70 backdrop-blur-sm px-3 py-1.5 rounded-full text-xs text-[#0F1C3E] font-light flex items-center shadow-sm border border-gray-100">
-                <div className="w-2 h-2 rounded-full bg-[#3584E4] mr-2"></div>
-                <span>Exposure Data</span>
+            {/* Legend - More subtle indicators */}
+            <div className="absolute bottom-4 left-0 right-0 flex justify-center gap-4">
+              <div className="flex items-center gap-1.5">
+                <div className="w-2 h-2 rounded-full bg-[#3584E4]"></div>
+                <span className="text-xs text-gray-500 font-light">Exposure Data</span>
               </div>
               
-              <div className="bg-white/70 backdrop-blur-sm px-3 py-1.5 rounded-full text-xs text-[#0F1C3E] font-light flex items-center shadow-sm border border-gray-100">
-                <div className="w-2 h-2 rounded-full bg-[#9563DE] mr-2"></div>
-                <span>Policies</span>
+              <div className="flex items-center gap-1.5">
+                <div className="w-2 h-2 rounded-full bg-[#9563DE]"></div>
+                <span className="text-xs text-gray-500 font-light">Policies</span>
               </div>
               
-              <div className="bg-white/70 backdrop-blur-sm px-3 py-1.5 rounded-full text-xs text-[#0F1C3E] font-light flex items-center shadow-sm border border-gray-100">
-                <div className="w-2 h-2 rounded-full bg-[#2B8C74] mr-2"></div>
-                <span>Certificates</span>
+              <div className="flex items-center gap-1.5">
+                <div className="w-2 h-2 rounded-full bg-[#2B8C74]"></div>
+                <span className="text-xs text-gray-500 font-light">Certificates</span>
               </div>
             </div>
           </div>

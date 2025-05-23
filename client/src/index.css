@@ -3,6 +3,8 @@
 @tailwind utilities;
 
 :root {
+  --font-sans: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  
   --background: 240 87% 8%;
   --foreground: 0 0% 100%;
   --muted: 240 4.8% 95.9%;

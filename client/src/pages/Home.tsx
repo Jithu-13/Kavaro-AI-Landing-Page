@@ -10,10 +10,10 @@ import ScrollToTopButton from "@/components/ScrollToTopButton";
 
 export default function Home() {
   return (
-    <div className="min-h-screen font-sans">
+    <div className="min-h-screen font-sans bg-white dark:bg-[#0F1C3E] transition-colors duration-300">
       <Navbar />
       <HeroSection />
-      <div className="bg-[var(--light-background)] text-[var(--light-kavaro)]">
+      <div className="bg-white dark:bg-[#0F1C3E] text-[#0F1C3E] dark:text-white">
         <ComparisonSection />
         <SolutionSection />
         <TestimonialsSection />

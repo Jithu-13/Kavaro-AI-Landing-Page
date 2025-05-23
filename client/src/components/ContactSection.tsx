@@ -32,11 +32,11 @@ export default function ContactSection() {
   };
 
   return (
-    <section id="contact" className="py-16 md:py-24 px-6 max-w-6xl mx-auto bg-[#0F1C3E] text-white rounded-xl my-12">
+    <section id="contact" className="py-16 md:py-24 px-6 max-w-6xl mx-auto bg-white dark:bg-[#0F1C3E] text-[#0F1C3E] dark:text-white shadow-lg rounded-xl my-12">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
         <div>
           <h2 className="text-3xl md:text-4xl font-bold mb-6">Get in Touch</h2>
-          <p className="text-gray-300 mb-8">Have questions about our document management platform? Our team is here to help you streamline your insurance workflows.</p>
+          <p className="text-gray-600 dark:text-gray-300 mb-8">Have questions about our document management platform? Our team is here to help you streamline your insurance workflows.</p>
           
           <div className="space-y-6">
             <div className="flex items-start space-x-4">
@@ -45,7 +45,7 @@ export default function ContactSection() {
               </div>
               <div>
                 <h3 className="text-lg font-medium mb-1">Email Us</h3>
-                <p className="text-gray-300">support@kavaro-ai.com</p>
+                <p className="text-gray-600 dark:text-gray-300">support@kavaro-ai.com</p>
               </div>
             </div>
             
@@ -55,7 +55,7 @@ export default function ContactSection() {
               </div>
               <div>
                 <h3 className="text-lg font-medium mb-1">Call Us</h3>
-                <p className="text-gray-300">+1 (555) 123-4567</p>
+                <p className="text-gray-600 dark:text-gray-300">+1 (555) 123-4567</p>
               </div>
             </div>
             
@@ -65,21 +65,21 @@ export default function ContactSection() {
               </div>
               <div>
                 <h3 className="text-lg font-medium mb-1">Office</h3>
-                <p className="text-gray-300">123 Tech Lane, San Francisco, CA 94107</p>
+                <p className="text-gray-600 dark:text-gray-300">123 Tech Lane, San Francisco, CA 94107</p>
               </div>
             </div>
           </div>
         </div>
         
-        <div className="bg-[#0F1C3E]/80 p-6 rounded-xl border border-[#2B8C74]/20">
+        <div className="bg-gray-50 dark:bg-[#0F1C3E]/80 p-6 rounded-xl border border-gray-200 dark:border-[#2B8C74]/20 shadow-md">
           <h3 className="text-xl font-bold mb-4">Send us a message</h3>
           <form className="space-y-4" onSubmit={handleSubmit}>
             <div>
-              <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-1">Name</label>
+              <label htmlFor="name" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Name</label>
               <Input 
                 type="text" 
                 id="name" 
-                className="w-full p-3 bg-[#0F1C3E]/60 rounded-lg border border-[#2B8C74]/20 focus:border-[#2B8C74] outline-none transition-colors text-white" 
+                className="w-full p-3 bg-white dark:bg-[#0F1C3E]/60 rounded-lg border border-gray-200 dark:border-[#2B8C74]/20 focus:border-[#2B8C74] outline-none transition-colors text-[#0F1C3E] dark:text-white" 
                 placeholder="Your name" 
                 value={contactForm.name}
                 onChange={handleInputChange}
@@ -87,11 +87,11 @@ export default function ContactSection() {
             </div>
             
             <div>
-              <label htmlFor="email" className="block text-sm font-medium text-gray-300 mb-1">Email</label>
+              <label htmlFor="email" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Email</label>
               <Input 
                 type="email" 
                 id="email" 
-                className="w-full p-3 bg-[#0F1C3E]/60 rounded-lg border border-[#2B8C74]/20 focus:border-[#2B8C74] outline-none transition-colors text-white" 
+                className="w-full p-3 bg-white dark:bg-[#0F1C3E]/60 rounded-lg border border-gray-200 dark:border-[#2B8C74]/20 focus:border-[#2B8C74] outline-none transition-colors text-[#0F1C3E] dark:text-white" 
                 placeholder="Your email" 
                 value={contactForm.email}
                 onChange={handleInputChange}
@@ -99,11 +99,11 @@ export default function ContactSection() {
             </div>
             
             <div>
-              <label htmlFor="message" className="block text-sm font-medium text-gray-300 mb-1">Message</label>
+              <label htmlFor="message" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Message</label>
               <Textarea 
                 id="message" 
                 rows={4} 
-                className="w-full p-3 bg-[#0F1C3E]/60 rounded-lg border border-[#2B8C74]/20 focus:border-[#2B8C74] outline-none transition-colors text-white" 
+                className="w-full p-3 bg-white dark:bg-[#0F1C3E]/60 rounded-lg border border-gray-200 dark:border-[#2B8C74]/20 focus:border-[#2B8C74] outline-none transition-colors text-[#0F1C3E] dark:text-white" 
                 placeholder="How can we help you?" 
                 value={contactForm.message}
                 onChange={handleInputChange}

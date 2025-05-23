@@ -7,21 +7,15 @@ export default function HeroSection() {
       <div className="max-w-6xl mx-auto px-6 flex flex-col-reverse md:flex-row items-center justify-between gap-10 fade-in">
         <div className="max-w-xl mt-6 md:mt-0">
           <h1 className="text-4xl md:text-6xl font-bold mb-6 text-[#111827]">
-            Securing AI Solutions
+            AI-Powered Insurance Management, Made Simple.
           </h1>
           <p className="text-gray-700 text-lg mb-8">
-            We provide advanced security for AI applications, ensuring robust protection and reliability for your systems.
+            Kavaro AI helps non-risk professionals manage COIs, contracts, and other insurance documents with confidence — through secure workflows, intelligent automation, and an interface anyone can use.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Button className="bg-accent hover:bg-accent/90 text-white px-6 py-6 h-auto text-base rounded-md">
-              Get Started
+              Contact Us to Learn More
             </Button>
-          </div>
-          
-          <div className="mt-12">
-            <a href="#about" className="text-gray-700 hover:text-accent flex items-center transition-colors">
-              Learn More <ArrowRight className="ml-2 h-4 w-4" />
-            </a>
           </div>
         </div>
 

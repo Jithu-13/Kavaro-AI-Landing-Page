@@ -22,13 +22,13 @@ export default function ComparisonSection() {
         
         <div className="grid md:grid-cols-2 gap-8 md:gap-16">
           {/* Old Way Side */}
-          <div className="rounded-3xl overflow-hidden shadow-lg">
-            <div className="bg-gray-100 p-6 border-b border-gray-200">
+          <div className="rounded-3xl overflow-hidden shadow-xl transform hover:-rotate-1 transition-transform duration-300">
+            <div className="bg-red-100 p-6 border-b border-red-200">
               <h3 className="text-2xl font-semibold text-gray-800 mb-1">The Old Way</h3>
-              <p className="text-gray-600">Manual Chaos</p>
+              <p className="text-red-600 font-medium">Manual Chaos</p>
             </div>
             
-            <div className="bg-white p-8 h-[500px] relative">
+            <div className="bg-white p-8 h-[500px] relative border-l-4 border-red-300 bg-gradient-to-br from-white to-red-50">
               {/* Cluttered Desktop Illustration */}
               <div className="absolute inset-0 p-8">
                 {/* Email Window */}
@@ -100,13 +100,13 @@ export default function ComparisonSection() {
           </div>
           
           {/* New Way Side */}
-          <div className="rounded-3xl overflow-hidden shadow-lg">
-            <div className="bg-[var(--light-ai)]/10 p-6 border-b border-[var(--light-ai)]/20">
-              <h3 className="text-2xl font-semibold text-gray-800 mb-1">The Kavaro Way</h3>
-              <p className="text-[var(--light-ai)]">AI-Powered Simplicity</p>
+          <div className="rounded-3xl overflow-hidden shadow-2xl transform hover:rotate-1 transition-transform duration-300">
+            <div className="bg-[#2B8C74]/20 p-6 border-b border-[#2B8C74]/30">
+              <h3 className="text-2xl font-semibold text-white mb-1">The Kavaro Way</h3>
+              <p className="text-[#2B8C74] font-medium">AI-Powered Simplicity</p>
             </div>
             
-            <div className="bg-white p-8 h-[500px] relative">
+            <div className="bg-white p-8 h-[500px] relative border-l-4 border-[#2B8C74]">
               {/* Clean UI Illustration */}
               <div className="absolute inset-0 p-8">
                 {/* Dashboard Interface */}

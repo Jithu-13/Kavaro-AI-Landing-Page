@@ -3,7 +3,7 @@ import { ArrowRight } from "lucide-react";
 
 export default function HeroSection() {
   return (
-    <main className="bg-[#FAFAFA] text-[#111827] py-16 md:py-24">
+    <main className="bg-[#FAFAFA] text-[#111827] py-16 md:py-24 rounded-b-3xl">
       <div className="max-w-6xl mx-auto px-6 flex flex-col-reverse md:flex-row items-center justify-between gap-10 fade-in">
         <div className="max-w-xl mt-6 md:mt-0">
           <h1 className="text-4xl md:text-6xl font-bold mb-6 text-[#111827]">
@@ -25,11 +25,11 @@ export default function HeroSection() {
           </div>
         </div>
 
-        <div className="md:w-1/2 flex justify-center">
+        <div className="md:w-1/2 flex justify-center items-center">
           <img 
-            src="/assets/kavaro-logo.svg" 
+            src="/assets/kavaro-full-logo.svg" 
             alt="Kavaro AI Logo" 
-            className="w-52 md:w-72 hero-animation"
+            className="w-64 md:w-96 hero-animation"
             aria-hidden="true"
           />
         </div>

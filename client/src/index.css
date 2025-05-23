@@ -2,9 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Smooth scrolling for the entire site */
+/* Premium smooth scrolling with scroll snap */
 html {
   scroll-behavior: smooth;
+}
+
+/* Main scroll container */
+body {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+}
+
+/* Snap sections */
+section {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
 }
 
 /* Animation classes */

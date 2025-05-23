@@ -15,16 +15,16 @@ export default function HeroSection() {
             <span className="bg-[#2B8C74]/10 text-[#2B8C74] text-sm font-medium px-4 py-1.5 rounded-full">Risk Management Platform</span>
           </div>
           
-          <h1 className="text-4xl md:text-6xl font-medium tracking-tight mb-6 text-[#0F1C3E] dark:text-white">
+          <h1 className="hero-title text-4xl md:text-6xl font-medium tracking-tight mb-6 text-[#0F1C3E] dark:text-white">
             Secure Risk Intelligence,<br />
             <span className="text-[#2B8C74] font-medium">Built for Every Stakeholder</span>
           </h1>
           
-          <p className="text-gray-600 dark:text-gray-300 text-xl md:text-2xl leading-relaxed mb-12 max-w-2xl mx-auto font-light">
+          <p className="hero-subtitle text-gray-600 dark:text-gray-300 text-xl md:text-2xl leading-relaxed mb-12 max-w-2xl mx-auto font-light">
             Kavaro AI is the foundational platform for modern insurance and risk operations - combining AI-powered document intelligence, automation, and data orchestration in one solution.
           </p>
           
-          <div className="flex flex-col sm:flex-row justify-center items-center gap-6 mt-12">
+          <div className="hero-cta flex flex-col sm:flex-row justify-center items-center gap-6 mt-12">
             <Button className="bg-[#2B8C74] hover:bg-[#2B8C74]/90 text-white px-8 py-6 h-auto text-lg rounded-full font-medium min-w-[200px] shadow-lg hover:shadow-xl transition-all">
               Contact Us
             </Button>

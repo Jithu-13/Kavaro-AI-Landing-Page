@@ -329,46 +329,7 @@ export default function SolutionSection() {
           </p>
         </div>
         
-        {/* Benefits */}
-        <div className="mt-24">
-          <h3 className="text-2xl md:text-3xl font-semibold text-black text-center mb-12">
-            Key Benefits
-          </h3>
-          
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="bg-gray-50 p-6 rounded-xl hover:shadow-md transition-shadow">
-              <div className="w-12 h-12 rounded-full bg-[var(--light-ai)]/10 flex items-center justify-center mb-4">
-                <Lock className="h-6 w-6 text-[var(--light-ai)]" />
-              </div>
-              <h4 className="text-lg font-medium text-black mb-2">Secure Document Hub</h4>
-              <p className="text-gray-600">Centralized document storage with permission controls for your team.</p>
-            </div>
-            
-            <div className="bg-gray-50 p-6 rounded-xl hover:shadow-md transition-shadow">
-              <div className="w-12 h-12 rounded-full bg-[var(--light-ai)]/10 flex items-center justify-center mb-4">
-                <Brain className="h-6 w-6 text-[var(--light-ai)]" />
-              </div>
-              <h4 className="text-lg font-medium text-black mb-2">AI Assistance</h4>
-              <p className="text-gray-600">Smart tools for document intake, tagging, and automatic classification.</p>
-            </div>
-            
-            <div className="bg-gray-50 p-6 rounded-xl hover:shadow-md transition-shadow">
-              <div className="w-12 h-12 rounded-full bg-[var(--light-ai)]/10 flex items-center justify-center mb-4">
-                <Shield className="h-6 w-6 text-[var(--light-ai)]" />
-              </div>
-              <h4 className="text-lg font-medium text-black mb-2">Searchable Records</h4>
-              <p className="text-gray-600">Find COIs, contracts, policies, and documents instantly with smart search.</p>
-            </div>
-            
-            <div className="bg-gray-50 p-6 rounded-xl hover:shadow-md transition-shadow">
-              <div className="w-12 h-12 rounded-full bg-[var(--light-ai)]/10 flex items-center justify-center mb-4">
-                <AlertCircle className="h-6 w-6 text-[var(--light-ai)]" />
-              </div>
-              <h4 className="text-lg font-medium text-black mb-2">Expiration Alerts</h4>
-              <p className="text-gray-600">Automated alerts keep you ahead of compliance deadlines.</p>
-            </div>
-          </div>
-        </div>
+
       </div>
     </section>
   );

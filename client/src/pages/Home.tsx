@@ -8,13 +8,17 @@ import ScrollToTopButton from "@/components/ScrollToTopButton";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-[#0A0B1D] text-white font-sans">
-      <Navbar />
+    <div className="min-h-screen font-sans">
+      <div className="bg-[#0A0B1D] text-white">
+        <Navbar />
+      </div>
       <HeroSection />
-      <FeaturesSection />
-      <BenefitsSection />
-      <ContactSection />
-      <Footer />
+      <div className="bg-[#0A0B1D] text-white">
+        <FeaturesSection />
+        <BenefitsSection />
+        <ContactSection />
+        <Footer />
+      </div>
       <ScrollToTopButton />
     </div>
   );

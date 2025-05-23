@@ -39,24 +39,20 @@ export default function Navbar() {
 
   return (
     <>
-      <header className={`sticky top-0 z-50 ${isScrolled ? "bg-primary/90 backdrop-blur-sm border-b border-white/10" : "bg-transparent"} transition-all duration-300`}>
+      <header className={`sticky top-0 z-50 ${isScrolled ? "bg-[#0A0B1D]/90 backdrop-blur-sm border-b border-white/10" : "bg-[#0A0B1D]"} transition-all duration-300`}>
         <div className="flex justify-between items-center p-6 max-w-6xl mx-auto">
           <div className="flex items-center gap-3">
-            <div className="h-9 w-9 rounded-lg bg-accent/20 flex items-center justify-center">
-              <span className="text-accent text-lg font-bold">K</span>
-            </div>
+            <img src="/assets/kavaro-logo.svg" alt="Kavaro AI Logo" className="h-10 w-10" />
             <span className="text-xl font-semibold">Kavaro <span className="text-accent">AI</span></span>
           </div>
           
           <nav className="hidden md:flex gap-8 text-sm text-gray-300">
             <a href="#" className="hover:text-white transition-colors">Home</a>
-            <a href="#features" className="hover:text-white transition-colors">Features</a>
-            <a href="#benefits" className="hover:text-white transition-colors">Benefits</a>
+            <a href="#about" className="hover:text-white transition-colors">About</a>
             <a href="#contact" className="hover:text-white transition-colors">Contact</a>
           </nav>
           
           <div className="flex items-center gap-4">
-            <a href="#" className="hidden md:inline-block text-sm text-gray-300 hover:text-white transition-colors">Login</a>
             <Button className="bg-accent hover:bg-accent/90 text-white">
               Sign Up
             </Button>
@@ -72,7 +68,7 @@ export default function Navbar() {
       </header>
 
       {/* Mobile menu */}
-      <div className={`fixed inset-0 bg-primary z-50 flex flex-col justify-center items-center transform transition-transform duration-300 ease-in-out ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}>
+      <div className={`fixed inset-0 bg-[#0A0B1D] z-50 flex flex-col justify-center items-center transform transition-transform duration-300 ease-in-out ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}>
         <button 
           className="absolute top-6 right-6 text-gray-300 hover:text-white"
           onClick={closeMenu}
@@ -82,8 +78,7 @@ export default function Navbar() {
         </button>
         <nav className="flex flex-col gap-8 text-xl text-gray-300">
           <a href="#" className="hover:text-white transition-colors" onClick={closeMenu}>Home</a>
-          <a href="#features" className="hover:text-white transition-colors" onClick={closeMenu}>Features</a>
-          <a href="#benefits" className="hover:text-white transition-colors" onClick={closeMenu}>Benefits</a>
+          <a href="#about" className="hover:text-white transition-colors" onClick={closeMenu}>About</a>
           <a href="#contact" className="hover:text-white transition-colors" onClick={closeMenu}>Contact</a>
         </nav>
       </div>

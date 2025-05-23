@@ -5,27 +5,32 @@
 :root {
   --font-sans: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   
-  /* Dark Mode Colors - Based on Brand Guide */
-  --dark-background: #0A0B1D;
-  --dark-background-alt: #0F1433;
-  --dark-background-accent: #141C45;
-  
-  --dark-shield: #B6E1C4;
-  --dark-circuit: #1B1D2F;
-  --dark-kavaro: #FFFFFF;
-  --dark-ai: #2B8C74;
-  --dark-ai-hover: #1F7562;
+  /* Main Brand Colors */
+  --kavaro-navy: #0F1C3E;
+  --kavaro-green: #2B8C74;
+  --kavaro-white: #FFFFFF;
   
   /* Light Mode Colors - Based on Brand Guide */
   --light-background: #FFFFFF;
   --light-background-alt: #F5F7FA;
   --light-background-accent: #EDF0F7;
   
-  --light-shield: #0F1C3E;
-  --light-circuit: #3BA271;
-  --light-kavaro: #0F1C3E;
-  --light-ai: #3BA271;
-  --light-ai-hover: #2B8C74;
+  --light-text: #0F1C3E;
+  --light-text-muted: #677084;
+  --light-accent: #2B8C74;
+  --light-accent-hover: #1F7562;
+  --light-border: rgba(15, 28, 62, 0.1);
+  
+  /* Dark Mode Colors - Based on Brand Guide */
+  --dark-background: #0A0B1D;
+  --dark-background-alt: #0F1433;
+  --dark-background-accent: #141C45;
+  
+  --dark-text: #FFFFFF;
+  --dark-text-muted: #B3B8C3;
+  --dark-accent: #2B8C74;
+  --dark-accent-hover: #1F7562;
+  --dark-border: rgba(43, 140, 116, 0.2);
   
   /* System Variables */
   --background: 240 87% 8%; /* #0A0B1D */
@@ -70,6 +75,15 @@
   --destructive: 0 62.8% 30.6%;
   --destructive-foreground: 0 0% 98%;
   --ring: 240 4.9% 83.9%;
+  
+  /* Custom dark mode colors */
+  --dark-text: #FFFFFF;
+  --dark-text-muted: #B3B8C3;
+  --dark-bg-primary: #0F1C3E;
+  --dark-bg-secondary: #0A0B1D;
+  --dark-accent: #2B8C74;
+  --dark-accent-hover: #1F7562;
+  --dark-border: rgba(43, 140, 116, 0.2);
 }
 
 .gradient-text {
@@ -117,5 +131,12 @@
 
   html {
     scroll-behavior: smooth;
+  }
+  
+  /* Dark mode transition */
+  *, *::before, *::after {
+    transition-property: background-color, border-color, color, fill, stroke;
+    transition-duration: 300ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 }

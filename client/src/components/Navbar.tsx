@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Menu, X, Moon, Sun } from "lucide-react";
-import { KavaroLogoLight } from "./KavaroImprovedLogo";
+import { KavaroNavbarLogo } from "./KavaroMatchingLogo";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -70,7 +70,7 @@ export default function Navbar() {
         <div className="flex justify-between items-center py-5 px-6 max-w-7xl mx-auto">
           <div className="flex items-center">
             <div className="flex items-center">
-              <KavaroLogoLight size={40} />
+              <KavaroNavbarLogo />
             </div>
             <div className="hidden md:flex items-center ml-2">
               <span className="text-xs px-2 py-0.5 rounded-full bg-[#2B8C74]/10 text-[#2B8C74] dark:bg-[#2B8C74]/20 dark:text-[#2B8C74]">Beta</span>

@@ -25,7 +25,7 @@ export default function TestimonialsSection() {
     <section id="testimonials" className="py-20 md:py-32 bg-gradient-to-b from-[#0F1C3E] to-[#0A0B1D] text-white">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-semibold mb-6">
+          <h2 className="text-3xl md:text-5xl font-semibold mb-6">
             Trusted by Teams Who Just Needed a Better Way
           </h2>
         </div>
@@ -34,19 +34,19 @@ export default function TestimonialsSection() {
           {testimonials.map((testimonial, index) => (
             <div 
               key={index} 
-              className="bg-[#1A2B4A] p-6 rounded-xl border border-[#B6E1C4]/10 relative"
+              className="bg-[#1A2B4A] p-8 rounded-xl border border-[#B6E1C4]/10 relative hover:shadow-lg transition-shadow"
             >
-              <Quote className="absolute top-4 right-4 h-8 w-8 text-[#B6E1C4]/20" />
-              <div className="mb-6 relative z-10">
-                <p className="text-gray-200 italic leading-relaxed">"{testimonial.quote}"</p>
+              <Quote className="absolute top-4 right-4 h-10 w-10 text-[#B6E1C4]/20" />
+              <div className="mb-8 relative z-10">
+                <p className="text-gray-200 italic leading-relaxed text-lg">"{testimonial.quote}"</p>
               </div>
               <div className="flex items-center">
-                <div className="w-10 h-10 rounded-full bg-[#B6E1C4]/20 flex items-center justify-center mr-3">
-                  <span className="text-[#B6E1C4] text-lg font-medium">{testimonial.author.charAt(0)}</span>
+                <div className="w-12 h-12 rounded-full bg-[#B6E1C4]/20 flex items-center justify-center mr-4">
+                  <span className="text-[#B6E1C4] text-xl font-medium">{testimonial.author.charAt(0)}</span>
                 </div>
                 <div>
-                  <p className="font-medium">{testimonial.author}</p>
-                  <p className="text-sm text-gray-400">{testimonial.title}</p>
+                  <p className="font-medium text-white text-lg">{testimonial.author}</p>
+                  <p className="text-sm text-[#B6E1C4]/70">{testimonial.title}</p>
                 </div>
               </div>
             </div>

@@ -14,10 +14,6 @@ export default function FinalCTASection() {
       
       <div className="max-w-5xl mx-auto px-6 relative z-10">
         <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-semibold tracking-tight mb-6 text-black">
-            Ready to Take Control of Your Insurance Documents?
-          </h2>
-          
           <p className="text-gray-700 text-xl md:text-2xl max-w-3xl mx-auto mb-12">
             Kavaro AI gives your team the security, clarity, and simplicity you've been missing. Let's show you how.
           </p>

@@ -153,13 +153,13 @@ export default function ScrollAnimationManager() {
       }
     );
     
-    // Feature cards animate in with stagger
+    // Comparison cards animate in with stagger
     gsap.fromTo(
-      '#solution .feature-card',
+      '#solution .rounded-3xl',
       { y: 50, opacity: 0 },
       { 
         scrollTrigger: {
-          trigger: '#solution .features-grid',
+          trigger: '#solution .grid',
           start: 'top 80%',
           toggleActions: 'play none none reverse'
         },

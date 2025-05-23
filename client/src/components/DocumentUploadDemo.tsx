@@ -133,12 +133,18 @@ export default function DocumentUploadDemo() {
                   initial={{ opacity: 0, y: 10 }}
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: -10 }}
-                  className="text-center"
+                  className="text-center w-full"
                 >
-                  <div className="w-20 h-20 mx-auto mb-4 bg-gray-100 rounded-full flex items-center justify-center">
-                    <Upload className="h-10 w-10 text-gray-400" />
+                  <div className="p-8 border-2 border-dashed border-gray-200 rounded-xl bg-gray-50/50 hover:bg-gray-50 transition-colors cursor-pointer mb-2">
+                    <div className="flex flex-col items-center justify-center">
+                      <div className="w-16 h-16 bg-[#2B8C74]/10 rounded-xl flex items-center justify-center mb-4">
+                        <FileIcon className="h-8 w-8 text-[#2B8C74]" />
+                      </div>
+                      <p className="text-[#0F1C3E] font-medium mb-1">Upload your document</p>
+                      <p className="text-gray-500 text-sm">Certificate of Insurance, Policy or Endorsement</p>
+                    </div>
                   </div>
-                  <p className="text-gray-500">Drag and drop your file or click to browse</p>
+                  <p className="text-xs text-gray-400 italic">All documents are processed securely and encrypted</p>
                 </motion.div>
               )}
               
@@ -148,10 +154,29 @@ export default function DocumentUploadDemo() {
                   initial={{ opacity: 0, y: 10 }}
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: -10 }}
-                  className="text-center"
+                  className="w-full"
                 >
-                  <div className="w-20 h-20 mx-auto mb-4 rounded-full border-4 border-gray-200 border-t-[#2B8C74] animate-spin"></div>
-                  <p className="text-gray-700">Uploading document...</p>
+                  <div className="bg-white rounded-xl p-6 border border-gray-100 shadow-sm">
+                    <div className="flex items-center">
+                      <div className="w-10 h-10 bg-[#2B8C74]/10 rounded-lg flex items-center justify-center mr-3">
+                        <Upload className="h-5 w-5 text-[#2B8C74]" />
+                      </div>
+                      <div className="flex-1">
+                        <div className="flex justify-between items-center mb-1">
+                          <p className="text-sm font-medium text-[#0F1C3E]">Insurance_COI_2023.pdf</p>
+                          <p className="text-xs text-[#2B8C74]">75%</p>
+                        </div>
+                        <div className="w-full h-1.5 bg-gray-100 rounded-full overflow-hidden">
+                          <motion.div 
+                            className="h-full bg-[#2B8C74] rounded-full"
+                            initial={{ width: "0%" }}
+                            animate={{ width: "75%" }}
+                            transition={{ duration: 1.5, ease: "easeInOut" }}
+                          ></motion.div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </motion.div>
               )}
               
@@ -161,36 +186,56 @@ export default function DocumentUploadDemo() {
                   initial={{ opacity: 0, y: 10 }}
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: -10 }}
-                  className="text-center"
+                  className="w-full"
                 >
-                  <div className="relative w-20 h-20 mx-auto mb-4">
-                    <div className="absolute inset-0 rounded-full border-4 border-gray-200"></div>
-                    <motion.div 
-                      className="absolute inset-0 rounded-full border-4 border-[#2B8C74] border-t-transparent"
-                      animate={{ rotate: 360 }}
-                      transition={{ duration: 2, repeat: Infinity, ease: "linear" }}
-                    ></motion.div>
-                    <div className="absolute inset-0 flex items-center justify-center">
-                      <FileText className="h-8 w-8 text-[#2B8C74]" />
+                  <div className="bg-white rounded-xl p-6 border border-gray-100 shadow-sm mb-4">
+                    <div className="flex items-center justify-between mb-4">
+                      <div className="flex items-center">
+                        <div className="w-10 h-10 bg-blue-50 rounded-lg flex items-center justify-center mr-3">
+                          <Shield className="h-5 w-5 text-blue-500" />
+                        </div>
+                        <div>
+                          <p className="text-sm font-medium text-[#0F1C3E]">AI Verification in Progress</p>
+                          <p className="text-xs text-gray-500">Insurance_COI_2023.pdf</p>
+                        </div>
+                      </div>
+                      <div className="relative w-8 h-8">
+                        <div className="absolute inset-0 rounded-full border-2 border-gray-200"></div>
+                        <motion.div 
+                          className="absolute inset-0 rounded-full border-2 border-[#2B8C74] border-t-transparent"
+                          animate={{ rotate: 360 }}
+                          transition={{ duration: 2, repeat: Infinity, ease: "linear" }}
+                        ></motion.div>
+                      </div>
+                    </div>
+                    
+                    <div className="space-y-3">
+                      <div className="flex items-center">
+                        <div className="w-5 h-5 rounded-full bg-green-100 flex items-center justify-center mr-2">
+                          <CheckCircle className="h-3 w-3 text-green-600" />
+                        </div>
+                        <p className="text-xs text-gray-600">Extracting document structure</p>
+                      </div>
+                      <div className="flex items-center">
+                        <div className="w-5 h-5 rounded-full bg-green-100 flex items-center justify-center mr-2">
+                          <CheckCircle className="h-3 w-3 text-green-600" />
+                        </div>
+                        <p className="text-xs text-gray-600">Identifying insurance provider</p>
+                      </div>
+                      <div className="flex items-center">
+                        <motion.div 
+                          className="w-5 h-5 rounded-full bg-[#2B8C74]/10 flex items-center justify-center mr-2"
+                          animate={{ scale: [1, 1.1, 1] }}
+                          transition={{ duration: 1, repeat: Infinity }}
+                        >
+                          <Clock className="h-3 w-3 text-[#2B8C74]" />
+                        </motion.div>
+                        <p className="text-xs text-[#2B8C74]">Verifying coverage details...</p>
+                      </div>
                     </div>
                   </div>
-                  <p className="text-gray-700">AI is analyzing the document</p>
-                  <div className="mt-4 flex justify-center gap-2">
-                    <motion.div 
-                      className="h-1.5 w-1.5 rounded-full bg-[#2B8C74]"
-                      animate={{ scale: [1, 1.5, 1] }}
-                      transition={{ duration: 1, repeat: Infinity, repeatDelay: 0.2 }}
-                    ></motion.div>
-                    <motion.div 
-                      className="h-1.5 w-1.5 rounded-full bg-[#2B8C74]"
-                      animate={{ scale: [1, 1.5, 1] }}
-                      transition={{ duration: 1, repeat: Infinity, repeatDelay: 0.4, delay: 0.2 }}
-                    ></motion.div>
-                    <motion.div 
-                      className="h-1.5 w-1.5 rounded-full bg-[#2B8C74]"
-                      animate={{ scale: [1, 1.5, 1] }}
-                      transition={{ duration: 1, repeat: Infinity, repeatDelay: 0.6, delay: 0.4 }}
-                    ></motion.div>
+                  <div className="flex justify-center">
+                    <p className="text-xs text-gray-400">This usually takes about 5-10 seconds</p>
                   </div>
                 </motion.div>
               )}

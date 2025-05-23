@@ -4,7 +4,6 @@ import ProblemSection from "@/components/ProblemSection";
 import ComparisonSection from "@/components/ComparisonSection";
 import SolutionSection from "@/components/SolutionSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
-import FinalCTASection from "@/components/FinalCTASection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 import ScrollToTopButton from "@/components/ScrollToTopButton";
@@ -18,7 +17,6 @@ export default function Home() {
         <ComparisonSection />
         <SolutionSection />
         <TestimonialsSection />
-        <FinalCTASection />
         <ContactSection />
         <Footer />
       </div>

@@ -1,4 +1,4 @@
-import { Lock, FileText, Check, Tag, Clock, Shield, Brain, Bell, AlertCircle, BarChart3, Workflow, PanelTopOpen, Files, Users, Search, CheckCircle, AlertTriangle } from "lucide-react";
+import { Lock, FileText, Check, Tag, Clock, Shield, Brain, Bell, AlertCircle, BarChart3, Workflow, PanelTopOpen } from "lucide-react";
 
 export default function SolutionSection() {
   return (
@@ -6,15 +6,15 @@ export default function SolutionSection() {
       <div className="max-w-7xl mx-auto px-6">
         <div className="max-w-3xl mx-auto text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-semibold tracking-tight mb-8 text-black">
-            The Risk Management <span className="text-[#2B8C74]">Bridge</span>
+            One Platform. Every Risk Stakeholder. <span className="text-[#2B8C74]">Total Visibility.</span>
           </h2>
           
           <p className="text-gray-800 text-xl leading-relaxed mb-5">
-            Kavaro AI is the platform that bridges all segments of the insurance cycle together. We connect underwriters, brokers, clients, vendors, and all risk stakeholders through a single, intelligent platform.
+            Kavaro AI is more than a document system — it's your risk command center. We intake unstructured risk data from every source and use AI to classify, organize, and keep it all current, secure, and usable.
           </p>
           
           <p className="text-gray-800 text-xl leading-relaxed mb-5">
-            By unifying risk data across organizational silos, we provide total visibility, shared context, and actionable intelligence at every step of the risk management process.
+            With role-based workflows, real-time insights, and automated compliance checks, every part of the insurance ecosystem stays connected and protected.
           </p>
         </div>
         
@@ -327,205 +327,6 @@ export default function SolutionSection() {
           <p className="text-center text-xl text-gray-700 mt-8 max-w-3xl mx-auto">
             Your insurance data stays secure, smart, and ready — all in one place.
           </p>
-        </div>
-        
-        {/* Stakeholder-specific tables */}
-        <div className="mt-24 mb-16">
-          <h3 className="text-3xl font-semibold text-center mb-16">How Each Stakeholder Benefits</h3>
-          
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
-            {/* Underwriters Table */}
-            <div className="bg-white rounded-xl shadow-md overflow-hidden border border-gray-200">
-              <div className="bg-gradient-to-r from-blue-500 to-blue-600 px-6 py-4 flex items-center">
-                <div className="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center mr-4">
-                  <PanelTopOpen className="h-6 w-6 text-white" />
-                </div>
-                <h4 className="text-xl font-semibold text-white">Underwriters</h4>
-              </div>
-              
-              <div className="divide-y divide-gray-200">
-                <div className="px-6 py-4">
-                  <div className="flex items-start">
-                    <div className="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center flex-shrink-0 mr-4">
-                      <Files className="h-5 w-5 text-blue-600" />
-                    </div>
-                    <div>
-                      <h5 className="font-medium text-gray-800 mb-1">Streamlined Data Collection</h5>
-                      <p className="text-gray-600 text-sm">Easily gather and organize client documents, submissions, and exposure data in one place</p>
-                    </div>
-                  </div>
-                </div>
-                
-                <div className="px-6 py-4">
-                  <div className="flex items-start">
-                    <div className="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center flex-shrink-0 mr-4">
-                      <Brain className="h-5 w-5 text-blue-600" />
-                    </div>
-                    <div>
-                      <h5 className="font-medium text-gray-800 mb-1">AI Risk Assessment</h5>
-                      <p className="text-gray-600 text-sm">Automatically identify key risk factors and exposure trends across your book of business</p>
-                    </div>
-                  </div>
-                </div>
-                
-                <div className="px-6 py-4">
-                  <div className="flex items-start">
-                    <div className="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center flex-shrink-0 mr-4">
-                      <BarChart3 className="h-5 w-5 text-blue-600" />
-                    </div>
-                    <div>
-                      <h5 className="font-medium text-gray-800 mb-1">Portfolio Analytics</h5>
-                      <p className="text-gray-600 text-sm">Gain real-time insights into risk concentration, policy performance, and emerging patterns</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            {/* Brokers Table */}
-            <div className="bg-white rounded-xl shadow-md overflow-hidden border border-gray-200">
-              <div className="bg-gradient-to-r from-purple-500 to-purple-600 px-6 py-4 flex items-center">
-                <div className="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center mr-4">
-                  <Users className="h-6 w-6 text-white" />
-                </div>
-                <h4 className="text-xl font-semibold text-white">Brokers</h4>
-              </div>
-              
-              <div className="divide-y divide-gray-200">
-                <div className="px-6 py-4">
-                  <div className="flex items-start">
-                    <div className="w-10 h-10 rounded-full bg-purple-100 flex items-center justify-center flex-shrink-0 mr-4">
-                      <Workflow className="h-5 w-5 text-purple-600" />
-                    </div>
-                    <div>
-                      <h5 className="font-medium text-gray-800 mb-1">Streamlined Renewal Process</h5>
-                      <p className="text-gray-600 text-sm">Automate document collection, submission preparation, and renewal workflows</p>
-                    </div>
-                  </div>
-                </div>
-                
-                <div className="px-6 py-4">
-                  <div className="flex items-start">
-                    <div className="w-10 h-10 rounded-full bg-purple-100 flex items-center justify-center flex-shrink-0 mr-4">
-                      <Clock className="h-5 w-5 text-purple-600" />
-                    </div>
-                    <div>
-                      <h5 className="font-medium text-gray-800 mb-1">Proactive Risk Insights</h5>
-                      <p className="text-gray-600 text-sm">AI-powered alerts about changing risks and coverage gaps before they affect clients</p>
-                    </div>
-                  </div>
-                </div>
-                
-                <div className="px-6 py-4">
-                  <div className="flex items-start">
-                    <div className="w-10 h-10 rounded-full bg-purple-100 flex items-center justify-center flex-shrink-0 mr-4">
-                      <CheckCircle className="h-5 w-5 text-purple-600" />
-                    </div>
-                    <div>
-                      <h5 className="font-medium text-gray-800 mb-1">Enhanced Client Service</h5>
-                      <p className="text-gray-600 text-sm">Provide self-service access to policies, certificates and claims information 24/7</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            {/* Clients Table */}
-            <div className="bg-white rounded-xl shadow-md overflow-hidden border border-gray-200">
-              <div className="bg-gradient-to-r from-green-500 to-green-600 px-6 py-4 flex items-center">
-                <div className="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center mr-4">
-                  <FileText className="h-6 w-6 text-white" />
-                </div>
-                <h4 className="text-xl font-semibold text-white">Clients</h4>
-              </div>
-              
-              <div className="divide-y divide-gray-200">
-                <div className="px-6 py-4">
-                  <div className="flex items-start">
-                    <div className="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center flex-shrink-0 mr-4">
-                      <Search className="h-5 w-5 text-green-600" />
-                    </div>
-                    <div>
-                      <h5 className="font-medium text-gray-800 mb-1">Document Management</h5>
-                      <p className="text-gray-600 text-sm">Keep all policies, certificates, and contracts organized and instantly searchable</p>
-                    </div>
-                  </div>
-                </div>
-                
-                <div className="px-6 py-4">
-                  <div className="flex items-start">
-                    <div className="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center flex-shrink-0 mr-4">
-                      <Bell className="h-5 w-5 text-green-600" />
-                    </div>
-                    <div>
-                      <h5 className="font-medium text-gray-800 mb-1">Compliance Monitoring</h5>
-                      <p className="text-gray-600 text-sm">Automatic alerts for renewals, expiring certificates, and compliance requirements</p>
-                    </div>
-                  </div>
-                </div>
-                
-                <div className="px-6 py-4">
-                  <div className="flex items-start">
-                    <div className="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center flex-shrink-0 mr-4">
-                      <Shield className="h-5 w-5 text-green-600" />
-                    </div>
-                    <div>
-                      <h5 className="font-medium text-gray-800 mb-1">Risk Visibility</h5>
-                      <p className="text-gray-600 text-sm">Comprehensive dashboard showing protection status and potential coverage gaps</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            {/* Vendors Table */}
-            <div className="bg-white rounded-xl shadow-md overflow-hidden border border-gray-200">
-              <div className="bg-gradient-to-r from-amber-500 to-amber-600 px-6 py-4 flex items-center">
-                <div className="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center mr-4">
-                  <Tag className="h-6 w-6 text-white" />
-                </div>
-                <h4 className="text-xl font-semibold text-white">Vendors</h4>
-              </div>
-              
-              <div className="divide-y divide-gray-200">
-                <div className="px-6 py-4">
-                  <div className="flex items-start">
-                    <div className="w-10 h-10 rounded-full bg-amber-100 flex items-center justify-center flex-shrink-0 mr-4">
-                      <FileText className="h-5 w-5 text-amber-600" />
-                    </div>
-                    <div>
-                      <h5 className="font-medium text-gray-800 mb-1">Easy Certificate Submission</h5>
-                      <p className="text-gray-600 text-sm">Simple portal for uploading and managing insurance certificates and compliance documents</p>
-                    </div>
-                  </div>
-                </div>
-                
-                <div className="px-6 py-4">
-                  <div className="flex items-start">
-                    <div className="w-10 h-10 rounded-full bg-amber-100 flex items-center justify-center flex-shrink-0 mr-4">
-                      <Bell className="h-5 w-5 text-amber-600" />
-                    </div>
-                    <div>
-                      <h5 className="font-medium text-gray-800 mb-1">Renewal Reminders</h5>
-                      <p className="text-gray-600 text-sm">Automated notifications before certificates expire to maintain compliance</p>
-                    </div>
-                  </div>
-                </div>
-                
-                <div className="px-6 py-4">
-                  <div className="flex items-start">
-                    <div className="w-10 h-10 rounded-full bg-amber-100 flex items-center justify-center flex-shrink-0 mr-4">
-                      <Check className="h-5 w-5 text-amber-600" />
-                    </div>
-                    <div>
-                      <h5 className="font-medium text-gray-800 mb-1">Compliance Status</h5>
-                      <p className="text-gray-600 text-sm">Real-time view of your compliance status with all client requirements</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
         
 

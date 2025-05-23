@@ -61,228 +61,188 @@ export default function SolutionSection() {
           </div>
         </div>
         
-        {/* The Risk Intelligence Hub */}
+        {/* The Risk Intelligence Hub - Cleaner Design */}
         <div className="mx-auto max-w-5xl relative">
-          <div className="h-[500px] md:h-[600px] rounded-3xl bg-gradient-to-br from-[#0F1C3E] to-[#15162c] overflow-hidden relative shadow-2xl p-8 flex flex-col items-center justify-center">
-            {/* Background grid pattern */}
-            <div className="absolute inset-0 opacity-15">
+          <div className="h-[500px] md:h-[600px] rounded-3xl bg-gradient-to-br from-[#091630] to-[#152045] overflow-hidden relative shadow-2xl flex flex-col items-center justify-center">
+            {/* Background pattern - subtle hex grid */}
+            <div className="absolute inset-0 opacity-5">
               <div className="h-full w-full" style={{ 
-                backgroundImage: 'radial-gradient(circle, rgba(43,140,116,0.1) 1px, transparent 1px)',
-                backgroundSize: '30px 30px' 
+                backgroundImage: 'url("data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'28\' height=\'49\' viewBox=\'0 0 28 49\'%3E%3Cg fill-rule=\'evenodd\'%3E%3Cg id=\'hexagons\' fill=\'%23ffffff\' fill-opacity=\'1\'%3E%3Cpath d=\'M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")',
+                backgroundSize: '28px 49px' 
               }}></div>
             </div>
+
+            {/* Outer ring - subtle circular highlight */}
+            <div className="absolute w-[90%] h-[90%] rounded-full border border-[#2B8C74]/10"></div>
             
             {/* Connected Platform Visualization - "The Risk Intelligence Hub" */}
             <div className="relative w-full h-full flex items-center justify-center">
               
               {/* Central Hub - Kavaro AI Platform */}
-              <div className="w-40 h-40 relative z-20">
-                {/* Shield-like shape with hexagonal/neural network styling */}
-                <div className="w-full h-full bg-gradient-to-br from-[#2B8C74]/40 to-[#2B8C74]/20 rounded-xl transform rotate-45 border border-[#2B8C74]/50 shadow-lg">
-                  <div className="absolute inset-0 transform -rotate-45 flex flex-col items-center justify-center">
-                    <div className="text-white font-semibold text-lg mb-1">Kavaro AI</div>
-                    <div className="text-white/80 text-xs">Platform</div>
+              <div className="w-48 h-48 relative z-20">
+                {/* Hexagonal shield background */}
+                <div className="absolute inset-0 bg-gradient-to-br from-[#0F1C3E] to-[#152045] rounded-xl transform rotate-45 shadow-xl"></div>
+                
+                {/* Kavaro shield icon */}
+                <div className="absolute inset-0 flex items-center justify-center transform -rotate-45">
+                  <div className="w-36 h-36 rounded-lg bg-gradient-to-br from-[#2B8C74]/30 to-[#2B8C74]/5 border border-[#2B8C74]/30 flex flex-col items-center justify-center">
+                    <div className="flex items-center justify-center mb-2">
+                      <div className="w-10 h-10 rounded-full bg-[#2B8C74]/20 flex items-center justify-center">
+                        <Shield className="w-5 h-5 text-[#2B8C74]" />
+                      </div>
+                    </div>
+                    <div className="text-white font-semibold text-xl">Kavaro AI</div>
+                    <div className="text-[#2B8C74] text-sm font-medium mt-1">Platform</div>
+                    
+                    {/* Horizontal divider */}
+                    <div className="w-16 h-0.5 bg-[#2B8C74]/30 my-2"></div>
                     
                     {/* Platform core icons */}
-                    <div className="flex mt-2 space-x-2">
-                      <div className="w-6 h-6 rounded-full bg-[#2B8C74]/20 flex items-center justify-center">
+                    <div className="flex space-x-4 mt-2">
+                      <div className="w-6 h-6 rounded-full bg-[#2B8C74]/10 flex items-center justify-center">
                         <Brain className="w-3 h-3 text-[#2B8C74]" />
                       </div>
-                      <div className="w-6 h-6 rounded-full bg-[#2B8C74]/20 flex items-center justify-center">
-                        <Shield className="w-3 h-3 text-[#2B8C74]" />
-                      </div>
-                      <div className="w-6 h-6 rounded-full bg-[#2B8C74]/20 flex items-center justify-center">
+                      <div className="w-6 h-6 rounded-full bg-[#2B8C74]/10 flex items-center justify-center">
                         <FileText className="w-3 h-3 text-[#2B8C74]" />
+                      </div>
+                      <div className="w-6 h-6 rounded-full bg-[#2B8C74]/10 flex items-center justify-center">
+                        <Bell className="w-3 h-3 text-[#2B8C74]" />
                       </div>
                     </div>
                   </div>
                 </div>
                 
-                {/* Glowing effect */}
-                <div className="absolute inset-0 bg-[#2B8C74]/10 filter blur-lg rounded-xl transform rotate-45"></div>
+                {/* Subtle glow effect */}
+                <div className="absolute inset-0 bg-[#2B8C74]/5 filter blur-xl rounded-xl transform rotate-45"></div>
               </div>
               
               {/* Underwriters Node - Top */}
-              <div className="absolute top-6 left-1/2 transform -translate-x-1/2 z-10 flex flex-col items-center">
-                <div className="w-20 h-20 rounded-full bg-blue-500/20 border border-blue-500/40 flex items-center justify-center mb-2">
-                  <FileText className="h-8 w-8 text-blue-300" />
+              <div className="absolute top-12 left-1/2 transform -translate-x-1/2 z-10 flex flex-col items-center">
+                <div className="w-16 h-16 rounded-full bg-gradient-to-br from-blue-500/20 to-blue-600/10 border border-blue-500/30 flex items-center justify-center mb-3 shadow-md">
+                  <FileText className="h-7 w-7 text-blue-300" />
                 </div>
-                <span className="text-white font-medium text-sm">Underwriters</span>
-                <div className="bg-blue-900/30 backdrop-blur-sm rounded-full px-3 py-1 mt-1 max-w-[150px] text-center">
-                  <span className="text-blue-100 text-xs">Clean exposure data & document sets</span>
+                <div className="bg-blue-900/40 backdrop-blur-sm rounded-full px-3 py-1.5 border border-blue-500/20">
+                  <div className="flex flex-col items-center">
+                    <span className="text-white font-medium text-xs mb-0.5">Underwriters</span>
+                    <span className="text-blue-100 text-[10px] max-w-[130px] text-center">Clean exposure data</span>
+                  </div>
                 </div>
               </div>
               
               {/* Brokers Node - Right */}
-              <div className="absolute right-6 top-1/2 transform -translate-y-1/2 z-10 flex flex-col items-center">
-                <div className="w-20 h-20 rounded-full bg-purple-500/20 border border-purple-500/40 flex items-center justify-center mb-2">
-                  <Users className="h-8 w-8 text-purple-300" />
+              <div className="absolute right-12 top-1/2 transform -translate-y-1/2 z-10 flex flex-col items-center">
+                <div className="w-16 h-16 rounded-full bg-gradient-to-br from-purple-500/20 to-purple-600/10 border border-purple-500/30 flex items-center justify-center mb-3 shadow-md">
+                  <Users className="h-7 w-7 text-purple-300" />
                 </div>
-                <span className="text-white font-medium text-sm">Brokers</span>
-                <div className="bg-purple-900/30 backdrop-blur-sm rounded-full px-3 py-1 mt-1 max-w-[150px] text-center">
-                  <span className="text-purple-100 text-xs">Better client intel, better retention</span>
+                <div className="bg-purple-900/40 backdrop-blur-sm rounded-full px-3 py-1.5 border border-purple-500/20">
+                  <div className="flex flex-col items-center">
+                    <span className="text-white font-medium text-xs mb-0.5">Brokers</span>
+                    <span className="text-purple-100 text-[10px] max-w-[130px] text-center">Better client retention</span>
+                  </div>
                 </div>
               </div>
               
               {/* Clients Node - Bottom */}
-              <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 z-10 flex flex-col items-center">
-                <div className="w-20 h-20 rounded-full bg-green-500/20 border border-green-500/40 flex items-center justify-center mb-2">
-                  <PanelTopOpen className="h-8 w-8 text-green-300" />
+              <div className="absolute bottom-12 left-1/2 transform -translate-x-1/2 z-10 flex flex-col items-center">
+                <div className="w-16 h-16 rounded-full bg-gradient-to-br from-green-500/20 to-green-600/10 border border-green-500/30 flex items-center justify-center mb-3 shadow-md">
+                  <PanelTopOpen className="h-7 w-7 text-green-300" />
                 </div>
-                <span className="text-white font-medium text-sm">Clients</span>
-                <div className="bg-green-900/30 backdrop-blur-sm rounded-full px-3 py-1 mt-1 max-w-[150px] text-center">
-                  <span className="text-green-100 text-xs">Stay audit-ready without spreadsheets</span>
+                <div className="bg-green-900/40 backdrop-blur-sm rounded-full px-3 py-1.5 border border-green-500/20">
+                  <div className="flex flex-col items-center">
+                    <span className="text-white font-medium text-xs mb-0.5">Clients</span>
+                    <span className="text-green-100 text-[10px] max-w-[130px] text-center">Always audit-ready</span>
+                  </div>
                 </div>
               </div>
               
               {/* Vendors Node - Left */}
-              <div className="absolute left-6 top-1/2 transform -translate-y-1/2 z-10 flex flex-col items-center">
-                <div className="w-20 h-20 rounded-full bg-amber-500/20 border border-amber-500/40 flex items-center justify-center mb-2">
-                  <FileText className="h-8 w-8 text-amber-300" />
+              <div className="absolute left-12 top-1/2 transform -translate-y-1/2 z-10 flex flex-col items-center">
+                <div className="w-16 h-16 rounded-full bg-gradient-to-br from-amber-500/20 to-amber-600/10 border border-amber-500/30 flex items-center justify-center mb-3 shadow-md">
+                  <FileText className="h-7 w-7 text-amber-300" />
                 </div>
-                <span className="text-white font-medium text-sm">Vendors</span>
-                <div className="bg-amber-900/30 backdrop-blur-sm rounded-full px-3 py-1 mt-1 max-w-[150px] text-center">
-                  <span className="text-amber-100 text-xs">Easy uploads, no back-and-forth</span>
-                </div>
-              </div>
-              
-              {/* Compliance Node - Between Bottom and Left */}
-              <div className="absolute left-1/4 bottom-1/4 transform -translate-x-1/2 translate-y-1/2 z-10 flex flex-col items-center">
-                <div className="w-20 h-20 rounded-full bg-red-500/20 border border-red-500/40 flex items-center justify-center mb-2">
-                  <BarChart3 className="h-8 w-8 text-red-300" />
-                </div>
-                <span className="text-white font-medium text-sm">Compliance</span>
-                <div className="bg-red-900/30 backdrop-blur-sm rounded-full px-3 py-1 mt-1 max-w-[150px] text-center">
-                  <span className="text-red-100 text-xs">Centralized visibility & reporting</span>
+                <div className="bg-amber-900/40 backdrop-blur-sm rounded-full px-3 py-1.5 border border-amber-500/20">
+                  <div className="flex flex-col items-center">
+                    <span className="text-white font-medium text-xs mb-0.5">Vendors</span>
+                    <span className="text-amber-100 text-[10px] max-w-[130px] text-center">Easy document uploads</span>
+                  </div>
                 </div>
               </div>
               
-              {/* Connection Lines using SVG */}
+              {/* Compliance Node - Bottom Left */}
+              <div className="absolute left-[15%] bottom-[25%] z-10 flex flex-col items-center">
+                <div className="w-16 h-16 rounded-full bg-gradient-to-br from-red-500/20 to-red-600/10 border border-red-500/30 flex items-center justify-center mb-3 shadow-md">
+                  <BarChart3 className="h-7 w-7 text-red-300" />
+                </div>
+                <div className="bg-red-900/40 backdrop-blur-sm rounded-full px-3 py-1.5 border border-red-500/20">
+                  <div className="flex flex-col items-center">
+                    <span className="text-white font-medium text-xs mb-0.5">Compliance</span>
+                    <span className="text-red-100 text-[10px] max-w-[130px] text-center">Centralized reporting</span>
+                  </div>
+                </div>
+              </div>
+              
+              {/* Connection Lines - Cleaner Design */}
               <svg className="absolute inset-0 w-full h-full z-0" xmlns="http://www.w3.org/2000/svg">
-                {/* Underwriter to Center */}
-                <path 
-                  d="M 50% 20%, Q 60% 35%, 50% 50%" 
-                  fill="none" 
-                  stroke="#2B8C74" 
-                  strokeWidth="2" 
-                  strokeDasharray="4,4" 
-                  strokeOpacity="0.8"
-                />
+                {/* Outer connection ring */}
+                <circle cx="50%" cy="50%" r="43%" fill="none" stroke="#2B8C74" strokeWidth="0.5" strokeOpacity="0.2" />
                 
-                {/* Center to Underwriter */}
-                <path 
-                  d="M 50% 50%, Q 40% 35%, 50% 20%" 
-                  fill="none" 
-                  stroke="#2B8C74" 
-                  strokeWidth="2" 
-                  strokeDasharray="4,4" 
-                  strokeOpacity="0.8"
-                />
-                
-                {/* Broker to Center */}
-                <path 
-                  d="M 80% 50%, Q 65% 40%, 50% 50%" 
-                  fill="none" 
-                  stroke="#2B8C74" 
-                  strokeWidth="2" 
-                  strokeDasharray="4,4" 
-                  strokeOpacity="0.8"
-                />
-                
-                {/* Center to Broker */}
-                <path 
-                  d="M 50% 50%, Q 65% 60%, 80% 50%" 
-                  fill="none" 
-                  stroke="#2B8C74" 
-                  strokeWidth="2" 
-                  strokeDasharray="4,4" 
-                  strokeOpacity="0.8"
-                />
-                
-                {/* Client to Center */}
-                <path 
-                  d="M 50% 80%, Q 40% 65%, 50% 50%" 
-                  fill="none" 
-                  stroke="#2B8C74" 
-                  strokeWidth="2" 
-                  strokeDasharray="4,4" 
-                  strokeOpacity="0.8"
-                />
-                
-                {/* Center to Client */}
-                <path 
-                  d="M 50% 50%, Q 60% 65%, 50% 80%" 
-                  fill="none" 
-                  stroke="#2B8C74" 
-                  strokeWidth="2" 
-                  strokeDasharray="4,4" 
-                  strokeOpacity="0.8"
-                />
-                
-                {/* Vendor to Center */}
-                <path 
-                  d="M 20% 50%, Q 35% 60%, 50% 50%" 
-                  fill="none" 
-                  stroke="#2B8C74" 
-                  strokeWidth="2" 
-                  strokeDasharray="4,4" 
-                  strokeOpacity="0.8"
-                />
-                
-                {/* Center to Vendor */}
-                <path 
-                  d="M 50% 50%, Q 35% 40%, 20% 50%" 
-                  fill="none" 
-                  stroke="#2B8C74" 
-                  strokeWidth="2" 
-                  strokeDasharray="4,4" 
-                  strokeOpacity="0.8"
-                />
-                
-                {/* Compliance to Center */}
-                <path 
-                  d="M 25% 75%, Q 35% 65%, 50% 50%" 
-                  fill="none" 
-                  stroke="#2B8C74" 
-                  strokeWidth="2" 
-                  strokeDasharray="4,4" 
-                  strokeOpacity="0.8"
-                />
-                
-                {/* Center to Compliance */}
-                <path 
-                  d="M 50% 50%, Q 40% 60%, 25% 75%" 
-                  fill="none" 
-                  stroke="#2B8C74" 
-                  strokeWidth="2" 
-                  strokeDasharray="4,4" 
-                  strokeOpacity="0.8"
-                />
+                {/* Data flow lines */}
+                <g stroke="#2B8C74" strokeWidth="1.5" strokeLinecap="round" strokeDasharray="1,6" strokeOpacity="0.6">
+                  {/* Underwriter to Center */}
+                  <path d="M 50% 20%, L 50% 35%" />
+                  {/* Center to Underwriter - small arrow */}
+                  <path d="M 50% 35%, 47% 30%" />
+                  <path d="M 50% 35%, 53% 30%" />
+                  
+                  {/* Broker to Center */}
+                  <path d="M 80% 50%, L 65% 50%" />
+                  {/* Center to Broker - small arrow */}
+                  <path d="M 65% 50%, 70% 47%" />
+                  <path d="M 65% 50%, 70% 53%" />
+                  
+                  {/* Client to Center */}
+                  <path d="M 50% 80%, L 50% 65%" />
+                  {/* Center to Client - small arrow */}
+                  <path d="M 50% 65%, 47% 70%" />
+                  <path d="M 50% 65%, 53% 70%" />
+                  
+                  {/* Vendor to Center */}
+                  <path d="M 20% 50%, L 35% 50%" />
+                  {/* Center to Vendor - small arrow */}
+                  <path d="M 35% 50%, 30% 47%" />
+                  <path d="M 35% 50%, 30% 53%" />
+                  
+                  {/* Compliance to Center */}
+                  <path d="M 25% 67%, L 40% 57%" />
+                  {/* Center to Compliance - small arrow */}
+                  <path d="M 40% 57%, 35% 57%" />
+                  <path d="M 40% 57%, 38% 62%" />
+                </g>
               </svg>
               
-              {/* Border Features - Bottom */}
+              {/* Platform Features - Bottom */}
               <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex gap-2 z-30">
-                <div className="bg-white/10 backdrop-blur-sm rounded-full px-3 py-1.5 flex items-center gap-1.5 border border-white/10">
+                <div className="bg-gradient-to-r from-[#091630]/80 to-[#152045]/80 backdrop-blur-sm rounded-full px-3 py-1.5 flex items-center gap-1.5 border border-[#2B8C74]/20 shadow-lg">
                   <Shield className="h-3.5 w-3.5 text-[#2B8C74]" />
-                  <span className="text-white text-xs">Blockchain-grade audit trails</span>
+                  <span className="text-white text-xs">Blockchain Audit Trails</span>
                 </div>
-                <div className="bg-white/10 backdrop-blur-sm rounded-full px-3 py-1.5 flex items-center gap-1.5 border border-white/10">
+                <div className="bg-gradient-to-r from-[#091630]/80 to-[#152045]/80 backdrop-blur-sm rounded-full px-3 py-1.5 flex items-center gap-1.5 border border-[#2B8C74]/20 shadow-lg">
                   <Lock className="h-3.5 w-3.5 text-[#2B8C74]" />
-                  <span className="text-white text-xs">Encryption & permissioning</span>
+                  <span className="text-white text-xs">Enterprise Security</span>
                 </div>
               </div>
               
-              {/* Platform Description */}
-              <div className="absolute top-2 left-1/2 transform -translate-x-1/2 z-30">
-                <div className="bg-white/10 backdrop-blur-sm rounded-full px-4 py-2 text-white text-base font-medium border border-[#2B8C74]/20">
-                  The Risk Intelligence Hub
+              {/* Platform Title */}
+              <div className="absolute top-3 left-1/2 transform -translate-x-1/2 z-30">
+                <div className="bg-gradient-to-r from-[#091630]/80 to-[#152045]/80 backdrop-blur-sm rounded-full px-6 py-2 border border-[#2B8C74]/20 shadow-lg">
+                  <span className="text-white text-base font-medium">The Risk Intelligence Hub</span>
                 </div>
               </div>
             </div>
           </div>
           
           <p className="text-center text-xl text-gray-700 mt-8 max-w-3xl mx-auto">
-            One platform that connects every stakeholder in the risk management ecosystem with total visibility and intelligence.
+            One intelligent platform connecting every stakeholder in the risk management ecosystem with complete visibility.
           </p>
         </div>
         

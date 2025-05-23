@@ -2,7 +2,7 @@ import { ChevronRight, FileText, Mail, Table, Users, Database, AlertTriangle, Fi
 
 export default function ProblemSection() {
   return (
-    <section id="problem" className="py-20 md:py-32 bg-[#0F1C3E] text-white">
+    <section id="problem" className="min-h-screen py-20 flex flex-col justify-center bg-[#0F1C3E] text-white">
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl md:text-5xl font-semibold tracking-tight mb-6">

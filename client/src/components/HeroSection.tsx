@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 
 export default function HeroSection() {
   return (
-    <main className="bg-white dark:bg-[#0F1C3E] text-[#0F1C3E] dark:text-white pt-36 pb-20 md:pt-48 md:pb-32 transition-colors duration-300 overflow-hidden">
+    <main className="bg-white dark:bg-[#0F1C3E] text-[#0F1C3E] dark:text-white min-h-screen flex items-center transition-colors duration-300 overflow-hidden">
       {/* Background gradient effect - Apple style */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute -top-[30%] -left-[10%] w-[70%] h-[70%] rounded-full bg-gradient-to-br from-[#2B8C74]/5 to-transparent blur-3xl"></div>
@@ -32,6 +32,15 @@ export default function HeroSection() {
               <span className="font-normal">Learn more</span>
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" className="transition-transform group-hover:translate-x-1">
                 <path d="M1 8H15M15 8L8 1M15 8L8 15" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+              </svg>
+            </a>
+          </div>
+          
+          {/* Scroll indicator */}
+          <div className="absolute bottom-10 left-0 right-0 flex justify-center">
+            <a href="#solution" className="scroll-indicator text-[#2B8C74] opacity-70 hover:opacity-100 transition-opacity">
+              <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M12 5v14M5 12l7 7 7-7"/>
               </svg>
             </a>
           </div>

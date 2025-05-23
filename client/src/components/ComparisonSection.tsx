@@ -2,21 +2,21 @@ import { CheckCircle, Clock, FileStack, Search, Folder, FileText, Tag } from "lu
 
 export default function ComparisonSection() {
   return (
-    <section id="comparison" className="py-20 md:py-32 border-b border-gray-100 bg-gray-50">
+    <section id="comparison" className="py-20 md:py-32 border-b border-gray-100 dark:border-[#2B8C74]/20 bg-[#0F1C3E] text-white">
       <div className="max-w-7xl mx-auto px-6">
         <div className="max-w-3xl mx-auto text-center mb-20">
-          <h2 className="text-4xl md:text-5xl font-semibold tracking-tight mb-8 text-black">
+          <h2 className="text-4xl md:text-5xl font-semibold tracking-tight mb-8 text-white">
             "Can you handle the COIs?"
           </h2>
-          <p className="text-gray-800 text-xl leading-relaxed mb-5">
+          <p className="text-gray-200 text-xl leading-relaxed mb-5">
             That's how it starts. Next thing you know, you're juggling PDFs, spreadsheets, and endless email threads — with no idea how to stay compliant.
           </p>
-          <p className="text-gray-800 text-xl leading-relaxed mb-5">
+          <p className="text-gray-200 text-xl leading-relaxed mb-5">
             Most teams don't have a risk manager. But insurance is still part of the job. And right now, there's no easy way to handle it.
           </p>
         </div>
         
-        <h3 className="text-3xl md:text-4xl font-semibold tracking-tight mb-16 text-black text-center">
+        <h3 className="text-3xl md:text-4xl font-semibold tracking-tight mb-16 text-white text-center">
           A Better Way to Manage Insurance
         </h3>
         

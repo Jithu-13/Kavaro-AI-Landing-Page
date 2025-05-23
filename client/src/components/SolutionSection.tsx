@@ -2,7 +2,7 @@ import { Lock, FileText, Check, Tag, Clock, Shield, Brain, Bell, AlertCircle } f
 
 export default function SolutionSection() {
   return (
-    <section id="solution" className="py-20 md:py-32 bg-white border-b border-gray-100">
+    <section id="solution" className="py-20 md:py-32 bg-white border-b border-gray-100 text-[#0F1C3E]">
       <div className="max-w-7xl mx-auto px-6">
         <div className="max-w-3xl mx-auto text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-semibold tracking-tight mb-8 text-black">

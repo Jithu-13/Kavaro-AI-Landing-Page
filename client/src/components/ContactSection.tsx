@@ -32,7 +32,7 @@ export default function ContactSection() {
   };
 
   return (
-    <section id="contact" className="py-16 md:py-24 px-6 max-w-6xl mx-auto bg-white dark:bg-[#0F1C3E] text-[#0F1C3E] dark:text-white shadow-lg rounded-xl my-12">
+    <section id="contact" className="py-16 md:py-24 px-6 max-w-7xl mx-auto bg-white text-[#0F1C3E]">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
         <div>
           <h2 className="text-3xl md:text-4xl font-bold mb-6">Get in Touch</h2>

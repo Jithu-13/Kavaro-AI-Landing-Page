@@ -22,7 +22,7 @@ const companies = ["Apex Builders", "SwiftEvents", "RiseWare", "Metro Health"];
 
 export default function TestimonialsSection() {
   return (
-    <section id="testimonials" className="py-20 md:py-32 bg-[#0F1C3E] text-white">
+    <section id="testimonials" className="py-20 md:py-32 bg-[#0F1C3E] text-white border-b border-[#2B8C74]/20">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-semibold mb-6">

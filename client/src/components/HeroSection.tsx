@@ -21,7 +21,7 @@ export default function HeroSection() {
           </h1>
           
           <p className="text-gray-600 dark:text-gray-300 text-xl md:text-2xl leading-relaxed mb-12 max-w-2xl mx-auto font-light">
-            Kavaro AI unifies risk and insurance data into a secure, AI-powered system — automating workflows, surfacing insights, and protecting compliance from intake to audit.
+            Kavaro AI is the foundational platform for modern insurance and risk operations - combining AI-powered document intelligence, automation, and data orchestration in one solution.
           </p>
           
           <div className="flex flex-col sm:flex-row justify-center items-center gap-6 mt-12">

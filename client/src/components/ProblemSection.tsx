@@ -23,86 +23,100 @@ export default function ProblemSection() {
             {/* Background path */}
             <div className="absolute top-[50%] left-0 right-0 h-px bg-gradient-to-r from-[#2B8C74]/0 via-[#2B8C74]/30 to-[#2B8C74]/0"></div>
             
-            {/* Nodes with animated pulsing effect */}
-            <div className="absolute top-[50%] left-[15%] transform -translate-y-1/2 flex flex-col items-center">
-              <div className="relative mb-6">
-                <div className="w-24 h-24 rounded-full bg-gradient-to-br from-[#1A2950] to-[#0F1C3E] flex items-center justify-center shadow-lg border border-[#2B8C74]/20 z-10">
-                  <Users className="text-[#2B8C74] h-10 w-10" />
-                </div>
-                <div className="absolute inset-0 rounded-full bg-[#2B8C74]/20 animate-ping-slow"></div>
-              </div>
-              <div className="bg-gradient-to-br from-[#1A2950] to-[#0F1C3E] p-6 rounded-xl shadow-lg max-w-xs border border-[#2B8C74]/20">
-                <h3 className="text-xl font-medium mb-3 text-white">Stakeholder Disconnect</h3>
-                <p className="text-gray-300 text-sm leading-relaxed">
-                  Each stakeholder operates in isolation, with no shared understanding or collaborative platform.
-                </p>
-                <div className="mt-4">
-                  <div className="flex items-center gap-2 mb-1">
-                    <span className="w-2 h-2 rounded-full bg-red-400"></span>
-                    <span className="text-xs text-gray-400">Different systems</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <span className="w-2 h-2 rounded-full bg-orange-400"></span>
-                    <span className="text-xs text-gray-400">No shared context</span>
+            {/* Problem 1: Stakeholder Disconnect */}
+            <div className="absolute top-[30%] left-[15%] transform -translate-y-1/2">
+              <div className="relative mb-4">
+                <div className="w-20 h-20 rounded-full bg-white flex items-center justify-center shadow-md z-10">
+                  <div className="w-16 h-16 rounded-full bg-gradient-to-br from-[#3584E4] to-[#0A65C2] flex items-center justify-center">
+                    <Users className="text-white h-8 w-8" />
                   </div>
                 </div>
+                <div className="absolute inset-0 rounded-full bg-[#3584E4]/20 animate-ping-slow opacity-60"></div>
               </div>
-              {/* Vertical line connecting to timeline */}
-              <div className="absolute top-[50%] h-12 w-px bg-gradient-to-b from-[#2B8C74]/30 to-[#2B8C74]/0"></div>
+              <h3 className="text-xl font-medium mb-2 text-white text-center">Stakeholder Disconnect</h3>
             </div>
             
-            <div className="absolute top-[50%] left-[50%] transform -translate-y-1/2 -translate-x-1/2 flex flex-col items-center">
-              <div className="bg-gradient-to-br from-[#1A2950] to-[#0F1C3E] p-6 rounded-xl shadow-lg max-w-xs border border-[#2B8C74]/20 mb-6">
-                <h3 className="text-xl font-medium mb-3 text-white">No Source of Truth</h3>
+            {/* Problem 1 Description - Separate from icon */}
+            <div className="absolute top-[65%] left-[15%] transform -translate-x-1/4">
+              <div className="bg-[#0F1C3E]/80 backdrop-blur-sm p-4 rounded-xl shadow-lg max-w-[220px] border border-[#3584E4]/20">
                 <p className="text-gray-300 text-sm leading-relaxed">
-                  Critical documents scattered across systems lead to version confusion and data fragmentation.
+                  Underwriters, brokers, clients, and vendors each use different systems.
                 </p>
-                <div className="mt-4">
-                  <div className="flex items-center gap-2 mb-1">
-                    <span className="w-2 h-2 rounded-full bg-red-400"></span>
-                    <span className="text-xs text-gray-400">Multiple copies</span>
+                <div className="mt-3 space-y-1.5">
+                  <div className="flex items-center gap-2">
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#3584E4]"></span>
+                    <span className="text-xs text-gray-400">No shared visibility</span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <span className="w-2 h-2 rounded-full bg-orange-400"></span>
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#3584E4]"></span>
+                    <span className="text-xs text-gray-400">Siloed decisions</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            {/* Problem 2: No Source of Truth */}
+            <div className="absolute top-[30%] left-[50%] transform -translate-y-1/2 -translate-x-1/2">
+              <div className="relative mb-4">
+                <div className="w-20 h-20 rounded-full bg-white flex items-center justify-center shadow-md z-10">
+                  <div className="w-16 h-16 rounded-full bg-gradient-to-br from-[#9563DE] to-[#7540BA] flex items-center justify-center">
+                    <Database className="text-white h-8 w-8" />
+                  </div>
+                </div>
+                <div className="absolute inset-0 rounded-full bg-[#9563DE]/20 animate-ping-slow opacity-60" style={{ animationDelay: "0.5s" }}></div>
+              </div>
+              <h3 className="text-xl font-medium mb-2 text-white text-center">No Source of Truth</h3>
+            </div>
+            
+            {/* Problem 2 Description - Separate from icon */}
+            <div className="absolute top-[65%] left-[50%] transform -translate-x-1/2">
+              <div className="bg-[#0F1C3E]/80 backdrop-blur-sm p-4 rounded-xl shadow-lg max-w-[220px] border border-[#9563DE]/20">
+                <p className="text-gray-300 text-sm leading-relaxed">
+                  Documents scattered across emails, drives, and departments.
+                </p>
+                <div className="mt-3 space-y-1.5">
+                  <div className="flex items-center gap-2">
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#9563DE]"></span>
+                    <span className="text-xs text-gray-400">Version confusion</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#9563DE]"></span>
                     <span className="text-xs text-gray-400">Outdated information</span>
                   </div>
                 </div>
               </div>
-              <div className="relative">
-                <div className="w-24 h-24 rounded-full bg-gradient-to-br from-[#1A2950] to-[#0F1C3E] flex items-center justify-center shadow-lg border border-[#2B8C74]/20 z-10">
-                  <Database className="text-[#2B8C74] h-10 w-10" />
-                </div>
-                <div className="absolute inset-0 rounded-full bg-[#2B8C74]/20 animate-ping-slow" style={{ animationDelay: "0.5s" }}></div>
-              </div>
-              {/* Vertical line connecting to timeline */}
-              <div className="absolute bottom-[50%] h-12 w-px bg-gradient-to-t from-[#2B8C74]/30 to-[#2B8C74]/0"></div>
             </div>
             
-            <div className="absolute top-[50%] right-[15%] transform -translate-y-1/2 flex flex-col items-center">
-              <div className="relative mb-6">
-                <div className="w-24 h-24 rounded-full bg-gradient-to-br from-[#1A2950] to-[#0F1C3E] flex items-center justify-center shadow-lg border border-[#2B8C74]/20 z-10">
-                  <AlertTriangle className="text-[#2B8C74] h-10 w-10" />
+            {/* Problem 3: Compliance Risk */}
+            <div className="absolute top-[30%] right-[15%] transform -translate-y-1/2">
+              <div className="relative mb-4">
+                <div className="w-20 h-20 rounded-full bg-white flex items-center justify-center shadow-md z-10">
+                  <div className="w-16 h-16 rounded-full bg-gradient-to-br from-[#E25C5C] to-[#D12F2F] flex items-center justify-center">
+                    <AlertTriangle className="text-white h-8 w-8" />
+                  </div>
                 </div>
-                <div className="absolute inset-0 rounded-full bg-[#2B8C74]/20 animate-ping-slow" style={{ animationDelay: "1s" }}></div>
+                <div className="absolute inset-0 rounded-full bg-[#E25C5C]/20 animate-ping-slow opacity-60" style={{ animationDelay: "1s" }}></div>
               </div>
-              <div className="bg-gradient-to-br from-[#1A2950] to-[#0F1C3E] p-6 rounded-xl shadow-lg max-w-xs border border-[#2B8C74]/20">
-                <h3 className="text-xl font-medium mb-3 text-white">Compliance Risk</h3>
+              <h3 className="text-xl font-medium mb-2 text-white text-center">Compliance Risk</h3>
+            </div>
+            
+            {/* Problem 3 Description - Separate from icon */}
+            <div className="absolute top-[65%] right-[15%] transform translate-x-1/4">
+              <div className="bg-[#0F1C3E]/80 backdrop-blur-sm p-4 rounded-xl shadow-lg max-w-[220px] border border-[#E25C5C]/20">
                 <p className="text-gray-300 text-sm leading-relaxed">
-                  Manual tracking creates blind spots, leading to missed renewals and potential regulatory violations.
+                  Manual tracking leads to critical compliance failures.
                 </p>
-                <div className="mt-4">
-                  <div className="flex items-center gap-2 mb-1">
-                    <span className="w-2 h-2 rounded-full bg-red-400"></span>
-                    <span className="text-xs text-gray-400">Expired documents</span>
+                <div className="mt-3 space-y-1.5">
+                  <div className="flex items-center gap-2">
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#E25C5C]"></span>
+                    <span className="text-xs text-gray-400">Missed renewals</span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <span className="w-2 h-2 rounded-full bg-orange-400"></span>
-                    <span className="text-xs text-gray-400">Missed deadlines</span>
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#E25C5C]"></span>
+                    <span className="text-xs text-gray-400">Regulatory exposure</span>
                   </div>
                 </div>
               </div>
-              {/* Vertical line connecting to timeline */}
-              <div className="absolute top-[50%] h-12 w-px bg-gradient-to-b from-[#2B8C74]/30 to-[#2B8C74]/0"></div>
             </div>
             
             {/* Connecting dots on the path */}

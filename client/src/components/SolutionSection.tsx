@@ -1,4 +1,5 @@
 import { Lock, FileText, Check, Tag, Clock, Shield, Brain, Bell, AlertCircle, BarChart3, Workflow, PanelTopOpen, Users } from "lucide-react";
+import kavaroDarkLogo from "@assets/Kavaro Dark.png";
 
 export default function SolutionSection() {
   return (
@@ -215,9 +216,8 @@ export default function SolutionSection() {
               
               {/* Content */}
               <div className="text-center">
-                <Shield className="h-12 w-12 md:h-14 md:w-14 text-[#2B8C74] mx-auto mb-2" />
-                <p className="text-white font-medium text-lg md:text-xl">Kavaro AI</p>
-                <p className="text-[#2B8C74]/90 text-xs font-light">Risk Intelligence Hub</p>
+                <img src={kavaroDarkLogo} alt="Kavaro AI" className="h-20 w-auto mx-auto mb-1" />
+                <p className="text-[#2B8C74]/90 text-xs font-light mt-1">Risk Intelligence Hub</p>
               </div>
             </div>
             

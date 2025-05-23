@@ -1,20 +1,20 @@
-import { Check, ArrowUpDown, Search } from "lucide-react";
+import { ShieldCheck, Clock, Fingerprint } from "lucide-react";
 
 const features = [
   {
-    icon: <Check className="h-6 w-6 text-accent" />,
-    title: "Smart Verification",
-    description: "Automatically verify insurance documents and extract key information with our AI-powered system."
+    icon: <ShieldCheck className="h-6 w-6 text-accent" />,
+    title: "Adversarial Defense",
+    description: "Protect your AI models from targeted attacks with our advanced adversarial defense system."
   },
   {
-    icon: <ArrowUpDown className="h-6 w-6 text-accent" />,
-    title: "Seamless Workflows",
-    description: "Create custom approval processes and notification flows that match your organization's needs."
+    icon: <Clock className="h-6 w-6 text-accent" />,
+    title: "Real-time Monitoring",
+    description: "Continuous surveillance of your AI systems with instant alerts for suspicious activities."
   },
   {
-    icon: <Search className="h-6 w-6 text-accent" />,
-    title: "Intelligent Search",
-    description: "Find any document or policy detail in seconds with advanced search capabilities across all your files."
+    icon: <Fingerprint className="h-6 w-6 text-accent" />,
+    title: "Data Encryption",
+    description: "End-to-end encryption for all AI training data and model parameters to prevent unauthorized access."
   }
 ];
 
@@ -22,8 +22,8 @@ export default function FeaturesSection() {
   return (
     <section id="features" className="py-16 md:py-24 px-6 max-w-6xl mx-auto">
       <div className="text-center mb-16">
-        <h2 className="text-3xl md:text-4xl font-bold mb-4">Core Features</h2>
-        <p className="text-gray-300 max-w-2xl mx-auto">Our platform delivers intuitive tools that make insurance document management simple, efficient, and accessible to everyone on your team.</p>
+        <h2 className="text-3xl md:text-4xl font-bold mb-4">Advanced Security Features</h2>
+        <p className="text-gray-300 max-w-2xl mx-auto">Our platform delivers cutting-edge protection mechanisms designed specifically for AI systems and machine learning models.</p>
       </div>
       
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

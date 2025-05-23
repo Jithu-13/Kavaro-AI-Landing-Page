@@ -81,13 +81,7 @@ export default function Navbar() {
           </nav>
           
           <div className="flex items-center gap-4">
-            <button
-              onClick={toggleTheme}
-              className="w-10 h-10 rounded-full flex items-center justify-center bg-[#0F1C3E]/10 hover:bg-[#0F1C3E]/20 text-[#0F1C3E] dark:bg-white/10 dark:hover:bg-white/20 dark:text-white transition-colors"
-              aria-label="Toggle dark mode"
-            >
-              {isDark ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
-            </button>
+
             <Button className="bg-[var(--light-background)] hover:bg-gray-100 text-[#2B8C74] dark:bg-[#0F1C3E]/20 dark:hover:bg-[#0F1C3E]/30 dark:text-white font-medium border border-gray-200 dark:border-[#2B8C74]/20 px-4 rounded-full">
               Sign Up
             </Button>

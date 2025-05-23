@@ -36,37 +36,30 @@ export default function ContactSection() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
         <div>
           <h2 className="text-3xl md:text-4xl font-bold mb-6">Get in Touch</h2>
-          <p className="text-gray-600 dark:text-gray-300 mb-8">Have questions about our document management platform? Our team is here to help you streamline your insurance workflows.</p>
+          <p className="text-gray-600 mb-6">Have questions about our document management platform? Our team is here to help you streamline your insurance workflows.</p>
           
-          <div className="space-y-6">
+          <div className="bg-[#2B8C74]/10 p-8 rounded-xl mb-8">
             <div className="flex items-start space-x-4">
-              <div className="bg-[#2B8C74]/20 p-2 rounded-lg">
+              <div className="bg-[#2B8C74]/20 p-3 rounded-full">
                 <Mail className="h-6 w-6 text-[#2B8C74]" />
               </div>
               <div>
-                <h3 className="text-lg font-medium mb-1">Email Us</h3>
-                <p className="text-gray-600 dark:text-gray-300">support@kavaro-ai.com</p>
+                <h3 className="text-xl font-medium mb-2">We're here to help</h3>
+                <p className="text-gray-600 leading-relaxed">
+                  Fill out the form and our team will get back to you within one business day. We'd love to show you how Kavaro AI can transform your insurance document management.
+                </p>
               </div>
             </div>
-            
-            <div className="flex items-start space-x-4">
-              <div className="bg-[#2B8C74]/20 p-2 rounded-lg">
-                <Phone className="h-6 w-6 text-[#2B8C74]" />
-              </div>
-              <div>
-                <h3 className="text-lg font-medium mb-1">Call Us</h3>
-                <p className="text-gray-600 dark:text-gray-300">+1 (555) 123-4567</p>
-              </div>
+          </div>
+          
+          <div className="rounded-xl border border-gray-200 p-6 bg-white">
+            <div className="flex items-center mb-4">
+              <div className="w-2 h-2 rounded-full bg-green-500 mr-2"></div>
+              <p className="text-sm text-gray-600">We typically respond within 24 hours</p>
             </div>
-            
-            <div className="flex items-start space-x-4">
-              <div className="bg-[#2B8C74]/20 p-2 rounded-lg">
-                <MapPin className="h-6 w-6 text-[#2B8C74]" />
-              </div>
-              <div>
-                <h3 className="text-lg font-medium mb-1">Office</h3>
-                <p className="text-gray-600 dark:text-gray-300">123 Tech Lane, San Francisco, CA 94107</p>
-              </div>
+            <div className="space-y-1">
+              <p className="text-sm text-gray-500">Available for demos and questions</p>
+              <p className="text-sm text-gray-500">Monday - Friday, 9AM - 5PM PT</p>
             </div>
           </div>
         </div>

@@ -22,7 +22,7 @@ const companies = ["Apex Builders", "SwiftEvents", "RiseWare", "Metro Health"];
 
 export default function TestimonialsSection() {
   return (
-    <section id="testimonials" className="py-20 md:py-32 bg-gradient-to-b from-[#0F1C3E] to-[#0A0B1D] text-white">
+    <section id="testimonials" className="py-20 md:py-32 bg-[#0F1C3E] text-white">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-semibold mb-6">
@@ -34,33 +34,33 @@ export default function TestimonialsSection() {
           {testimonials.map((testimonial, index) => (
             <div 
               key={index} 
-              className="bg-[#1A2B4A] p-8 rounded-xl border border-[#B6E1C4]/10 relative hover:shadow-lg transition-shadow"
+              className="bg-[#0F1C3E]/80 p-8 rounded-xl border border-[#2B8C74]/20 relative hover:shadow-lg transition-shadow"
             >
-              <Quote className="absolute top-4 right-4 h-10 w-10 text-[#B6E1C4]/20" />
+              <Quote className="absolute top-4 right-4 h-10 w-10 text-[#2B8C74]/30" />
               <div className="mb-8 relative z-10">
-                <p className="text-gray-200 italic leading-relaxed text-lg">"{testimonial.quote}"</p>
+                <p className="text-white italic leading-relaxed text-lg">"{testimonial.quote}"</p>
               </div>
               <div className="flex items-center">
-                <div className="w-12 h-12 rounded-full bg-[#B6E1C4]/20 flex items-center justify-center mr-4">
-                  <span className="text-[#B6E1C4] text-xl font-medium">{testimonial.author.charAt(0)}</span>
+                <div className="w-12 h-12 rounded-full bg-[#2B8C74]/20 flex items-center justify-center mr-4">
+                  <span className="text-[#2B8C74] text-xl font-medium">{testimonial.author.charAt(0)}</span>
                 </div>
                 <div>
                   <p className="font-medium text-white text-lg">{testimonial.author}</p>
-                  <p className="text-sm text-[#B6E1C4]/70">{testimonial.title}</p>
+                  <p className="text-sm text-[#2B8C74]/80">{testimonial.title}</p>
                 </div>
               </div>
             </div>
           ))}
         </div>
         
-        <div className="text-center border-t border-white/10 pt-12">
-          <p className="text-gray-400 mb-8">
+        <div className="text-center border-t border-[#2B8C74]/20 pt-12">
+          <p className="text-gray-300 mb-8">
             Trusted by growing teams in events, logistics, retail, and construction.
           </p>
           
           <div className="flex flex-wrap justify-center gap-6 md:gap-12">
             {companies.map((company, index) => (
-              <div key={index} className="text-[#B6E1C4] font-medium opacity-80 hover:opacity-100 transition-opacity">
+              <div key={index} className="text-[#2B8C74] font-medium opacity-80 hover:opacity-100 transition-opacity">
                 [ {company} ]
               </div>
             ))}

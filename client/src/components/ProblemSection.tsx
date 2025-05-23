@@ -16,51 +16,57 @@ export default function ProblemSection() {
           </p>
         </div>
           
-        <div className="grid md:grid-cols-3 gap-8 mb-16">
-          <div className="p-8 rounded-2xl bg-[#0F1C3E]/50 border border-[#2B8C74]/20 flex flex-col items-center text-center">
-            <div className="w-16 h-16 flex items-center justify-center rounded-full bg-[#2B8C74]/10 mb-6">
-              <Users className="text-[#2B8C74] h-7 w-7" />
+        <div className="grid md:grid-cols-3 gap-8 mb-20">
+          <div className="p-8 rounded-2xl bg-gradient-to-br from-[#1A2950] to-[#0F1C3E] border border-[#2B8C74]/20 flex flex-col items-center text-center shadow-lg transform transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
+            <div className="w-20 h-20 flex items-center justify-center rounded-full bg-gradient-to-br from-[#2B8C74]/30 to-[#2B8C74]/10 mb-6 shadow-inner">
+              <Users className="text-[#2B8C74] h-9 w-9" />
             </div>
-            <h3 className="text-xl font-medium mb-3 text-white">Stakeholder Disconnect</h3>
-            <p className="text-gray-300">
-              Underwriters, brokers, clients, and vendors all operate in separate systems with no shared visibility.
+            <h3 className="text-xl font-medium mb-4 text-white">Stakeholder Disconnect</h3>
+            <div className="h-0.5 w-12 bg-[#2B8C74]/30 mb-4"></div>
+            <p className="text-gray-300 leading-relaxed">
+              Underwriters, brokers, clients, and vendors all operate in separate systems with no shared visibility or context.
             </p>
           </div>
             
-          <div className="p-8 rounded-2xl bg-[#0F1C3E]/50 border border-[#2B8C74]/20 flex flex-col items-center text-center">
-            <div className="w-16 h-16 flex items-center justify-center rounded-full bg-[#2B8C74]/10 mb-6">
-              <Database className="text-[#2B8C74] h-7 w-7" />
+          <div className="p-8 rounded-2xl bg-gradient-to-br from-[#1A2950] to-[#0F1C3E] border border-[#2B8C74]/20 flex flex-col items-center text-center shadow-lg transform transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
+            <div className="w-20 h-20 flex items-center justify-center rounded-full bg-gradient-to-br from-[#2B8C74]/30 to-[#2B8C74]/10 mb-6 shadow-inner">
+              <Database className="text-[#2B8C74] h-9 w-9" />
             </div>
-            <h3 className="text-xl font-medium mb-3 text-white">No Source of Truth</h3>
-            <p className="text-gray-300">
+            <h3 className="text-xl font-medium mb-4 text-white">No Source of Truth</h3>
+            <div className="h-0.5 w-12 bg-[#2B8C74]/30 mb-4"></div>
+            <p className="text-gray-300 leading-relaxed">
               Documents scatter across emails, drives, and systems, creating version confusion and outdated information.
             </p>
           </div>
             
-          <div className="p-8 rounded-2xl bg-[#0F1C3E]/50 border border-[#2B8C74]/20 flex flex-col items-center text-center">
-            <div className="w-16 h-16 flex items-center justify-center rounded-full bg-[#2B8C74]/10 mb-6">
-              <AlertTriangle className="text-[#2B8C74] h-7 w-7" />
+          <div className="p-8 rounded-2xl bg-gradient-to-br from-[#1A2950] to-[#0F1C3E] border border-[#2B8C74]/20 flex flex-col items-center text-center shadow-lg transform transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
+            <div className="w-20 h-20 flex items-center justify-center rounded-full bg-gradient-to-br from-[#2B8C74]/30 to-[#2B8C74]/10 mb-6 shadow-inner">
+              <AlertTriangle className="text-[#2B8C74] h-9 w-9" />
             </div>
-            <h3 className="text-xl font-medium mb-3 text-white">Compliance Risk</h3>
-            <p className="text-gray-300">
-              Manual tracking leads to missed renewals, expired documents, and potential contract violations.
+            <h3 className="text-xl font-medium mb-4 text-white">Compliance Risk</h3>
+            <div className="h-0.5 w-12 bg-[#2B8C74]/30 mb-4"></div>
+            <p className="text-gray-300 leading-relaxed">
+              Manual tracking leads to missed renewals, expired documents, and potential contract violations across stakeholders.
             </p>
           </div>
         </div>
         
         <h3 className="text-3xl font-semibold tracking-tight mb-12 text-white text-center">
-          Connected Risk Management vs. Siloed Approaches
+          Siloed Approaches vs. Connected Risk Management
         </h3>
         
         <div className="grid md:grid-cols-2 gap-8 md:gap-16 mb-16">
           {/* Traditional Risk Management */}
-          <div className="rounded-3xl overflow-hidden shadow-xl transform hover:-rotate-1 transition-transform duration-300">
-            <div className="bg-red-100 p-6 border-b border-red-200">
+          <div className="rounded-3xl overflow-hidden shadow-xl transform hover:-rotate-1 transition-all duration-300 hover:shadow-2xl">
+            <div className="bg-gradient-to-r from-red-100 to-red-50 p-6 border-b border-red-200">
               <h3 className="text-2xl font-semibold text-gray-800 mb-1">Traditional Approach</h3>
-              <p className="text-red-600 font-medium">Disconnected & Manual</p>
+              <p className="text-red-600 font-medium flex items-center">
+                <span className="inline-block w-2 h-2 bg-red-500 rounded-full mr-2"></span>
+                Disconnected & Manual
+              </p>
             </div>
             
-            <div className="bg-white p-8 h-[400px] relative border-l-4 border-red-300 bg-gradient-to-br from-white to-red-50">
+            <div className="bg-white p-8 h-[400px] relative border-l-4 border-red-300 bg-gradient-to-br from-white to-red-50/80">
               {/* Cluttered Desktop Illustration */}
               <div className="absolute inset-0 p-8">
                 {/* Email Window */}
@@ -117,13 +123,16 @@ export default function ProblemSection() {
           </div>
           
           {/* Kavaro Way */}
-          <div className="rounded-3xl overflow-hidden shadow-2xl transform hover:rotate-1 transition-transform duration-300">
-            <div className="bg-[#2B8C74]/20 p-6 border-b border-[#2B8C74]/30">
+          <div className="rounded-3xl overflow-hidden shadow-2xl transform hover:rotate-1 transition-all duration-300 hover:shadow-[0_20px_50px_rgba(43,140,116,0.3)]">
+            <div className="bg-gradient-to-r from-[#2B8C74]/30 to-[#2B8C74]/10 p-6 border-b border-[#2B8C74]/30">
               <h3 className="text-2xl font-semibold text-white mb-1">The Kavaro Platform</h3>
-              <p className="text-[#2B8C74] font-medium">Connected & Intelligent</p>
+              <p className="text-[#2B8C74] font-medium flex items-center">
+                <span className="inline-block w-2 h-2 bg-[#2B8C74] rounded-full mr-2"></span>
+                Connected & Intelligent
+              </p>
             </div>
             
-            <div className="bg-white p-8 h-[400px] relative border-l-4 border-[#2B8C74]">
+            <div className="bg-white p-8 h-[400px] relative border-l-4 border-[#2B8C74] bg-gradient-to-br from-white to-[#2B8C74]/5">
               {/* Clean UI Illustration */}
               <div className="absolute inset-0 p-8">
                 {/* Platform Interface */}
@@ -189,14 +198,18 @@ export default function ProblemSection() {
                     </div>
                     
                     {/* AI Features */}
-                    <div className="absolute bottom-6 right-6 w-60 bg-white rounded-lg shadow-lg border border-[#2B8C74]/20 p-4">
+                    <div className="absolute bottom-6 right-6 w-64 bg-white rounded-lg shadow-lg border border-[#2B8C74]/20 p-4 hover:shadow-xl transition-shadow">
                       <div className="flex items-start gap-3">
-                        <div className="w-8 h-8 rounded-full bg-[#2B8C74]/20 flex items-center justify-center flex-shrink-0">
+                        <div className="w-8 h-8 rounded-full bg-gradient-to-br from-[#2B8C74]/30 to-[#2B8C74]/10 flex items-center justify-center flex-shrink-0">
                           <span className="text-[#2B8C74] text-sm font-medium">AI</span>
                         </div>
                         <div>
-                          <p className="text-xs font-medium text-gray-800">Intelligent Insights</p>
-                          <p className="text-xs text-gray-600 mt-1">Policy changes detected: 2 new conditions</p>
+                          <p className="text-xs font-medium text-gray-800">Risk Intelligence</p>
+                          <p className="text-xs text-gray-600 mt-1">Policy changes detected across connected stakeholders</p>
+                          <div className="flex gap-1 mt-2">
+                            <div className="text-[9px] bg-blue-50 text-blue-600 px-1.5 py-0.5 rounded-full">Underwriter</div>
+                            <div className="text-[9px] bg-green-50 text-green-600 px-1.5 py-0.5 rounded-full">Client</div>
+                          </div>
                         </div>
                       </div>
                     </div>

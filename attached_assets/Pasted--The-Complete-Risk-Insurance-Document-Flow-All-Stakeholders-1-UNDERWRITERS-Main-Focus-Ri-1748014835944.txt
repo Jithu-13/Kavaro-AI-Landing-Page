@@ -1,0 +1,87 @@
+🔄 The Complete Risk & Insurance Document Flow (All Stakeholders)
+
+🧾 1. UNDERWRITERS
+Main Focus: Risk evaluation & pricing
+Documents They Handle:
+
+Exposure schedules (locations, vehicles, payroll, TIV)
+Applications (ACORD forms, SOVs)
+Loss runs
+COIs & endorsements
+Risk narratives
+Claims history reports
+Lifecycle Stages:
+
+🔍 Submission Review
+📊 Risk Analysis
+💵 Policy Pricing & Binding
+🤝 2. INSURANCE BROKERS
+Main Focus: Submissions, client support, renewal coordination
+Documents They Handle:
+
+Client intake forms
+COIs (Certificates of Insurance)
+Policy binders & declarations
+Endorsements & exclusions
+Policy renewal packets
+Loss run requests
+Coverage summaries
+Compliance documentation
+Lifecycle Stages:
+
+📝 Client Onboarding
+📤 Submission Packaging
+🔄 Midterm Changes & Renewals
+🔁 Year-End Reporting & Retention
+🏢 3. CLIENTS / INSUREDS (Risk, Ops, HR, Legal)
+Main Focus: Staying covered, compliant, and audit-ready
+Documents They Handle:
+
+Insurance policies (GL, WC, Auto, Cyber, D&O, etc.)
+Contracts (with vendors, landlords, lessors)
+COIs for self and vendors
+Premium invoices
+Claim submissions
+Safety reports / incident logs
+Indemnification agreements
+Lifecycle Stages:
+
+📥 Policy Intake
+📁 Document Management
+🔔 Expiration Tracking & Renewals
+🧾 Claims & Audit Support
+👷 4. VENDORS / SUBCONTRACTORS
+Main Focus: Proving compliance to clients
+Documents They Handle:
+
+COIs
+Additional insured endorsements
+W-9s
+Contracts / work agreements
+Safety plans
+Proof of insurance for equipment or auto
+Background or compliance certifications
+Lifecycle Stages:
+
+🚪 Vendor Onboarding
+📤 Document Upload
+🔄 Renewal Submissions
+🧾 Compliance Tracking
+👨‍⚖️ 5. COMPLIANCE / LEGAL / EHS TEAMS
+Main Focus: Ensuring every risk is accounted for and defensible
+Documents They Handle:
+
+Risk register
+Incident reports
+OSHA / EHS documentation
+Contract language (insurance clauses)
+Policy comparison reports
+Audit logs
+Subpoenas, litigation records
+Cyber coverage & privacy disclosures
+Lifecycle Stages:
+
+🧩 Policy Review & Alignment
+🛡 Risk Mitigation
+🧾 Audit Prep
+⚖️ Legal Response & Claims Analysis

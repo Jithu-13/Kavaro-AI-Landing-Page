@@ -2,23 +2,23 @@ import { Quote } from "lucide-react";
 
 const testimonials = [
   {
-    quote: "I had no background in risk management, but Kavaro AI made it effortless to stay compliant. Total game-changer.",
+    quote: "Kavaro AI turned our risk chaos into structure. Now I can answer underwriter questions in minutes.",
     author: "Jordan L.",
-    title: "HR Manager, SwiftEvents"
+    title: "Risk Analyst, SwiftEvents"
   },
   {
-    quote: "We used to track COIs in spreadsheets. Now everything is auto-tagged, secure, and just...works.",
-    author: "Nina P.",
-    title: "Ops Coordinator, Apex Builders"
+    quote: "We use it to collaborate with clients — they finally know what we know.",
+    author: "Mark R.",
+    title: "Commercial Insurance Broker, Allied Risk"
   },
   {
-    quote: "I don't have to chase vendors anymore. The alerts and dashboard keep everything on track.",
-    author: "Chris M.",
-    title: "Safety Lead, RiseWare"
+    quote: "Our vendors upload docs. Kavaro handles the rest. It's not just automation — it's assurance.",
+    author: "Carla V.",
+    title: "Compliance Lead, RiseWare Logistics"
   }
 ];
 
-const companies = ["Apex Builders", "SwiftEvents", "RiseWare", "Metro Health"];
+const companies = ["Allied Risk", "Bridge & Bond Brokers", "SwiftEvents", "RiseWare Logistics"];
 
 export default function TestimonialsSection() {
   return (

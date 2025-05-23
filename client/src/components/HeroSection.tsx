@@ -6,10 +6,10 @@ export default function HeroSection() {
       <div className="max-w-6xl mx-auto px-6 fade-in">
         <div className="max-w-3xl mx-auto text-center">
           <h1 className="text-5xl md:text-7xl font-semibold tracking-tight mb-8 text-[#0F1C3E] dark:text-white">
-            AI-Powered Insurance <span className="text-[#2B8C74]">Management</span>, Made Simple.
+            The Risk Management <span className="text-[#2B8C74]">Bridge</span>
           </h1>
           <p className="text-gray-700 dark:text-gray-200 text-xl md:text-2xl leading-relaxed mb-12 max-w-2xl mx-auto font-light">
-            Kavaro AI helps non-risk professionals manage COIs, contracts, and other insurance documents with confidence.
+            Kavaro AI is a secure, AI-powered platform connecting underwriters, brokers, clients, vendors, and customers — making risk clear, documents current, and compliance automatic.
           </p>
           <div className="flex flex-col sm:flex-row justify-center items-center gap-4 mt-12">
             <Button className="bg-[#2B8C74] hover:bg-[#2B8C74]/90 text-white px-8 py-7 h-auto text-lg rounded-full font-medium min-w-[200px] shadow-lg hover:shadow-xl transition-all">

@@ -1,4 +1,4 @@
-import { Lock, FileText, Check, Tag, Clock, Shield, Brain, Bell, AlertCircle } from "lucide-react";
+import { Lock, FileText, Check, Tag, Clock, Shield, Brain, Bell, AlertCircle, BarChart3, Workflow, PanelTopOpen } from "lucide-react";
 
 export default function SolutionSection() {
   return (
@@ -6,16 +6,59 @@ export default function SolutionSection() {
       <div className="max-w-7xl mx-auto px-6">
         <div className="max-w-3xl mx-auto text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-semibold tracking-tight mb-8 text-black">
-            Simple. Secure. <span className="text-[var(--light-ai)]">Built for You.</span>
+            One Platform. Every Risk Stakeholder. <span className="text-[#2B8C74]">Total Visibility.</span>
           </h2>
           
           <p className="text-gray-800 text-xl leading-relaxed mb-5">
-            Kavaro AI gives your team an easy way to manage insurance and risk documents — no experience needed.
+            Kavaro AI is more than a document system — it's your risk command center. We intake unstructured risk data from every source and use AI to classify, organize, and keep it all current, secure, and usable.
           </p>
           
           <p className="text-gray-800 text-xl leading-relaxed mb-5">
-            Our platform uses secure workflows, AI-powered tools, and smart automation to help you upload, organize, and track everything in one place.
+            With role-based workflows, real-time insights, and automated compliance checks, every part of the insurance ecosystem stays connected and protected.
           </p>
+        </div>
+        
+        {/* Key Benefits */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6 mb-20">
+          <div className="p-6 bg-[#F5F9FF] rounded-xl border border-blue-100">
+            <div className="w-12 h-12 flex items-center justify-center rounded-full bg-blue-50 mb-4">
+              <Lock className="text-blue-600 h-6 w-6" />
+            </div>
+            <h3 className="text-lg font-medium mb-2">Secure Document Vault</h3>
+            <p className="text-gray-600 text-sm">Centralized storage with blockchain-grade audit trails for every document action</p>
+          </div>
+          
+          <div className="p-6 bg-[#F8F5FF] rounded-xl border border-purple-100">
+            <div className="w-12 h-12 flex items-center justify-center rounded-full bg-purple-50 mb-4">
+              <Brain className="text-purple-600 h-6 w-6" />
+            </div>
+            <h3 className="text-lg font-medium mb-2">AI Understanding</h3>
+            <p className="text-gray-600 text-sm">Intelligent analysis of policies, contracts, exposures, and loss runs</p>
+          </div>
+          
+          <div className="p-6 bg-[#F5FFFC] rounded-xl border border-teal-100">
+            <div className="w-12 h-12 flex items-center justify-center rounded-full bg-teal-50 mb-4">
+              <BarChart3 className="text-teal-600 h-6 w-6" />
+            </div>
+            <h3 className="text-lg font-medium mb-2">Real-time Analytics</h3>
+            <p className="text-gray-600 text-sm">Customized dashboards for brokers, underwriters, and clients</p>
+          </div>
+          
+          <div className="p-6 bg-[#FFF9F5] rounded-xl border border-orange-100">
+            <div className="w-12 h-12 flex items-center justify-center rounded-full bg-orange-50 mb-4">
+              <Workflow className="text-orange-600 h-6 w-6" />
+            </div>
+            <h3 className="text-lg font-medium mb-2">Role-based Workflows</h3>
+            <p className="text-gray-600 text-sm">Customized access and views across departments and vendors</p>
+          </div>
+          
+          <div className="p-6 bg-[#FFF5F9] rounded-xl border border-pink-100">
+            <div className="w-12 h-12 flex items-center justify-center rounded-full bg-pink-50 mb-4">
+              <Bell className="text-pink-600 h-6 w-6" />
+            </div>
+            <h3 className="text-lg font-medium mb-2">Compliance Alerts</h3>
+            <p className="text-gray-600 text-sm">Automatic renewal tracking and compliance notifications</p>
+          </div>
         </div>
         
         {/* The Vault - Visual Centerpiece */}

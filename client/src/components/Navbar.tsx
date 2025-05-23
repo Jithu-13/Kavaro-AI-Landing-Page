@@ -39,24 +39,24 @@ export default function Navbar() {
 
   return (
     <>
-      <header className={`sticky top-0 z-50 ${isScrolled ? "bg-[var(--dark-background)]/90 backdrop-blur-sm border-b border-white/10" : "bg-[var(--dark-background)]"} transition-all duration-300`}>
-        <div className="flex justify-between items-center p-6 max-w-6xl mx-auto">
+      <header className={`sticky top-0 z-50 ${isScrolled ? "bg-[var(--light-background)]/95 backdrop-blur-md border-b border-gray-100" : "bg-[var(--light-background)]"} transition-all duration-300`}>
+        <div className="flex justify-between items-center py-5 px-6 max-w-7xl mx-auto">
           <div className="flex items-center">
-            <span className="text-xl font-semibold">Kavaro <span className="text-[var(--dark-ai)]">AI</span></span>
+            <span className="text-xl font-semibold tracking-tight">Kavaro <span className="text-[var(--light-ai)]">AI</span></span>
           </div>
           
-          <nav className="hidden md:flex gap-8 text-sm text-gray-300">
-            <a href="#" className="hover:text-white transition-colors font-medium">Home</a>
-            <a href="#about" className="hover:text-white transition-colors font-medium">About</a>
-            <a href="#contact" className="hover:text-white transition-colors font-medium">Contact</a>
+          <nav className="hidden md:flex gap-8 text-sm">
+            <a href="#" className="text-[var(--light-kavaro)] hover:text-[var(--light-ai)] transition-colors font-medium">Home</a>
+            <a href="#about" className="text-[var(--light-kavaro)] hover:text-[var(--light-ai)] transition-colors font-medium">About</a>
+            <a href="#contact" className="text-[var(--light-kavaro)] hover:text-[var(--light-ai)] transition-colors font-medium">Contact</a>
           </nav>
           
           <div className="flex items-center gap-4">
-            <Button className="bg-[var(--dark-ai)] hover:bg-[var(--dark-ai)]/90 text-white font-medium">
+            <Button className="bg-[var(--light-background)] hover:bg-gray-100 text-[var(--light-ai)] font-medium border border-gray-200 px-4 rounded-full">
               Sign Up
             </Button>
             <button 
-              className="md:hidden text-gray-300 hover:text-white"
+              className="md:hidden text-[var(--light-kavaro)]"
               onClick={toggleMenu}
               aria-label="Toggle menu"
             >
@@ -67,18 +67,18 @@ export default function Navbar() {
       </header>
 
       {/* Mobile menu */}
-      <div className={`fixed inset-0 bg-[#0A0B1D] z-50 flex flex-col justify-center items-center transform transition-transform duration-300 ease-in-out ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}>
+      <div className={`fixed inset-0 bg-[var(--light-background)] z-50 flex flex-col justify-center items-center transform transition-transform duration-300 ease-in-out ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}>
         <button 
-          className="absolute top-6 right-6 text-gray-300 hover:text-white"
+          className="absolute top-6 right-6 text-[var(--light-kavaro)]"
           onClick={closeMenu}
           aria-label="Close menu"
         >
           <X className="h-6 w-6" />
         </button>
-        <nav className="flex flex-col gap-8 text-xl text-gray-300">
-          <a href="#" className="hover:text-white transition-colors" onClick={closeMenu}>Home</a>
-          <a href="#about" className="hover:text-white transition-colors" onClick={closeMenu}>About</a>
-          <a href="#contact" className="hover:text-white transition-colors" onClick={closeMenu}>Contact</a>
+        <nav className="flex flex-col gap-8 text-xl">
+          <a href="#" className="text-[var(--light-kavaro)] hover:text-[var(--light-ai)] transition-colors font-medium" onClick={closeMenu}>Home</a>
+          <a href="#about" className="text-[var(--light-kavaro)] hover:text-[var(--light-ai)] transition-colors font-medium" onClick={closeMenu}>About</a>
+          <a href="#contact" className="text-[var(--light-kavaro)] hover:text-[var(--light-ai)] transition-colors font-medium" onClick={closeMenu}>Contact</a>
         </nav>
       </div>
     </>

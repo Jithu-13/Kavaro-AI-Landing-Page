@@ -20,9 +20,9 @@ export default function HeroSection() {
 
         <div className="md:w-1/2 flex justify-center items-center">
           <img 
-            src="/assets/kavaro-full-logo.svg" 
+            src="/assets/kavaro-logo.png" 
             alt="Kavaro AI Logo" 
-            className="w-64 md:w-96 hero-animation"
+            className="w-64 md:w-80 hero-animation"
             aria-hidden="true"
           />
         </div>

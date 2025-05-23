@@ -1,4 +1,4 @@
-import { Bell, Lock, Brain, BarChart4, Shield, User, FileText, FolderOpen, AlertCircle, Settings, Search, Tag, Check, Clock } from "lucide-react";
+import { Lock, FileText, Check, Tag, Clock, Shield, Brain, Bell, AlertCircle } from "lucide-react";
 
 export default function SolutionSection() {
   return (
@@ -18,185 +18,155 @@ export default function SolutionSection() {
           </p>
         </div>
         
-        <div className="relative mx-auto max-w-5xl">
-          {/* Laptop Frame */}
-          <div className="relative rounded-xl overflow-hidden shadow-2xl bg-gray-900 pb-[56.25%]">
-            {/* Dashboard Screen */}
-            <div className="absolute inset-2 rounded-lg bg-[#0A0B1D] overflow-hidden">
-              <div className="h-full flex">
-                {/* Sidebar */}
-                <div className="w-52 bg-[#151636] border-r border-gray-700/30 flex-shrink-0 py-6">
-                  <div className="px-4 mb-8">
-                    <div className="flex items-center gap-2">
-                      <div className="w-8 h-8 rounded-full bg-[var(--light-ai)]/20 flex items-center justify-center">
-                        <span className="text-[var(--light-ai)] text-sm font-bold">K</span>
-                      </div>
-                      <span className="text-white font-medium">Kavaro AI</span>
+        {/* The Vault - Visual Centerpiece */}
+        <div className="mx-auto max-w-5xl relative">
+          <div className="h-[500px] md:h-[600px] rounded-3xl bg-gradient-to-b from-[#0A0B1D] to-[#15162c] overflow-hidden relative shadow-2xl">
+            {/* Vault Door */}
+            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] md:w-[400px] md:h-[400px]">
+              {/* Outer vault door ring */}
+              <div className="absolute inset-0 rounded-full border-[20px] border-[#131425] shadow-inner"></div>
+              
+              {/* Inner vault door - open state */}
+              <div className="absolute inset-[20px] rounded-full bg-gradient-to-br from-[#0e0f1f] to-[#232442] overflow-hidden shadow-lg flex items-center justify-center">
+                {/* Vault door accent */}
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <div className="w-[75%] h-[75%] rounded-full border-[8px] border-[#2B8C74]/30 flex items-center justify-center">
+                    <div className="w-[75%] h-[75%] rounded-full border-[8px] border-[#2B8C74]/20 flex items-center justify-center">
+                      <div className="w-[75%] h-[75%] rounded-full border-[8px] border-[#2B8C74]/10"></div>
                     </div>
                   </div>
-                  
-                  <nav className="space-y-1">
-                    <div className="px-3 py-2 mx-2 bg-[var(--light-ai)]/10 rounded-md flex items-center gap-3 text-[var(--light-ai)]">
-                      <FileText className="h-4 w-4" />
-                      <span className="text-sm font-medium">Documents</span>
-                    </div>
-                    
-                    <div className="px-3 py-2 mx-2 flex items-center gap-3 text-gray-400 hover:text-white transition-colors">
-                      <FolderOpen className="h-4 w-4" />
-                      <span className="text-sm">Vendors</span>
-                    </div>
-                    
-                    <div className="px-3 py-2 mx-2 flex items-center gap-3 text-gray-400 hover:text-white transition-colors">
-                      <AlertCircle className="h-4 w-4" />
-                      <span className="text-sm">Alerts</span>
-                    </div>
-                    
-                    <div className="px-3 py-2 mx-2 flex items-center gap-3 text-gray-400 hover:text-white transition-colors">
-                      <Settings className="h-4 w-4" />
-                      <span className="text-sm">Settings</span>
-                    </div>
-                  </nav>
                 </div>
                 
-                {/* Main Content */}
-                <div className="flex-grow p-6 relative">
-                  {/* Header area */}
-                  <div className="flex items-center justify-between mb-6">
-                    <h3 className="text-white text-xl font-medium">Your Control Center</h3>
-                    
-                    <div className="flex items-center gap-4">
-                      <div className="relative">
-                        <Bell className="h-5 w-5 text-gray-400" />
-                        <span className="absolute -top-1 -right-1 w-4 h-4 flex items-center justify-center rounded-full bg-[var(--light-ai)] text-white text-[10px]">3</span>
-                      </div>
-                      
-                      <div className="w-8 h-8 rounded-full bg-gray-700 flex items-center justify-center">
-                        <User className="h-4 w-4 text-gray-300" />
-                      </div>
+                {/* Vault interior glow */}
+                <div className="absolute inset-[20%] rounded-full bg-[#0A0B1D] flex items-center justify-center overflow-hidden">
+                  <div className="absolute inset-0 bg-[#B6E1C4]/5 rounded-full"></div>
+                  <div className="absolute w-[200%] h-[200%] animate-[spin_40s_linear_infinite] opacity-30">
+                    <div className="absolute top-0 left-1/2 w-px h-full bg-gradient-to-b from-transparent via-[#B6E1C4] to-transparent"></div>
+                    <div className="absolute top-1/2 left-0 w-full h-px bg-gradient-to-r from-transparent via-[#B6E1C4] to-transparent"></div>
+                  </div>
+                </div>
+              </div>
+              
+              {/* Vault handle */}
+              <div className="absolute right-0 top-1/2 transform translate-x-1/2 -translate-y-1/2 w-[40px] h-[80px] rounded-full bg-gradient-to-r from-[#2B8C74] to-[#3BA271] shadow-lg border border-white/10 flex items-center justify-center">
+                <div className="w-[15px] h-[30px] rounded-full bg-[#0A0B1D]"></div>
+              </div>
+            </div>
+            
+            {/* Floating Documents */}
+            <div className="absolute -top-10 -right-10 left-0 bottom-0 pointer-events-none">
+              {/* Document 1 */}
+              <div className="absolute top-[20%] right-[30%] transform rotate-3 w-52">
+                <div className="bg-white/90 p-4 rounded-lg shadow-lg border border-gray-100">
+                  <div className="flex justify-between items-start mb-2">
+                    <div className="w-10 h-10 bg-[#B6E1C4]/30 rounded flex items-center justify-center">
+                      <FileText className="h-5 w-5 text-[#2B8C74]" />
+                    </div>
+                    <div className="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center">
+                      <Check className="h-3 w-3 text-green-600" />
                     </div>
                   </div>
-                  
-                  {/* Search bar */}
-                  <div className="relative mb-6">
-                    <div className="absolute left-3 top-1/2 transform -translate-y-1/2">
-                      <Search className="h-4 w-4 text-gray-500" />
-                    </div>
-                    <input 
-                      type="text" 
-                      className="w-full bg-gray-800/50 border border-gray-700 rounded-md py-2 pl-10 pr-4 text-sm text-gray-300 placeholder-gray-500"
-                      placeholder="Search documents, vendors, or policies..."
-                      readOnly
-                    />
+                  <p className="text-sm font-medium text-gray-800">General Liability COI</p>
+                  <div className="mt-2 flex items-center justify-between">
+                    <span className="text-xs bg-blue-100 text-blue-800 px-2 py-0.5 rounded-full">Vendor: Apex Supply</span>
+                    <span className="text-xs text-gray-500">Verified 2 days ago</span>
                   </div>
-                  
-                  {/* Document list */}
-                  <div className="space-y-3 mb-6">
-                    <div className="bg-gray-800/30 rounded-lg border border-gray-700/50 p-4 flex items-center justify-between">
-                      <div className="flex items-center gap-3">
-                        <div className="w-10 h-10 bg-[var(--light-ai)]/10 rounded-md flex items-center justify-center">
-                          <FileText className="h-5 w-5 text-[var(--light-ai)]" />
-                        </div>
-                        <div>
-                          <p className="text-white text-sm font-medium">Apex Services - General Liability</p>
-                          <div className="flex items-center gap-2 mt-1">
-                            <span className="px-2 py-0.5 bg-[var(--light-ai)]/10 rounded-full text-[var(--light-ai)] text-[10px]">Auto Liability</span>
-                            <span className="px-2 py-0.5 bg-blue-500/10 rounded-full text-blue-400 text-[10px]">Vendor: Apex</span>
-                          </div>
-                        </div>
-                      </div>
-                      
-                      <div className="flex items-center gap-2">
-                        <span className="flex items-center gap-1 text-xs text-green-400">
-                          <Check className="h-3 w-3" />
-                          Valid
-                        </span>
-                      </div>
+                </div>
+                
+                {/* Connection nodes */}
+                <div className="absolute -right-12 top-1/2 transform -translate-y-1/2 w-8 h-8 rounded-full bg-[#B6E1C4]/20 flex items-center justify-center">
+                  <div className="w-6 h-6 rounded-full bg-[#B6E1C4]/30 animate-pulse"></div>
+                </div>
+              </div>
+              
+              {/* Document 2 */}
+              <div className="absolute top-[40%] left-[15%] transform -rotate-6 w-52">
+                <div className="bg-white/90 p-4 rounded-lg shadow-lg border border-gray-100">
+                  <div className="flex justify-between items-start mb-2">
+                    <div className="w-10 h-10 bg-[#B6E1C4]/30 rounded flex items-center justify-center">
+                      <FileText className="h-5 w-5 text-[#2B8C74]" />
                     </div>
-                    
-                    <div className="bg-gray-800/30 rounded-lg border border-gray-700/50 p-4 flex items-center justify-between">
-                      <div className="flex items-center gap-3">
-                        <div className="w-10 h-10 bg-[var(--light-ai)]/10 rounded-md flex items-center justify-center">
-                          <FileText className="h-5 w-5 text-[var(--light-ai)]" />
-                        </div>
-                        <div>
-                          <p className="text-white text-sm font-medium">Northeast Supply Co - COI</p>
-                          <div className="flex items-center gap-2 mt-1">
-                            <span className="px-2 py-0.5 bg-orange-500/10 rounded-full text-orange-400 text-[10px]">Expires in 30 Days</span>
-                          </div>
-                        </div>
-                      </div>
-                      
-                      <div className="flex items-center gap-2">
-                        <span className="flex items-center gap-1 text-xs text-orange-400">
-                          <Clock className="h-3 w-3" />
-                          Expiring Soon
-                        </span>
-                      </div>
-                    </div>
-                    
-                    <div className="bg-gray-800/30 rounded-lg border border-gray-700/50 p-4 flex items-center justify-between">
-                      <div className="flex items-center gap-3">
-                        <div className="w-10 h-10 bg-[var(--light-ai)]/10 rounded-md flex items-center justify-center">
-                          <FileText className="h-5 w-5 text-[var(--light-ai)]" />
-                        </div>
-                        <div>
-                          <p className="text-white text-sm font-medium">Global Tech Corp - Worker's Comp</p>
-                          <div className="flex items-center gap-2 mt-1">
-                            <span className="px-2 py-0.5 bg-purple-500/10 rounded-full text-purple-400 text-[10px]">Workers Comp</span>
-                          </div>
-                        </div>
-                      </div>
-                      
-                      <div className="flex items-center gap-2">
-                        <span className="flex items-center gap-1 text-xs text-green-400">
-                          <Check className="h-3 w-3" />
-                          Valid
-                        </span>
-                      </div>
+                    <div className="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center">
+                      <Check className="h-3 w-3 text-green-600" />
                     </div>
                   </div>
-                  
-                  {/* AI assistant popup */}
-                  <div className="absolute bottom-6 right-6 bg-gray-800/90 border border-gray-700 rounded-lg p-4 shadow-lg max-w-xs">
-                    <div className="flex gap-3">
-                      <div className="w-8 h-8 rounded-full bg-[var(--light-ai)]/20 flex items-center justify-center flex-shrink-0">
-                        <span className="text-[var(--light-ai)] text-sm font-bold">AI</span>
-                      </div>
-                      <div>
-                        <p className="text-white text-xs font-medium mb-1">Kavaro Assistant</p>
-                        <p className="text-gray-300 text-xs">Add policyholder name to this COI?</p>
-                        <div className="flex gap-2 mt-2">
-                          <button className="px-2 py-1 bg-[var(--light-ai)] rounded text-white text-xs">Yes</button>
-                          <button className="px-2 py-1 bg-gray-700 rounded text-white text-xs">No</button>
-                        </div>
-                      </div>
+                  <p className="text-sm font-medium text-gray-800">Workers Compensation</p>
+                  <div className="mt-2 flex items-center justify-between">
+                    <span className="text-xs bg-purple-100 text-purple-800 px-2 py-0.5 rounded-full">Annual Policy</span>
+                    <span className="text-xs text-gray-500">Verified 1 week ago</span>
+                  </div>
+                </div>
+                
+                {/* Connection nodes */}
+                <div className="absolute -left-8 top-1/2 transform -translate-y-1/2 w-8 h-8 rounded-full bg-[#B6E1C4]/20 flex items-center justify-center">
+                  <div className="w-6 h-6 rounded-full bg-[#B6E1C4]/30 animate-pulse"></div>
+                </div>
+              </div>
+              
+              {/* Document 3 */}
+              <div className="absolute bottom-[25%] right-[20%] transform rotate-6 w-52">
+                <div className="bg-white/90 p-4 rounded-lg shadow-lg border border-gray-100">
+                  <div className="flex justify-between items-start mb-2">
+                    <div className="w-10 h-10 bg-[#B6E1C4]/30 rounded flex items-center justify-center">
+                      <FileText className="h-5 w-5 text-[#2B8C74]" />
                     </div>
+                    <div className="w-6 h-6 bg-orange-100 rounded-full flex items-center justify-center">
+                      <Clock className="h-3 w-3 text-orange-600" />
+                    </div>
+                  </div>
+                  <p className="text-sm font-medium text-gray-800">Auto Insurance Policy</p>
+                  <div className="mt-2 flex items-center justify-between">
+                    <span className="text-xs bg-orange-100 text-orange-800 px-2 py-0.5 rounded-full">Expires in 30 Days</span>
+                    <span className="text-xs text-gray-500">Added yesterday</span>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          
-          {/* Floating elements */}
-          <div className="absolute -left-4 md:-left-12 top-1/4 bg-white p-3 rounded-full shadow-lg flex items-center justify-center">
-            <Lock className="h-6 w-6 text-[var(--light-ai)]" />
-          </div>
-          <div className="absolute -right-4 md:-right-12 top-1/3 bg-white p-3 rounded-full shadow-lg flex items-center justify-center">
-            <Brain className="h-6 w-6 text-[var(--light-ai)]" />
-          </div>
-          <div className="absolute -left-4 md:-left-12 bottom-1/4 bg-white p-3 rounded-full shadow-lg flex items-center justify-center">
-            <Shield className="h-6 w-6 text-[var(--light-ai)]" />
-          </div>
-          
-          {/* Compliance bar */}
-          <div className="absolute -right-4 md:-right-12 bottom-1/4 bg-white p-3 rounded-full shadow-lg">
-            <div className="h-6 w-20 bg-gray-100 rounded-full relative overflow-hidden">
-              <div className="absolute inset-0 bg-[var(--light-ai)] rounded-full" style={{ width: '90%' }}></div>
-              <div className="absolute inset-0 flex items-center justify-center">
-                <span className="text-xs font-medium text-white">90%</span>
+            
+            {/* AI Connection Lines */}
+            <svg className="absolute inset-0 w-full h-full" xmlns="http://www.w3.org/2000/svg">
+              <line x1="35%" y1="30%" x2="45%" y2="50%" stroke="#B6E1C4" strokeWidth="1" strokeDasharray="5,5" strokeOpacity="0.5" />
+              <line x1="65%" y1="30%" x2="55%" y2="50%" stroke="#B6E1C4" strokeWidth="1" strokeDasharray="5,5" strokeOpacity="0.5" />
+              <line x1="45%" y1="70%" x2="55%" y2="50%" stroke="#B6E1C4" strokeWidth="1" strokeDasharray="5,5" strokeOpacity="0.5" />
+            </svg>
+            
+            {/* AI Label Nodes */}
+            <div className="absolute top-[30%] left-[35%] bg-[#0A0B1D]/90 text-white text-xs px-2 py-1 rounded border border-[#B6E1C4]/30">
+              <div className="flex items-center gap-1">
+                <Tag className="h-3 w-3 text-[#B6E1C4]" />
+                <span>Tag Added</span>
               </div>
             </div>
+            
+            <div className="absolute top-[30%] right-[35%] bg-[#0A0B1D]/90 text-white text-xs px-2 py-1 rounded border border-[#B6E1C4]/30">
+              <div className="flex items-center gap-1">
+                <Brain className="h-3 w-3 text-[#B6E1C4]" />
+                <span>AI Suggestion</span>
+              </div>
+            </div>
+            
+            <div className="absolute bottom-[30%] left-[45%] bg-[#0A0B1D]/90 text-white text-xs px-2 py-1 rounded border border-[#B6E1C4]/30">
+              <div className="flex items-center gap-1">
+                <Clock className="h-3 w-3 text-[#B6E1C4]" />
+                <span>Expires in 30 Days</span>
+              </div>
+            </div>
+            
+            {/* Security Features */}
+            <div className="absolute bottom-4 left-4 bg-[#0A0B1D]/80 border border-[#B6E1C4]/20 rounded-lg p-2 flex items-center gap-2">
+              <Lock className="h-4 w-4 text-[#B6E1C4]" />
+              <span className="text-white text-xs">AES-256 Encrypted</span>
+            </div>
+            
+            <div className="absolute bottom-4 right-4 bg-[#0A0B1D]/80 border border-[#B6E1C4]/20 rounded-lg p-2 flex items-center gap-2">
+              <Bell className="h-4 w-4 text-[#B6E1C4]" />
+              <span className="text-white text-xs">Auto alerts enabled</span>
+            </div>
           </div>
+          
+          <p className="text-center text-xl text-gray-700 mt-8 max-w-3xl mx-auto">
+            Your insurance data stays secure, smart, and ready — all in one place.
+          </p>
         </div>
         
         {/* Benefits */}
@@ -224,7 +194,7 @@ export default function SolutionSection() {
             
             <div className="bg-gray-50 p-6 rounded-xl">
               <div className="w-12 h-12 rounded-full bg-[var(--light-ai)]/10 flex items-center justify-center mb-4">
-                <Search className="h-6 w-6 text-[var(--light-ai)]" />
+                <Shield className="h-6 w-6 text-[var(--light-ai)]" />
               </div>
               <h4 className="text-lg font-medium text-black mb-2">Searchable Records</h4>
               <p className="text-gray-600">Find COIs, contracts, policies, and documents instantly with smart search.</p>
@@ -232,7 +202,7 @@ export default function SolutionSection() {
             
             <div className="bg-gray-50 p-6 rounded-xl">
               <div className="w-12 h-12 rounded-full bg-[var(--light-ai)]/10 flex items-center justify-center mb-4">
-                <Clock className="h-6 w-6 text-[var(--light-ai)]" />
+                <AlertCircle className="h-6 w-6 text-[var(--light-ai)]" />
               </div>
               <h4 className="text-lg font-medium text-black mb-2">Expiration Alerts</h4>
               <p className="text-gray-600">Automated alerts keep you ahead of compliance deadlines.</p>

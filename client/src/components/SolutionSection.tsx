@@ -21,87 +21,159 @@ export default function SolutionSection() {
         {/* The Vault - Visual Centerpiece */}
         <div className="mx-auto max-w-5xl relative">
           <div className="h-[500px] md:h-[600px] rounded-3xl bg-gradient-to-b from-[#0A0B1D] to-[#15162c] overflow-hidden relative shadow-2xl">
-            {/* Vault Structure */}
-            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[360px] h-[360px] md:w-[460px] md:h-[460px]">
-              {/* Wall around vault */}
-              <div className="absolute -inset-8 bg-gradient-to-br from-[#0A0B1D] to-[#151938] rounded-3xl shadow-2xl"></div>
-              
-              {/* Outer metal frame */}
-              <div className="absolute inset-0 rounded-[20px] bg-gradient-to-br from-gray-700 to-gray-900 border-4 border-gray-800 shadow-inner overflow-hidden">
-                {/* Rivets on frame */}
-                <div className="absolute top-4 left-4 w-4 h-4 rounded-full bg-gray-600 border border-gray-500"></div>
-                <div className="absolute top-4 right-4 w-4 h-4 rounded-full bg-gray-600 border border-gray-500"></div>
-                <div className="absolute bottom-4 left-4 w-4 h-4 rounded-full bg-gray-600 border border-gray-500"></div>
-                <div className="absolute bottom-4 right-4 w-4 h-4 rounded-full bg-gray-600 border border-gray-500"></div>
+            {/* Wall surrounding vault */}
+            <div className="absolute inset-0 bg-gradient-to-br from-gray-800 to-gray-900"></div>
+            
+            {/* Vault wall texture */}
+            <div className="absolute inset-0">
+              {/* Grid pattern */}
+              <div className="absolute inset-0 opacity-10">
+                <div className="grid grid-cols-12 h-full">
+                  {[...Array(12)].map((_, i) => (
+                    <div key={i} className="border-r border-white/5 h-full"></div>
+                  ))}
+                </div>
+                <div className="grid grid-rows-12 w-full">
+                  {[...Array(12)].map((_, i) => (
+                    <div key={i} className="border-b border-white/5 w-full"></div>
+                  ))}
+                </div>
+              </div>
+            </div>
+            
+            {/* Bank vault door frame (metallic frame around the door) */}
+            <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] md:w-[500px] md:h-[500px] rounded-xl bg-gradient-to-b from-gray-700 via-gray-800 to-gray-900 shadow-2xl overflow-hidden flex items-center justify-center">
+              {/* Bolts around the frame */}
+              {[...Array(16)].map((_, i) => {
+                const angle = (i * 360) / 16;
+                const radius = 46; // % from center
+                const x = 50 + radius * Math.cos((angle * Math.PI) / 180);
+                const y = 50 + radius * Math.sin((angle * Math.PI) / 180);
                 
-                {/* Metal texture overlay */}
-                <div className="absolute inset-0 bg-gradient-to-br from-gray-700/20 to-gray-900/20 backdrop-blur-sm">
-                  <div className="w-full h-full opacity-10">
-                    {[...Array(50)].map((_, i) => (
+                return (
+                  <div 
+                    key={i} 
+                    className="absolute w-4 h-4 md:w-5 md:h-5 rounded-full bg-gray-600 border-2 border-gray-500 shadow-inner"
+                    style={{ left: `${x}%`, top: `${y}%`, transform: 'translate(-50%, -50%)' }}
+                  ></div>
+                );
+              })}
+              
+              {/* Door outline */}
+              <div className="w-[85%] h-[85%] rounded-xl border-8 border-gray-600 relative overflow-hidden shadow-inner">
+                {/* Door surface with brushed metal texture */}
+                <div className="absolute inset-0 bg-gradient-to-br from-gray-600 to-gray-700">
+                  {/* Horizontal brush lines */}
+                  <div className="absolute inset-0">
+                    {[...Array(30)].map((_, i) => (
                       <div 
-                        key={i} 
-                        className="absolute bg-gray-400/20 rounded-full"
-                        style={{
-                          width: `${Math.random() * 5 + 1}px`,
-                          height: `${Math.random() * 5 + 1}px`,
-                          top: `${Math.random() * 100}%`,
-                          left: `${Math.random() * 100}%`
-                        }}
+                        key={i}
+                        className="absolute w-full h-px bg-gray-500/10"
+                        style={{ top: `${(i * 100) / 30}%` }}
                       ></div>
                     ))}
                   </div>
                 </div>
-              </div>
-              
-              {/* Inner vault door */}
-              <div className="absolute inset-[40px] rounded-xl bg-gradient-to-br from-[#131425] to-[#232442] shadow-lg overflow-hidden border border-gray-700">
-                {/* Vault door details */}
-                <div className="absolute inset-0">
-                  {/* Circular lock mechanism */}
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="w-[70%] h-[70%] rounded-full border-[12px] border-[#232442] flex items-center justify-center relative">
-                      <div className="absolute inset-0 border-[12px] border-gray-700 rounded-full opacity-20"></div>
-                      <div className="w-[75%] h-[75%] rounded-full border-[8px] border-[#2B8C74]/30 flex items-center justify-center">
-                        <div className="w-[75%] h-[75%] rounded-full border-[8px] border-[#2B8C74]/20 flex items-center justify-center">
-                          <div className="w-[75%] h-[75%] rounded-full border-[8px] border-[#2B8C74]/10">
-                            {/* Center lock mechanism */}
-                            <div className="absolute inset-[30%] rounded-full bg-[#0A0B1D] shadow-inner border border-[#2B8C74]/30 flex items-center justify-center overflow-hidden">
-                              <div className="absolute inset-0 bg-[#B6E1C4]/5 rounded-full"></div>
-                              <div className="absolute w-[200%] h-[200%] animate-[spin_40s_linear_infinite] opacity-30">
-                                <div className="absolute top-0 left-1/2 w-px h-full bg-gradient-to-b from-transparent via-[#B6E1C4] to-transparent"></div>
-                                <div className="absolute top-1/2 left-0 w-full h-px bg-gradient-to-r from-transparent via-[#B6E1C4] to-transparent"></div>
-                              </div>
-                            </div>
-                          </div>
+                
+                {/* Vault door inner details */}
+                <div className="absolute inset-0 flex items-center justify-center">
+                  {/* Main circular lock mechanism */}
+                  <div className="w-[70%] h-[70%] rounded-full relative">
+                    {/* Outer ring */}
+                    <div className="absolute inset-0 rounded-full border-[16px] border-gray-700 shadow-inner"></div>
+                    
+                    {/* Middle ring with notches */}
+                    <div className="absolute inset-[20px] rounded-full border-[12px] border-gray-800 shadow-inner overflow-hidden">
+                      {/* Notches around the ring */}
+                      {[...Array(18)].map((_, i) => {
+                        const angle = (i * 360) / 18;
+                        const radius = 50; // % from center
+                        const x = 50 + radius * Math.cos((angle * Math.PI) / 180);
+                        const y = 50 + radius * Math.sin((angle * Math.PI) / 180);
+                        
+                        return (
+                          <div 
+                            key={i} 
+                            className="absolute w-2 h-3 bg-gray-900" 
+                            style={{ 
+                              left: `${x}%`, 
+                              top: `${y}%`, 
+                              transform: `translate(-50%, -50%) rotate(${angle}deg)` 
+                            }}
+                          ></div>
+                        );
+                      })}
+                    </div>
+                    
+                    {/* Inner ring with mint accent color */}
+                    <div className="absolute inset-[60px] rounded-full bg-gray-800 border-[8px] border-[#2B8C74]/30 flex items-center justify-center shadow-inner">
+                      {/* Center glow */}
+                      <div className="absolute inset-[15px] rounded-full bg-[#0A0B1D] flex items-center justify-center overflow-hidden shadow-inner">
+                        <div className="absolute inset-0 bg-[#B6E1C4]/10 rounded-full"></div>
+                        <div className="absolute w-[200%] h-[200%] animate-[spin_40s_linear_infinite] opacity-30">
+                          <div className="absolute top-0 left-1/2 w-px h-full bg-gradient-to-b from-transparent via-[#B6E1C4] to-transparent"></div>
+                          <div className="absolute top-1/2 left-0 w-full h-px bg-gradient-to-r from-transparent via-[#B6E1C4] to-transparent"></div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                  
-                  {/* Lock numbers */}
-                  <div className="absolute top-[20%] left-[25%] text-[10px] font-mono text-gray-400">25</div>
-                  <div className="absolute top-[30%] right-[25%] text-[10px] font-mono text-gray-400">62</div>
-                  <div className="absolute bottom-[25%] left-[30%] text-[10px] font-mono text-gray-400">18</div>
-                  <div className="absolute bottom-[20%] right-[20%] text-[10px] font-mono text-gray-400">93</div>
-                </div>
-              </div>
-              
-              {/* Vault handle */}
-              <div className="absolute right-[-5px] top-1/2 transform translate-x-1/2 -translate-y-1/2 w-[50px] h-[100px] rounded-2xl bg-gradient-to-r from-gray-600 to-gray-800 shadow-lg border border-gray-700 flex items-center justify-center z-10">
-                <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-[#2B8C74]/10 to-[#3BA271]/10"></div>
-                <div className="w-[20px] h-[60px] rounded-xl bg-gradient-to-r from-[#2B8C74] to-[#3BA271] shadow-inner border border-[#2B8C74]/50">
-                  <div className="absolute inset-0 opacity-30 flex items-center justify-center">
-                    <div className="h-1/2 w-1/3 border-2 border-white/10 rounded-full"></div>
+                    
+                    {/* Combination lock numbers */}
+                    <div className="absolute inset-0">
+                      <div className="absolute top-[15%] left-[15%] text-[10px] font-mono text-white/70 bg-gray-900/60 px-1 rounded-sm">25</div>
+                      <div className="absolute top-[15%] right-[15%] text-[10px] font-mono text-white/70 bg-gray-900/60 px-1 rounded-sm">62</div>
+                      <div className="absolute bottom-[15%] left-[15%] text-[10px] font-mono text-white/70 bg-gray-900/60 px-1 rounded-sm">18</div>
+                      <div className="absolute bottom-[15%] right-[15%] text-[10px] font-mono text-white/70 bg-gray-900/60 px-1 rounded-sm">93</div>
+                    </div>
                   </div>
                 </div>
-              </div>
-              
-              {/* Vault opening light glow */}
-              <div className="absolute inset-[40px] rounded-xl overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-r from-[#B6E1C4]/5 to-[#B6E1C4]/0 blur-lg opacity-50"></div>
-                <div className="absolute left-0 top-1/2 h-40 w-2 -translate-y-1/2 bg-[#B6E1C4]/30 blur-xl"></div>
+                
+                {/* Heavy door shadow showing it's open */}
+                <div className="absolute inset-y-0 left-0 w-6 bg-gradient-to-r from-black to-transparent"></div>
+                
+                {/* Gleaming highlights */}
+                <div className="absolute inset-0">
+                  <div className="absolute top-5 right-5 w-20 h-1 bg-white/10 rounded-full transform rotate-45"></div>
+                  <div className="absolute bottom-10 left-10 w-16 h-1 bg-white/10 rounded-full transform -rotate-30"></div>
+                </div>
+                
+                {/* Brand name on the vault */}
+                <div className="absolute top-6 inset-x-0 flex justify-center">
+                  <div className="px-4 py-1 rounded bg-gray-800/80 text-xs text-[#B6E1C4] font-mono tracking-wider">KAVARO SECURE</div>
+                </div>
               </div>
             </div>
+            
+            {/* Vault handle - Large rotating wheel */}
+            <div className="absolute right-[16%] top-1/2 transform -translate-y-1/2 z-20">
+              <div className="relative w-24 h-24 md:w-32 md:h-32">
+                {/* Outer wheel */}
+                <div className="absolute inset-0 rounded-full bg-gradient-to-br from-gray-600 to-gray-800 border-8 border-gray-700 shadow-lg"></div>
+                
+                {/* Inner details */}
+                <div className="absolute inset-[15%] rounded-full bg-gradient-to-br from-[#2B8C74]/20 to-[#3BA271]/20 border-4 border-gray-600"></div>
+                
+                {/* Center pin */}
+                <div className="absolute inset-[40%] rounded-full bg-gray-900 border-2 border-gray-600"></div>
+                
+                {/* Spokes */}
+                {[...Array(3)].map((_, i) => {
+                  const angle = (i * 360) / 3;
+                  return (
+                    <div 
+                      key={i} 
+                      className="absolute inset-[15%] rounded-full border-t-8 border-gray-600" 
+                      style={{ transform: `rotate(${angle}deg)` }}
+                    ></div>
+                  );
+                })}
+                
+                {/* Reflection */}
+                <div className="absolute top-[10%] right-[20%] w-6 h-2 bg-white/10 rounded-full"></div>
+              </div>
+            </div>
+            
+            {/* Light glow from opening */}
+            <div className="absolute left-[24%] top-0 bottom-0 w-2 bg-[#B6E1C4]/20 blur-xl"></div>
             
             {/* Floating Documents */}
             <div className="absolute -top-10 -right-10 left-0 bottom-0 pointer-events-none">

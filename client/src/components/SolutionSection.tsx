@@ -14,70 +14,201 @@ export default function SolutionSection() {
           </p>
         </div>
         
-        {/* Key Benefits - Modern Apple-style horizontal showcase */}
-        <div className="mb-24 overflow-hidden">
+        {/* Key Benefits - Apple-style Feature Carousel */}
+        <div className="mb-24 overflow-hidden" id="features-carousel">
           <div className="relative">
-            {/* Large feature imagery */}
-            <div className="w-full relative z-10 bg-white">
-              {/* Feature 1 */}
-              <div className="py-20 flex flex-col md:flex-row items-center justify-between">
-                <div className="w-full md:w-1/2 px-10 md:pr-20">
-                  <div className="mb-6 inline-block">
-                    <div className="w-16 h-16 flex items-center justify-center rounded-full bg-[#3584E4]/10">
-                      <Lock className="text-[#3584E4] h-7 w-7" />
-                    </div>
-                  </div>
-                  <h3 className="text-[#0F1C3E] text-3xl font-medium mb-4">Secure Vault</h3>
-                  <p className="text-gray-500 text-lg font-light leading-relaxed">
-                    Enterprise-grade document security with immutable audit trails tracking every action.
-                  </p>
-                </div>
-                <div className="w-full md:w-1/2 flex justify-center p-8">
-                  <div className="w-full max-w-md h-64 bg-gradient-to-br from-[#3584E4]/5 to-[#3584E4]/20 rounded-2xl overflow-hidden relative border border-[#3584E4]/20">
-                    <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                      <div className="relative">
-                        <div className="absolute -inset-4 bg-[#3584E4]/5 blur-xl rounded-full"></div>
-                        <Lock className="h-16 w-16 text-[#3584E4]" />
+            {/* Large feature imagery - Slideshow */}
+            <div className="w-full relative z-10 bg-white overflow-hidden">
+              <div className="flex snap-x snap-mandatory overflow-x-auto scrollbar-hide">
+                {/* Feature 1: Secure Vault */}
+                <div className="snap-center min-w-full py-20 flex flex-col md:flex-row items-center justify-between" id="feature-1">
+                  <div className="w-full md:w-1/2 px-10 md:pr-20">
+                    <div className="mb-6 inline-block">
+                      <div className="w-16 h-16 flex items-center justify-center rounded-full bg-[#3584E4]/10">
+                        <Lock className="text-[#3584E4] h-7 w-7" />
                       </div>
                     </div>
-                    <div className="absolute inset-0 flex items-center justify-center opacity-20">
-                      <div className="w-32 h-32 border-2 border-[#3584E4] rounded-lg transform rotate-12"></div>
-                      <div className="w-32 h-32 border-2 border-[#3584E4] rounded-lg absolute transform -rotate-12"></div>
+                    <h3 className="text-[#0F1C3E] text-3xl font-medium mb-4">Secure Vault</h3>
+                    <p className="text-gray-500 text-lg font-light leading-relaxed">
+                      Enterprise-grade document security with immutable audit trails tracking every action.
+                    </p>
+                  </div>
+                  <div className="w-full md:w-1/2 flex justify-center p-8">
+                    <div className="w-full max-w-md h-64 bg-gradient-to-br from-[#3584E4]/5 to-[#3584E4]/20 rounded-2xl overflow-hidden relative border border-[#3584E4]/20">
+                      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                        <div className="relative">
+                          <div className="absolute -inset-4 bg-[#3584E4]/5 blur-xl rounded-full"></div>
+                          <Lock className="h-16 w-16 text-[#3584E4]" />
+                        </div>
+                      </div>
+                      <div className="absolute inset-0 flex items-center justify-center opacity-20">
+                        <div className="w-32 h-32 border-2 border-[#3584E4] rounded-lg transform rotate-12"></div>
+                        <div className="w-32 h-32 border-2 border-[#3584E4] rounded-lg absolute transform -rotate-12"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Feature 2: AI Analysis */}
+                <div className="snap-center min-w-full py-20 flex flex-col md:flex-row items-center justify-between" id="feature-2">
+                  <div className="w-full md:w-1/2 px-10 md:pr-20">
+                    <div className="mb-6 inline-block">
+                      <div className="w-16 h-16 flex items-center justify-center rounded-full bg-[#9563DE]/10">
+                        <Brain className="text-[#9563DE] h-7 w-7" />
+                      </div>
+                    </div>
+                    <h3 className="text-[#0F1C3E] text-3xl font-medium mb-4">AI Analysis</h3>
+                    <p className="text-gray-500 text-lg font-light leading-relaxed">
+                      Intelligent document understanding that extracts relevant data and identifies patterns across policies.
+                    </p>
+                  </div>
+                  <div className="w-full md:w-1/2 flex justify-center p-8">
+                    <div className="w-full max-w-md h-64 bg-gradient-to-br from-[#9563DE]/5 to-[#9563DE]/20 rounded-2xl overflow-hidden relative border border-[#9563DE]/20">
+                      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                        <div className="relative">
+                          <div className="absolute -inset-4 bg-[#9563DE]/5 blur-xl rounded-full"></div>
+                          <Brain className="h-16 w-16 text-[#9563DE]" />
+                        </div>
+                      </div>
+                      <div className="absolute inset-0 flex items-center justify-center opacity-10">
+                        <div className="grid grid-cols-3 gap-3 w-48 h-48">
+                          {[...Array(9)].map((_, i) => (
+                            <div key={i} className="border border-[#9563DE] rounded-md"></div>
+                          ))}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Feature 3: Real-time Insights */}
+                <div className="snap-center min-w-full py-20 flex flex-col md:flex-row items-center justify-between" id="feature-3">
+                  <div className="w-full md:w-1/2 px-10 md:pr-20">
+                    <div className="mb-6 inline-block">
+                      <div className="w-16 h-16 flex items-center justify-center rounded-full bg-[#2B8C74]/10">
+                        <BarChart3 className="text-[#2B8C74] h-7 w-7" />
+                      </div>
+                    </div>
+                    <h3 className="text-[#0F1C3E] text-3xl font-medium mb-4">Real-time Insights</h3>
+                    <p className="text-gray-500 text-lg font-light leading-relaxed">
+                      Customized dashboards that surface relevant information for each stakeholder's needs.
+                    </p>
+                  </div>
+                  <div className="w-full md:w-1/2 flex justify-center p-8">
+                    <div className="w-full max-w-md h-64 bg-gradient-to-br from-[#2B8C74]/5 to-[#2B8C74]/20 rounded-2xl overflow-hidden relative border border-[#2B8C74]/20">
+                      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                        <div className="relative">
+                          <div className="absolute -inset-4 bg-[#2B8C74]/5 blur-xl rounded-full"></div>
+                          <BarChart3 className="h-16 w-16 text-[#2B8C74]" />
+                        </div>
+                      </div>
+                      <div className="absolute inset-0 flex items-end justify-center p-10 opacity-20">
+                        <div className="w-6 h-12 bg-[#2B8C74] rounded-t-md ml-2"></div>
+                        <div className="w-6 h-20 bg-[#2B8C74] rounded-t-md ml-2"></div>
+                        <div className="w-6 h-16 bg-[#2B8C74] rounded-t-md ml-2"></div>
+                        <div className="w-6 h-24 bg-[#2B8C74] rounded-t-md ml-2"></div>
+                        <div className="w-6 h-10 bg-[#2B8C74] rounded-t-md ml-2"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Feature 4: Role-based Access */}
+                <div className="snap-center min-w-full py-20 flex flex-col md:flex-row items-center justify-between" id="feature-4">
+                  <div className="w-full md:w-1/2 px-10 md:pr-20">
+                    <div className="mb-6 inline-block">
+                      <div className="w-16 h-16 flex items-center justify-center rounded-full bg-[#F0B86E]/10">
+                        <Workflow className="text-[#F0B86E] h-7 w-7" />
+                      </div>
+                    </div>
+                    <h3 className="text-[#0F1C3E] text-3xl font-medium mb-4">Role-based Access</h3>
+                    <p className="text-gray-500 text-lg font-light leading-relaxed">
+                      Tailored workflows and permissions that give each stakeholder exactly what they need.
+                    </p>
+                  </div>
+                  <div className="w-full md:w-1/2 flex justify-center p-8">
+                    <div className="w-full max-w-md h-64 bg-gradient-to-br from-[#F0B86E]/5 to-[#F0B86E]/20 rounded-2xl overflow-hidden relative border border-[#F0B86E]/20">
+                      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                        <div className="relative">
+                          <div className="absolute -inset-4 bg-[#F0B86E]/5 blur-xl rounded-full"></div>
+                          <Workflow className="h-16 w-16 text-[#F0B86E]" />
+                        </div>
+                      </div>
+                      <div className="absolute inset-0 flex items-center justify-center opacity-20">
+                        <div className="w-32 h-1 bg-[#F0B86E] absolute left-12"></div>
+                        <div className="w-32 h-1 bg-[#F0B86E] absolute right-12"></div>
+                        <div className="w-1 h-32 bg-[#F0B86E] absolute top-12"></div>
+                        <div className="w-1 h-32 bg-[#F0B86E] absolute bottom-12"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Feature 5: Smart Alerts */}
+                <div className="snap-center min-w-full py-20 flex flex-col md:flex-row items-center justify-between" id="feature-5">
+                  <div className="w-full md:w-1/2 px-10 md:pr-20">
+                    <div className="mb-6 inline-block">
+                      <div className="w-16 h-16 flex items-center justify-center rounded-full bg-[#E25C5C]/10">
+                        <Bell className="text-[#E25C5C] h-7 w-7" />
+                      </div>
+                    </div>
+                    <h3 className="text-[#0F1C3E] text-3xl font-medium mb-4">Smart Alerts</h3>
+                    <p className="text-gray-500 text-lg font-light leading-relaxed">
+                      Proactive notifications for renewals, compliance issues, and critical risk changes.
+                    </p>
+                  </div>
+                  <div className="w-full md:w-1/2 flex justify-center p-8">
+                    <div className="w-full max-w-md h-64 bg-gradient-to-br from-[#E25C5C]/5 to-[#E25C5C]/20 rounded-2xl overflow-hidden relative border border-[#E25C5C]/20">
+                      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                        <div className="relative">
+                          <div className="absolute -inset-4 bg-[#E25C5C]/5 blur-xl rounded-full"></div>
+                          <Bell className="h-16 w-16 text-[#E25C5C]" />
+                        </div>
+                      </div>
+                      <div className="absolute inset-0 flex items-center justify-center opacity-20">
+                        <div className="w-24 h-24 rounded-full border-2 border-[#E25C5C]"></div>
+                        <div className="w-36 h-36 rounded-full border border-[#E25C5C] absolute animate-ping-slow"></div>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
               
-              {/* Feature navigation - Apple-style dots */}
-              <div className="flex justify-center space-x-3 pb-16">
-                <div className="w-2 h-2 rounded-full bg-[#0F1C3E]"></div>
-                <div className="w-2 h-2 rounded-full bg-gray-200"></div>
-                <div className="w-2 h-2 rounded-full bg-gray-200"></div>
-                <div className="w-2 h-2 rounded-full bg-gray-200"></div>
-                <div className="w-2 h-2 rounded-full bg-gray-200"></div>
+              {/* Feature navigation - Apple-style clickable dots */}
+              <div className="flex justify-center space-x-6 pb-16">
+                <a href="#feature-1" className="w-2.5 h-2.5 rounded-full bg-[#3584E4] hover:scale-125 transition-transform cursor-pointer" aria-label="Go to Secure Vault feature"></a>
+                <a href="#feature-2" className="w-2.5 h-2.5 rounded-full bg-[#9563DE] hover:scale-125 transition-transform cursor-pointer" aria-label="Go to AI Analysis feature"></a>
+                <a href="#feature-3" className="w-2.5 h-2.5 rounded-full bg-[#2B8C74] hover:scale-125 transition-transform cursor-pointer" aria-label="Go to Real-time Insights feature"></a>
+                <a href="#feature-4" className="w-2.5 h-2.5 rounded-full bg-[#F0B86E] hover:scale-125 transition-transform cursor-pointer" aria-label="Go to Role-based Access feature"></a>
+                <a href="#feature-5" className="w-2.5 h-2.5 rounded-full bg-[#E25C5C] hover:scale-125 transition-transform cursor-pointer" aria-label="Go to Smart Alerts feature"></a>
               </div>
               
-              {/* Small feature previews */}
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-3 px-6 pb-12">
-                <div className="p-4 bg-gray-50 rounded-xl border border-gray-100 flex flex-col items-center text-center group hover:border-[#9563DE]/30 transition-colors cursor-pointer">
-                  <Brain className="text-[#9563DE] h-6 w-6 mb-2" />
-                  <h4 className="text-[#0F1C3E] text-sm font-medium">AI Analysis</h4>
-                </div>
+              {/* Feature Quick Select */}
+              <div className="grid grid-cols-5 gap-2 px-6 pb-12 max-w-3xl mx-auto">
+                <a href="#feature-1" className="p-3 bg-gray-50 rounded-xl border border-gray-100 flex flex-col items-center text-center group hover:border-[#3584E4]/40 hover:bg-[#3584E4]/5 transition-colors cursor-pointer">
+                  <Lock className="text-[#3584E4] h-5 w-5 mb-2" />
+                  <h4 className="text-[#0F1C3E] text-xs font-medium">Secure Vault</h4>
+                </a>
                 
-                <div className="p-4 bg-gray-50 rounded-xl border border-gray-100 flex flex-col items-center text-center group hover:border-[#2B8C74]/30 transition-colors cursor-pointer">
-                  <BarChart3 className="text-[#2B8C74] h-6 w-6 mb-2" />
-                  <h4 className="text-[#0F1C3E] text-sm font-medium">Real-time Insights</h4>
-                </div>
+                <a href="#feature-2" className="p-3 bg-gray-50 rounded-xl border border-gray-100 flex flex-col items-center text-center group hover:border-[#9563DE]/40 hover:bg-[#9563DE]/5 transition-colors cursor-pointer">
+                  <Brain className="text-[#9563DE] h-5 w-5 mb-2" />
+                  <h4 className="text-[#0F1C3E] text-xs font-medium">AI Analysis</h4>
+                </a>
                 
-                <div className="p-4 bg-gray-50 rounded-xl border border-gray-100 flex flex-col items-center text-center group hover:border-[#F0B86E]/30 transition-colors cursor-pointer">
-                  <Workflow className="text-[#F0B86E] h-6 w-6 mb-2" />
-                  <h4 className="text-[#0F1C3E] text-sm font-medium">Role-based Access</h4>
-                </div>
+                <a href="#feature-3" className="p-3 bg-gray-50 rounded-xl border border-gray-100 flex flex-col items-center text-center group hover:border-[#2B8C74]/40 hover:bg-[#2B8C74]/5 transition-colors cursor-pointer">
+                  <BarChart3 className="text-[#2B8C74] h-5 w-5 mb-2" />
+                  <h4 className="text-[#0F1C3E] text-xs font-medium">Real-time Insights</h4>
+                </a>
                 
-                <div className="p-4 bg-gray-50 rounded-xl border border-gray-100 flex flex-col items-center text-center group hover:border-[#E25C5C]/30 transition-colors cursor-pointer">
-                  <Bell className="text-[#E25C5C] h-6 w-6 mb-2" />
-                  <h4 className="text-[#0F1C3E] text-sm font-medium">Smart Alerts</h4>
-                </div>
+                <a href="#feature-4" className="p-3 bg-gray-50 rounded-xl border border-gray-100 flex flex-col items-center text-center group hover:border-[#F0B86E]/40 hover:bg-[#F0B86E]/5 transition-colors cursor-pointer">
+                  <Workflow className="text-[#F0B86E] h-5 w-5 mb-2" />
+                  <h4 className="text-[#0F1C3E] text-xs font-medium">Role-based Access</h4>
+                </a>
+                
+                <a href="#feature-5" className="p-3 bg-gray-50 rounded-xl border border-gray-100 flex flex-col items-center text-center group hover:border-[#E25C5C]/40 hover:bg-[#E25C5C]/5 transition-colors cursor-pointer">
+                  <Bell className="text-[#E25C5C] h-5 w-5 mb-2" />
+                  <h4 className="text-[#0F1C3E] text-xs font-medium">Smart Alerts</h4>
+                </a>
               </div>
             </div>
           </div>

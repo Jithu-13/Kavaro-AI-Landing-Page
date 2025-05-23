@@ -21,10 +21,11 @@ export default function SolutionSection() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-6">
               {/* Card 1: Secure Vault */}
               <div className="bg-white rounded-2xl p-8 shadow-sm border border-gray-100 hover:shadow-md hover:border-[#3584E4]/20 transition-all duration-300 group">
-                <div className="mb-6">
+                <div className="relative flex items-center mb-6">
                   <div className="w-16 h-16 flex items-center justify-center rounded-full bg-[#3584E4]/10 group-hover:scale-105 transition-transform duration-300">
                     <Lock className="text-[#3584E4] h-7 w-7" />
                   </div>
+                  <div className="absolute -inset-2 bg-[#3584E4]/5 rounded-full blur-xl opacity-60 -z-10"></div>
                 </div>
                 <h3 className="text-[#0F1C3E] text-xl font-medium mb-3">Secure Vault</h3>
                 <p className="text-gray-500 font-light leading-relaxed">
@@ -32,12 +33,14 @@ export default function SolutionSection() {
                 </p>
                 
                 <div className="mt-6 pt-6 border-t border-gray-100">
-                  <div className="h-24 relative overflow-hidden rounded-xl">
-                    <div className="absolute inset-0 bg-gradient-to-br from-[#3584E4]/5 to-[#3584E4]/20 flex items-center justify-center">
-                      <div className="relative">
-                        <div className="absolute -inset-4 bg-[#3584E4]/5 blur-xl rounded-full"></div>
-                        <Lock className="h-10 w-10 text-[#3584E4]" />
-                      </div>
+                  <div className="flex gap-3">
+                    <div className="flex items-center gap-2">
+                      <div className="w-1.5 h-1.5 rounded-full bg-[#3584E4]"></div>
+                      <span className="text-xs text-gray-500">End-to-end encryption</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <div className="w-1.5 h-1.5 rounded-full bg-[#3584E4]"></div>
+                      <span className="text-xs text-gray-500">Tamper-proof logs</span>
                     </div>
                   </div>
                 </div>
@@ -45,10 +48,11 @@ export default function SolutionSection() {
               
               {/* Card 2: AI Analysis */}
               <div className="bg-white rounded-2xl p-8 shadow-sm border border-gray-100 hover:shadow-md hover:border-[#9563DE]/20 transition-all duration-300 group">
-                <div className="mb-6">
+                <div className="relative flex items-center mb-6">
                   <div className="w-16 h-16 flex items-center justify-center rounded-full bg-[#9563DE]/10 group-hover:scale-105 transition-transform duration-300">
                     <Brain className="text-[#9563DE] h-7 w-7" />
                   </div>
+                  <div className="absolute -inset-2 bg-[#9563DE]/5 rounded-full blur-xl opacity-60 -z-10"></div>
                 </div>
                 <h3 className="text-[#0F1C3E] text-xl font-medium mb-3">AI Analysis</h3>
                 <p className="text-gray-500 font-light leading-relaxed">
@@ -56,12 +60,14 @@ export default function SolutionSection() {
                 </p>
                 
                 <div className="mt-6 pt-6 border-t border-gray-100">
-                  <div className="h-24 relative overflow-hidden rounded-xl">
-                    <div className="absolute inset-0 bg-gradient-to-br from-[#9563DE]/5 to-[#9563DE]/20 flex items-center justify-center">
-                      <div className="relative">
-                        <div className="absolute -inset-4 bg-[#9563DE]/5 blur-xl rounded-full"></div>
-                        <Brain className="h-10 w-10 text-[#9563DE]" />
-                      </div>
+                  <div className="flex gap-3">
+                    <div className="flex items-center gap-2">
+                      <div className="w-1.5 h-1.5 rounded-full bg-[#9563DE]"></div>
+                      <span className="text-xs text-gray-500">Smart extraction</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <div className="w-1.5 h-1.5 rounded-full bg-[#9563DE]"></div>
+                      <span className="text-xs text-gray-500">Pattern recognition</span>
                     </div>
                   </div>
                 </div>
@@ -69,10 +75,11 @@ export default function SolutionSection() {
               
               {/* Card 3: Real-time Insights */}
               <div className="bg-white rounded-2xl p-8 shadow-sm border border-gray-100 hover:shadow-md hover:border-[#2B8C74]/20 transition-all duration-300 group">
-                <div className="mb-6">
+                <div className="relative flex items-center mb-6">
                   <div className="w-16 h-16 flex items-center justify-center rounded-full bg-[#2B8C74]/10 group-hover:scale-105 transition-transform duration-300">
                     <BarChart3 className="text-[#2B8C74] h-7 w-7" />
                   </div>
+                  <div className="absolute -inset-2 bg-[#2B8C74]/5 rounded-full blur-xl opacity-60 -z-10"></div>
                 </div>
                 <h3 className="text-[#0F1C3E] text-xl font-medium mb-3">Real-time Insights</h3>
                 <p className="text-gray-500 font-light leading-relaxed">
@@ -80,12 +87,14 @@ export default function SolutionSection() {
                 </p>
                 
                 <div className="mt-6 pt-6 border-t border-gray-100">
-                  <div className="h-24 relative overflow-hidden rounded-xl">
-                    <div className="absolute inset-0 bg-gradient-to-br from-[#2B8C74]/5 to-[#2B8C74]/20 flex items-center justify-center">
-                      <div className="relative">
-                        <div className="absolute -inset-4 bg-[#2B8C74]/5 blur-xl rounded-full"></div>
-                        <BarChart3 className="h-10 w-10 text-[#2B8C74]" />
-                      </div>
+                  <div className="flex gap-3">
+                    <div className="flex items-center gap-2">
+                      <div className="w-1.5 h-1.5 rounded-full bg-[#2B8C74]"></div>
+                      <span className="text-xs text-gray-500">Custom visualizations</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <div className="w-1.5 h-1.5 rounded-full bg-[#2B8C74]"></div>
+                      <span className="text-xs text-gray-500">Live data</span>
                     </div>
                   </div>
                 </div>
@@ -93,10 +102,11 @@ export default function SolutionSection() {
               
               {/* Card 4: Role-based Access */}
               <div className="bg-white rounded-2xl p-8 shadow-sm border border-gray-100 hover:shadow-md hover:border-[#F0B86E]/20 transition-all duration-300 group">
-                <div className="mb-6">
+                <div className="relative flex items-center mb-6">
                   <div className="w-16 h-16 flex items-center justify-center rounded-full bg-[#F0B86E]/10 group-hover:scale-105 transition-transform duration-300">
                     <Workflow className="text-[#F0B86E] h-7 w-7" />
                   </div>
+                  <div className="absolute -inset-2 bg-[#F0B86E]/5 rounded-full blur-xl opacity-60 -z-10"></div>
                 </div>
                 <h3 className="text-[#0F1C3E] text-xl font-medium mb-3">Role-based Access</h3>
                 <p className="text-gray-500 font-light leading-relaxed">
@@ -104,12 +114,14 @@ export default function SolutionSection() {
                 </p>
                 
                 <div className="mt-6 pt-6 border-t border-gray-100">
-                  <div className="h-24 relative overflow-hidden rounded-xl">
-                    <div className="absolute inset-0 bg-gradient-to-br from-[#F0B86E]/5 to-[#F0B86E]/20 flex items-center justify-center">
-                      <div className="relative">
-                        <div className="absolute -inset-4 bg-[#F0B86E]/5 blur-xl rounded-full"></div>
-                        <Workflow className="h-10 w-10 text-[#F0B86E]" />
-                      </div>
+                  <div className="flex gap-3">
+                    <div className="flex items-center gap-2">
+                      <div className="w-1.5 h-1.5 rounded-full bg-[#F0B86E]"></div>
+                      <span className="text-xs text-gray-500">Custom permissions</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <div className="w-1.5 h-1.5 rounded-full bg-[#F0B86E]"></div>
+                      <span className="text-xs text-gray-500">Workflow automation</span>
                     </div>
                   </div>
                 </div>
@@ -117,10 +129,11 @@ export default function SolutionSection() {
               
               {/* Card 5: Smart Alerts */}
               <div className="bg-white rounded-2xl p-8 shadow-sm border border-gray-100 hover:shadow-md hover:border-[#E25C5C]/20 transition-all duration-300 group">
-                <div className="mb-6">
+                <div className="relative flex items-center mb-6">
                   <div className="w-16 h-16 flex items-center justify-center rounded-full bg-[#E25C5C]/10 group-hover:scale-105 transition-transform duration-300">
                     <Bell className="text-[#E25C5C] h-7 w-7" />
                   </div>
+                  <div className="absolute -inset-2 bg-[#E25C5C]/5 rounded-full blur-xl opacity-60 -z-10"></div>
                 </div>
                 <h3 className="text-[#0F1C3E] text-xl font-medium mb-3">Smart Alerts</h3>
                 <p className="text-gray-500 font-light leading-relaxed">
@@ -128,12 +141,14 @@ export default function SolutionSection() {
                 </p>
                 
                 <div className="mt-6 pt-6 border-t border-gray-100">
-                  <div className="h-24 relative overflow-hidden rounded-xl">
-                    <div className="absolute inset-0 bg-gradient-to-br from-[#E25C5C]/5 to-[#E25C5C]/20 flex items-center justify-center">
-                      <div className="relative">
-                        <div className="absolute -inset-4 bg-[#E25C5C]/5 blur-xl rounded-full"></div>
-                        <Bell className="h-10 w-10 text-[#E25C5C]" />
-                      </div>
+                  <div className="flex gap-3">
+                    <div className="flex items-center gap-2">
+                      <div className="w-1.5 h-1.5 rounded-full bg-[#E25C5C]"></div>
+                      <span className="text-xs text-gray-500">Deadline tracking</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <div className="w-1.5 h-1.5 rounded-full bg-[#E25C5C]"></div>
+                      <span className="text-xs text-gray-500">Risk change alerts</span>
                     </div>
                   </div>
                 </div>
@@ -141,10 +156,11 @@ export default function SolutionSection() {
               
               {/* Card 6: Advanced Visualization - Highlighted feature card */}
               <div className="bg-[#0F1C3E] rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 group text-white">
-                <div className="mb-6">
+                <div className="relative flex items-center mb-6">
                   <div className="w-16 h-16 flex items-center justify-center rounded-full bg-white/10 group-hover:scale-105 transition-transform duration-300">
                     <Users className="text-white h-7 w-7" />
                   </div>
+                  <div className="absolute -inset-2 bg-white/5 rounded-full blur-xl opacity-40 -z-10"></div>
                 </div>
                 <h3 className="text-white text-xl font-medium mb-3">Network Visualization</h3>
                 <p className="text-gray-300 font-light leading-relaxed">
@@ -152,12 +168,14 @@ export default function SolutionSection() {
                 </p>
                 
                 <div className="mt-6 pt-6 border-t border-white/10">
-                  <div className="h-24 relative overflow-hidden rounded-xl">
-                    <div className="absolute inset-0 bg-gradient-to-br from-white/5 to-white/10 flex items-center justify-center">
-                      <div className="relative">
-                        <div className="absolute -inset-4 bg-white/5 blur-xl rounded-full"></div>
-                        <Users className="h-10 w-10 text-white" />
-                      </div>
+                  <div className="flex gap-3">
+                    <div className="flex items-center gap-2">
+                      <div className="w-1.5 h-1.5 rounded-full bg-white"></div>
+                      <span className="text-xs text-gray-300">Relationship mapping</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <div className="w-1.5 h-1.5 rounded-full bg-white"></div>
+                      <span className="text-xs text-gray-300">Document flow</span>
                     </div>
                   </div>
                 </div>

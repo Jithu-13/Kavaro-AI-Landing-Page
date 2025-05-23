@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 
 export default function HeroSection() {
   return (
-    <main className="bg-[var(--light-background)] text-[var(--light-kavaro)] pt-28 pb-20 md:pt-40 md:pb-32">
+    <main className="bg-[var(--light-background)] text-[var(--light-kavaro)] pt-36 pb-20 md:pt-48 md:pb-32">
       <div className="max-w-6xl mx-auto px-6 fade-in">
         <div className="max-w-3xl mx-auto text-center">
           <h1 className="text-5xl md:text-7xl font-semibold tracking-tight mb-8 text-black">

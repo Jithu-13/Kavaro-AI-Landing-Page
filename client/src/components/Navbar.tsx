@@ -39,7 +39,7 @@ export default function Navbar() {
 
   return (
     <>
-      <header className={`sticky top-0 z-50 ${isScrolled ? "bg-[var(--light-background)]/95 backdrop-blur-md border-b border-gray-100" : "bg-[var(--light-background)]"} transition-all duration-300`}>
+      <header className={`fixed w-full top-0 z-50 ${isScrolled ? "bg-[var(--light-background)]/95 backdrop-blur-md border-b border-gray-100 shadow-sm" : "bg-[var(--light-background)]"} transition-all duration-300`}>
         <div className="flex justify-between items-center py-5 px-6 max-w-7xl mx-auto">
           <div className="flex items-center">
             <span className="text-xl font-semibold tracking-tight text-black">Kavaro <span className="text-[var(--light-ai)]">AI</span></span>

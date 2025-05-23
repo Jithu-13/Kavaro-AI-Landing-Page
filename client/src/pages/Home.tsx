@@ -11,12 +11,9 @@ import ScrollToTopButton from "@/components/ScrollToTopButton";
 export default function Home() {
   return (
     <div className="min-h-screen font-sans">
-      <div className="bg-[var(--light-background)] text-[var(--light-kavaro)]">
-        <Navbar />
-      </div>
+      <Navbar />
       <HeroSection />
       <div className="bg-[var(--light-background)] text-[var(--light-kavaro)]">
-        <ProblemSection />
         <ComparisonSection />
         <FeaturesSection />
         <BenefitsSection />
